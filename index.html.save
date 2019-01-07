@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mon Mémento</title>
-  </head>
-  <body>
-    <h1>La ligne de commande</h1>
-    <p><color:"green">Partie 1
-      <ul>
-        <li>Afficher la manuel de la commande Ls: <font color="red">man Ls</font>
-        <li>Afficher le contenu du dossier courant: <font color="red">Ls </font>
-        <li>Afficher le contenu du dossier courant avec les fichiers cachés: <font color="red">Ls -A</font>
-        <li>Afficher le contenu du dossier courant version longue sans les fichiers cachés: <font color="red">Ls -L </font>
-        <li>Afficher le contenu du dossier courant version longue avec les fichiers cachées: <font color="red">Ls -Al</font>
-        <li>Afficher le chemin du dossier courant: <font color="red">pwd </font>
-        <li>Se déplacer dans le dossier "Documents": <font color="red">cd Documents</font>
-        <li>Afficher le contenu de ce dossier: <font color="red">Ls</font>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Mon Mémento</title>
+</head>
+<body>
+  <h1>La ligne de commande</h1>
+  <p><font color="green">Partie 1</font>
+    <ul>
+      <li>Afficher la manuel de la commande Ls: <font color="red">man Ls</font></li>
+      <li>Afficher le contenu du dossier courant: <font color="red">Ls </font></li>
+      <li>Afficher le contenu du dossier courant avec les fichiers cachés: <font color="red">Ls -A</font></li>
+      <li>Afficher le contenu du dossier courant version longue sans les fichiers cachés: <font color="red">Ls -L </font></li>
+      <li>Afficher le contenu du dossier courant version longue avec les fichiers cachées: <font color="red">Ls -Al</font></li>
+      <li>Afficher le chemin du dossier courant: <font color="red">pwd </font></li>
+      <li>Se déplacer dans le dossier "Documents": <font color="red">cd Documents</font></li>
+      <li>Afficher le contenu de ce dossier: <font color="red">Ls</font></li>
     </ul>
-
-    <!- a finir modif couleur et br ->
-      <font color="green">Partie 2</font></br>
-      <ul>
-        <li>Se mettre en super utilisateur: <font color="red">sudo -s</font>
-        <li>Mettre à jour la liste des paquets: <font color="red">apt update</font>
-        <li>Mettre à jour des paquets: <font color="red">apt upgrade</font>
-        <li>Trouver tous les paquets contenant le mot XML: a<font color="red">pt search XML</font>
-        <li>Installer le paquet git: <font color="red">apt install git</font>
-        <li>Avec le navigateur, télécharger le .deb à l'adresse http:/atom.io/ . Avec la ligne de commande, se déplacer dans le dossier Téléchargement. Lancer l'installation du .deb nouvellement téléchargé: <font color="red">dpkg -i atom-amd64.deb</font> </br>
-      <font color="green">Partie 3</font>
-        <li>Créer un dossier website dans le dossier Documents :  <font color="red">mkdir -p website</font>
-        <li>Créer un dossier et un sous dossier en une seule ligne de commande dans le dossier website: Memento/assets: <font color="red">mkdir -p Memento/assets</font>
-        <li>Se déplacer dans le dossier nouvellement crée et faire trois nouveaux documents en une seule ligne css, img, js: <font color="red">mkdir -p css img js</font>
-        <li>Dans un dossier Memento créer le fichier style.css : <font color="red">touch style.css</font>
-        <li>Dans le dossier Memento créer le fichier index.html et copier coller un le texte de l'exercice: <font color="red">touch index.html </font>
-        <li>ouvrir nano: <font color="red">nano index.html </font></br>
-        <li>Déplacer le fichier style.css dans le dossier css du dossier assets: <font color="red">mv style.css /Documents/website/Memento/assets/css </font>
-
-
+    <font color="green">Partie 2</font>
+    <ul>
+      <li>Se mettre en super utilisateur: <font color="red">sudo -s</font></li>
+      <li>Mettre à jour la liste des paquets: <font color="red">apt update</font></li>
+      <li>Mettre à jour des paquets: <font color="red">apt upgrade</font></li>
+      <li>Trouver tous les paquets contenant le mot XML: <font color="red">apt search XML</font></li>
+      <li>Installer le paquet git: <font color="red">apt install git</font></li>
+      <li>Avec le navigateur, télécharger le .deb à l'adresse http:/atom.io/ . Avec la ligne de commande, se déplacer dans le dossier Téléchargement. Lancer l'installation du .deb nouvellement téléchargé: <font color="red">dpkg -i atom-amd64.deb</font></li>
+    </ul>
+    <font color="green">Partie 3</font>
+    <ul>
+      <li>Créer un dossier website dans le dossier Documents :  <font color="red">mkdir -p website</font></li>
+      <li>Créer un dossier et un sous dossier en une seule ligne de commande dans le dossier website: Memento/assets: <font color="red">mkdir -p Memento/assets</font></li>
+      <li>Se déplacer dans le dossier nouvellement crée et faire trois nouveaux documents en une seule ligne css, img, js: <font color="red">mkdir -p css img js</font></li>
+      <li>Dans un dossier Memento créer le fichier style.css : <font color="red">touch style.css</font></li>
+      <li>Dans le dossier Memento créer le fichier index.html et copier coller un le texte de l'exercice: <font color="red">touch index.html </font></li>
+      <li>ouvrir nano: <font color="red">nano index.html </font></li>
+      <li>Déplacer le fichier style.css dans le dossier css du dossier assets: <font color="red">mv style.css /Documents/website/Memento/assets/css </font></li>
+    </ul>
       <font color="blue">note:
-      pour copier/COLLER Shift et inver
-      pour quitter et sauvegarder sur Nano: ctrl X </font>
+    <ul>
+      <li>pour copier/coller Shift et inver</li>
+      <li>pour quitter et sauvegarder sur Nano: ctrl X </li></font>
+    </ul>
     </p>
 
-<h2>Nano exercice</h2>
+<h1>Nano exercice</h1>
 
   <p>
-    Créer un dossier exerciceNano dans le dossier utilisateur : <font color="red">mkdir -p exerciceNano </font>
-
+  <ul>
+    <li>Créer un dossier exerciceNano dans le dossier utilisateur : <font color="red">mkdir -p exerciceNano </font></li>
+    <li>Créer un fichier dans le dossier crée dans l'exercice 1 quisera nommé: index.html: <font color="red">touch index.html</font></li>
+    <li>Ouvrir le fichier avec <strong>nano</strong>: <font color="red">nano index.html</font> et écrire dedans ceci:</li>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lthead&gtNano exercice&lt/head&gt
+  &ltbody&gt
+  &lth1&gtHello world !!!&lt/h1&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+    <li>Fermer: <font color="red"> Ctrl X</font> et vérifier le résultat dans <strong>Firefox</strong>: <font color="red"> firefox index.html </font></li>
+    <li>Ajouter dans le fichier <strong>index.html</strong> la balise <strong>title</strong> et la remplir.</li>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lthead&gt
+  &lttitle&gttitre de la page&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+  &lth1&gtHello world !!!&lt/h1&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+    <li>Ajouter 3 titres <strong>h2</strong> et les remplir.</li>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lthead&gt
+  &lttitle&gttitre de la page&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+  &lth1&gtHello world !!!&lt/h1&gt
+  &lth2&gttitre 1&lt/h2&gt
+  &lth2&gttitre 2&lt/h2&gt
+  &lth2&gttitre 3&lt/h2&gt
+  &lt/body&gt
+  &lt/html&gt
+    </pre>
+    <li>En se servant des options de <strong>nano</strong> remplacer les balises <strong>h2</strong> par des paragraphes.<font color="red"> Ctrl alt gr 8 pour remplacer. </font></li>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lthead&gt
+  &lttitle&gttitre de la page&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+  &lth1&gtHello world !!!&lt/h1&gt
+  &ltp&gttitre 1&lt/p&gt
+  &ltp&gttitre 2&lt/p&gt
+  &ltp&gttitre 3&lt/p&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+  </ul>
   </p>
-
-    <pre><code></code></pre>
+<h1>Git</h1>
   </body>
 </html>
