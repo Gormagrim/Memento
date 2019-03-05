@@ -1,0 +1,47 @@
+
+.plop{
+  font-size: 70%;
+  color: #5c5c5c;
+
+
+}
+.imgWidth{
+  height: 60px;
+  width: 120px;
+}
+
+.h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* .img{
+  height: 65px;
+  width: 110px;
+} */
+
+.footer{
+  font-size: 100%;
+  background-color: #f2f2f2;
+  height: 250px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 3%;
+  color: #5c5c5c;
+}
+
+
+.finfooter{
+	text-decoration: none;
+	font-size: 70%;
+	text-align: center;
+  line-height: 10%;
+}
+.copyright{
+	text-decoration: none;
+	font-size: 70%;
+	text-align: center;
+}
+.star_rate {
+  background-size: calc(4.5 * 20%) 16px;
+}

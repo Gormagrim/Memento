@@ -1,0 +1,105 @@
+/* Pour toutes les sections */
+#bootstrap, #javascript {
+  width: 100%;
+  height: 100%; /* permet la bonne position de mon ancre au click de la navbar */
+  padding-top: 5rem;   /* permet d'avoir ma 2eme section en dessous de la navbar */
+}
+
+.titleSection, .project{
+  text-align: center;
+  color: #193158;
+  font-weight: bold;
+}
+
+.project {
+  border: 1px solid #193158;
+  background-color: rgba(127, 158, 207, 0.5);
+  font-size: x-large;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+/* Partie HTML */
+#html {
+  /* permet d'avoir ma 1ere section en dessous de la navbar */
+  padding-top: 5rem;
+}
+
+.titleExercise {
+  color: #42994e;
+  font-weight: bold;
+}
+.borderExercise {
+  border: 1px solid black;
+  margin-bottom: 5rem;
+}
+
+.image {
+  width: auto;
+  background-repeat: no-repeat;
+  height: 15rem;
+}
+
+.exerciseThreeHtml {
+  background-image: url(../img/exo3html.png);
+  background-position: center;
+}
+
+.exerciseFourHtml {
+  background-image: url(../img/exo4html.png);
+  height: 10rem;
+  background-position: center;
+}
+
+.exerciseFiveHtml {
+  background-image: url(../img/exo5html.png);
+  background-position: center;
+}
+
+.exerciseSixHtml {
+  background-image: url(../img/exo6html.png);
+  height: 30rem;
+  background-position: center;
+}
+
+.exerciseSevenHtml {
+  background-image: url(../img/exo7html.png);
+  height: 40rem;
+}
+
+.styleCode {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.smallMade h1, .smallMade h2 {
+  font-size: large;
+}
+
+.smallMade p {
+  font-size: small;
+}
+
+/* Partie Javascript */
+.exerciseOneJavascript {
+  background-image: url(../img/exo1javascript.png);
+  background-position: center;
+}
+
+.exerciseTwoJavascript {
+  background-image: url(../img/exo2javascript.png);
+  background-position: center;
+}
+
+.exerciseThreeJavascript {
+  background-image: url(../img/exo3javascript.png);
+  background-position: center;
+}
+
+.exerciseThreeJavascriptBis {
+  background-image: url(../img/exo3javascriptbis.png);
+  background-position: center;
+}

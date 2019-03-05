@@ -1,0 +1,865 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#html">HTML <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#bootstrap">bootstrap</a>
+      <a class="nav-item nav-link" href="#!/oscaro">Projet Oscaro</a>
+      <a class="nav-item nav-link" href="#javascript">javascript</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <section id="html">
+        <h1 class="titleSection">Exercices HTML</h1>
+        <p>REFAIRE L'AUTO-INTENTATION DES CODES "pre" À LA TOUTE FIN</p>
+        <p>COMMENT UTILISER UNE FEUILLE DE STYLE PAR VUE ??? EST CE POSSIBLE ??</p>
+        <p>RAJOUTER CV EN HTML ET CSS</p>
+        <p>RAJOUTER CV EN Bootstrap</p>
+        <p>FINIR JAVASCRIPT EXO 4 </p>
+        <p>LES TITRES BootStrap ET JAVASCRIPT ÉTAIENT EN H1 PASSÉ EN H2 A MODIFIER </p>
+        <p>REVOIR LES COM</p>
+        <p>pour un css par vue : <a href="http://embed.plnkr.co/lEErLbr3SvQ9Ye75G13l/">clique içi !</a></p>
+        <p>Vous trouverez ici une série d'exercices à faire dans l'ordre et à mettre dans votre github. Vous devez avoir une page valide HTML (Doctype, ...). Pensez à l'indentation !!! </p>
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 1</h2>
+          <p>Ecrire une page HTML qui affiche :</p>
+          <ul>
+            <li>un titre au niveau du bandeau de la fenêtre du navigateur</li>
+            <li>le même titre dans le document</li>
+            <li>un paragraphe</li>
+            <li>Le document devra être écrit en UTF-8</li>
+            <li>Le document devra contenir des caractères accentués</li>
+          </ul>
+          <h3>Rendu : </h3>
+          <div class="smallMade">
+            <h1>Ma première page en HTML</h1>
+            <p>paragraphe avec des caractères accentués pour le premier cours HTML</p>
+          </div>
+          <h3>code : </h3>
+          <pre class="styleCode">
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+            &lthead&gt
+            &ltmeta charset="utf-8"/&gt
+            &lttitle&gtMa première page en HTML&lt/title&gt
+            &lt/head&gt
+            &ltbody&gt
+            &lth1&gtMa première page en HTML&lt/h1&gt
+            &ltp&gt Voiçi mon paragraphe avec des caractères accentués pour le premier cours HTML&lt/p&gt
+            &lt/body&gt
+            &lt/html&gt
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 2</h2>
+          <p>Ecrire une page HTML contenant :</p>
+          <ul>
+            <li>un titre de niveau 1</li>
+            <li>un paragraphe</li>
+            <li>un titre de niveau 2</li>
+            <li>un deuxième paragraphe</li>
+            <li>un autre titre de niveau 2</li>
+            <li>un troisième paragraphe</li>
+          </ul>
+          <p>Le choix des textes dans les titres et les paragraphes vous appartient.</p>
+          <h3>Rendu : </h3>
+          <div class="smallMade">
+            <h1>un titre de niveau 1</h1>
+            <p>un paragraphe</p>
+            <h2>titre de niveau 2</h2>
+            <p>Un deuxième paragraphe</p>
+            <h2>un autre titre de niveau 2</h2>
+            <p>un troisième paragraphe</p>
+          </div>
+          <h3>code : </h3>
+
+          <pre class="styleCode">
+            &lth1&gtun titre de niveau 1&lt/h1&gt
+            &ltp&gtun paragraphe&lt/p&gt
+            &lth2&gttitre de niveau 2&lt/h2&gt
+            &ltp&gtUn deuxième paragraphe&lt/p&gt
+            &lth2&gtun autre titre de niveau 2&lt/h2&gt
+            &ltp&gtun troisième paragraphe&lt/p&gt
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 3</h2>
+          <p>Reproduire l'image correspondant à l'exercice.</p>
+          <p>Rappel : Pour utiliser du CSS dans du HTML, on se sert de <strong>l'attribut style</strong></p>
+          <div class="image exerciseThreeHtml"></div>
+          <h3>code : </h3>
+          <pre class="styleCode">
+            &lth1&gtMa liste de course du 7 Mai 2016&lt/h1&gt
+            &ltp&gtIl me faut plusieurs choses:&lt/p&gt
+            &ltul&gt
+            &ltli&gtUne baguette&lt/li&gt
+            &ltli&gt2 &ltspan style="color:red"&gtkilos&lt/span&gt de tomates &lt/li&gt
+            &ltli&gt3 &ltspan style="color:green"&gtlitres&lt/span&gt de lait&lt/li&gt
+            &ltli&gt5 &ltstrong&gtboites&lt/strong&gt de chewing gum&lt/li&gt
+            &lt/ul&gt
+            &ltem&gt Payer en liquide ou par chèque.&lt/em&gt
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 4</h2>
+          <p>Reproduire l'image correspondant à l'exercice.</p>
+          <p>Pour les liens, mettre le site correspondant. Je vous laisse les trouver par vous-même.</p>
+          <p>L'image se trouve à l'adresse : http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png</p>
+          <strong>IMPORTANT</strong>
+          <ul>
+            <li>Vous ne devez pas télécharger l'image.</li>
+            <li>Mettre un titre à chaque lien, pour qu'au survol il apparaisse.</li>
+            <li>Mettre un texte alternatif et un titre à l'image.</li>
+          </ul>
+          <div class="image exerciseFourHtml"></div>
+          <h3>code : </h3>
+          <pre class="styleCode">
+            &ltbody&gt
+            &lth1&gt&ltimg src="http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png" alt="image bloc note" title="image bloc note"/&gtTous les petits trucs qui me seront utile pour la suite&lt/h1&gt
+            &ltp&gtLe site de codecademy est &lta href="https://www.codecademy.com/fr" title="site codecademy"&gtiçi&lt/a&gt&lt/p&gt
+            &ltp&gtPour pleins de tuto sympa, il y a aussi &lta href="https://openclassrooms.com/fr/dashboard" title="site openclassroom"&gtopenclassroom.&lt/a&gt&lt/p&gt
+            &ltp&gt&lta href="https://ubuntu-fr.org/" title="site Ubuntu"&gtSi je veux devenir un crack sous Ubuntu, il me faut la bonne adresse.&lt/a&gt&lt/p&gt
+            &lt/body&gt
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 5</h2>
+          <p>Reproduire l'image correspondant à l'exercice.</p>
+          <p>Pour le CSS le mettre dans une <strong>balise style.</strong></p>
+          <p>Pour faire le tableau, il faut se servir des balises <strong>thead, tfoot</strong> et <strong>tbody</strong>.</p>
+          <p>Vous ne devez pas utiliser <strong>d'attribut style</strong> dans cet exercice.</p>
+          <div class="image exerciseFiveHtml"></div>
+          <h3>code : </h3>
+          <pre class="styleCode">
+            &lthead&gt
+            &ltstyle&gt
+            table {
+              border: 1px solid black;
+              {La propriété border-collapse détermine si les bordures d'un tableau sont séparées ou fusionnées}
+              border-collapse: collapse;
+            }
+            thead {
+              text-align: center;
+            }
+            tfoot {
+              text-align: center;
+            }
+            td, th {
+              {La propriété border-width définit la largeur d'une bordure pour la boîte d'un élément.
+              Cette propriété est une propriété raccourcie pour définir les propriétés détaillées:
+              border-top-width, border-right-width, border-bottom-width et border-left-width.}
+              border-width: 1px;
+              border-style: solid;
+            }
+            &lt/style&gt
+            &lt/head&gt
+            &ltbody&gt
+            &lttable&gt
+            {L'élément HTML &ltcaption&gt représente la légende (ou le titre) d'un tableau.
+            Il doit être le première élément parmi les descendants de l'élément &lttable&gt.}
+            &ltcaption&gtMon compte BNP&lt/caption&gt
+            &ltthead&gt
+            &lttr&gt
+            &ltth&gtDate&lt/th&gt
+            &ltth&gtLibellé&lt/th&gt
+            &ltth&gtCrédit&lt/th&gt
+            &ltth&gtDébit&lt/th&gt
+            &lt/tr&gt
+            &lt/thead&gt
+            &lttfoot&gt
+            &lttr&gt
+            &lttd colspan="2"&gtSolde&lt/td&gt
+            &lttd colspan="2"&gt575,40&lt/td&gt
+            &lt/tr&gt
+            &lt/tfoot&gt
+            &lttbody&gt
+            &lttr&gt
+            &lttd&gt01/05/2016&lt/td&gt
+            &lttd&gtpaye&lt/td&gt
+            &lttd&gt1500&lt/td&gt
+            &lttd&gt0&lt/td&gt
+            &lt/tr&gt
+            &lttr&gt
+            &lttd&gt01/05/2016&lt/td&gt
+            &lttd&gtCourses de la semaine&lt/td&gt
+            &lttd&gt0&lt/td&gt
+            &lttd&gt152,30&lt/td&gt
+            &lt/tr&gt
+            &lttr&gt
+            &lttd&gt04/05/2016&lt/td&gt
+            &lttd&gtMc do&lt/td&gt
+            &lttd&gt0&lt/td&gt
+            &lttd&gt32,40&lt/td&gt
+            &lt/tr&gt
+            &lttr&gt
+            &lttd&gt05/05/2016&lt/td&gt
+            &lttd&gtLoyer&lt/td&gt
+            &lttd&gt0&lt/td&gt
+            &lttd&gt700&lt/td&gt
+            &lt/tr&gt
+            &lttr&gt
+            &lttd&gt05/05/2016&lt/td&gt
+            &lttd&gtInternet&lt/td&gt
+            &lttd&gt0&lt/td&gt
+            &lttd&gt39,90&lt/td&gt
+            &lt/tr&gt
+            &lt/tbody&gt
+            &lt/table&gt
+            &lt/body&gt
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 6</h2>
+          <p>Reproduire l'image correspondant à l'exercice.</p>
+          <p>Toutes les propriétés CSS se trouveront dans <strong>un fichier</strong> autre que le fichier HTML.</p>
+          <p>Pour la largeur des rectangles de couleur, privilégiez les pourcentages.</p>
+          <p>Chaque rectangle de couleur est un seul élément.</p>
+          <div class="image exerciseSixHtml"></div>
+
+          <h3>code : </h3>
+          <p>Dans html</p>
+          <pre class="styleCode">
+            &lt!DOCTYPE html&gt
+            &lthtml lang="fr" dir="ltr"&gt
+            &lthead&gt
+            &ltmeta charset="utf-8" /&gt
+            {link permet de rattacher la feuille de style}
+            &ltlink rel="stylesheet" href="style.css"/&gt
+            &lttitle&gtExercice 6&lt/title&gt
+            &lt/head&gt
+            &ltbody&gt
+            &ltdiv class="green"&gt&lt/div&gt
+            &ltdiv class="blue"&gt&lt/div&gt
+            &ltdiv class="red"&gt&lt/div&gt
+            &ltdiv class="orange"&gt&lt/div&gt
+            &ltdiv class="grey"&gt&lt/div&gt
+            &ltdiv class="yellow"&gt&lt/div&gt
+            &ltdiv class="teal"&gt&lt/div&gt
+            &ltdiv class="brown"&gt&lt/div&gt
+            &ltdiv class="navy"&gt&lt/div&gt
+            &lt/body&gt
+            &lt/html&gt
+          </pre>
+          <p>Dans la feuille de style</p>
+          <pre class="styleCode">
+            div {
+              float:left;
+              height:50px;
+            }
+            .green {
+              width:80%;
+              background-color: #2ECC71;
+            }
+            .blue {
+              width:20%;
+              background: #2980B9;
+            }
+            .red {
+              height:150px;
+              width:34%;
+              background: #E74C3C;
+            }
+            .orange {
+              height:75px;
+              width:33%;
+              background: #E67E22;
+            }
+            .grey {
+              height:75px;
+              width:33%;
+              background: #95A5A6;
+            }
+            .yellow {
+              height:75px;
+              width:22%;
+              background: #F39C12;
+            }
+            .teal {
+              height:75px;
+              width:22%;
+              background: #16A085;
+            }
+            .brown {
+              height:75px;
+              width:22%;
+              background: #D35400;
+            }
+            .navy {
+              height:170px;
+              width:100%;
+              background: #2C3E50;
+            }
+          </pre>
+        </div> <!-- border exercice-->
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 7</h2>
+          <p>Reproduire l'image correspondant à l'exercice.</p>
+          <p>Ce formulaire contient 3 parties et un bouton.</p>
+          <p>Toutes les propriétés CSS se trouveront dans un fichier autre que le fichier HTML.</p>
+          <div class="image exerciseSevenHtml"></div>
+          <p>Dans l'html</p>
+          <pre class="styleCode">
+            &ltbody&gt
+            {L'élément HTML &ltform&gt représente une section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.}
+            &ltform&gt
+            {L'élément HTML &ltfieldset&gt est utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (&ltlabel&gt) dans un formulaire web.}
+            &ltfieldset class="identity"&gt
+            {L'élément HTML &ltlegend&gt représente une légende pour le contenu de son élément parent &ltfieldset&gt.}
+            &ltlegend class="identity"&gtVotre identité&lt/legend&gt
+            &ltol&gt
+            {Le pseudo-élément ::placeholder représente le texte de substitution pour un élément de formulaire.}
+            &ltli&gt&ltlabel for="lastName"&gtNom :&lt/label&gt&ltinput type="text" name="lastName" id="lastName/&gt" placeholder="Dupont"&gt&lt/li&gt
+            &ltli&gt&ltlabel for="firstName"&gtPrénom :&lt/label&gt&ltinput type="text" name="firstName" id="firstName/&gt" placeholder="Jean"&gt&lt/li&gt
+            &ltli&gt&ltlabel for="mailBox"&gtAdresse mail :&lt/label&gt&ltinput type="email" name="mailBox" id="mailBox/&gt" placeholder="Adresse mail"&gt&lt/li&gt
+            &lt/ol&gt
+            &lt/fieldset&gt
+            &lt/form&gt
+            &ltform&gt
+            &ltfieldset class="deliveryAddress"&gt
+            &ltlegend class="deliveryAddress"&gtAdresse de livraison&lt/legend&gt
+            &ltol&gt
+            &ltli&gt&ltlabel for="adress"&gtAdresse :&lt/label&gt&lttextarea rows="5" cols="14"&gt&lt/textarea&gt&lt/li&gt &lt!-- for et id doivent être identique --&gt
+            &ltli&gt&ltlabel for="postalCode"&gtCode postal :&lt/label&gt&ltinput type="text" name="postalCode" id="postalCode" placeholder="Code postal"&gt&lt/li&gt
+            &ltli&gt&ltlabel for="town"&gtVille :&lt/label&gt&ltinput type="text" name="town" id="town/&gt" placeholder="Ville"&gt&lt/li&gt
+            &lt/ol&gt
+            &lt/fieldset&gt
+            &lt/form&gt
+            &ltform&gt
+            &ltfieldset class="regulationInformation"&gt
+            &ltlegend class="regulationInformation"&gtInformations de réglement&lt/legend&gt
+            &ltol&gt
+            &ltli&gt&ltlabel for="cB"&gtType de carte bancaire :&lt/label&gt&lt/li&gt
+            &ltol&gt
+            {Les éléments &ltinput&gt dont l'attribut type vaut radio sont généralement utilisés pour construire des groupes d'options parmi lesquelles on ne peut choisir qu'une valeur.
+            Les « boutons radio » sont représentés par des cercles remplis lorsqu'ils sont sélectionnés.}
+            &ltinput type="radio" name="radiol" value="radio1"&gt&ltlabel&gt VISA&lt/label&gt&ltbr/&gt
+            &ltinput type="radio" name="radiol" value="radio2"&gt&ltlabel&gt Mastercard&lt/label&gt
+            &lt/ol&gt
+            &ltli&gt&ltlabel for="cardNumber"&gtNuméro de carte&lt/label&gt : &ltinput type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte"&gt&lt/li&gt
+            &ltli&gt&ltlabel for="securityCode"&gtCode de sécurité&lt/label&gt : &ltinput type="text" name="securityCode" id="securityCode" placeholder="Code de sécurité"&gt&lt/li&gt
+            &ltli&gt&ltlabel for="name"&gtNom du titulaire&lt/label&gt : &ltinput type="text" name="name" id="name" placeholder="Nom du titulaire"&gt&lt/li&gt
+            &lt/ol&gt
+            &lt/fieldset&gt
+            &lt/form&gt
+            &ltbutton type="submit" class="button"&gtJ'achète !&lt/button&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans la feuille de style</p>
+          <pre class="styleCode">
+            fieldset.identity {
+              background: #9A12B3;
+            }
+            legend.identity {
+              background: #9A12B3;
+            }
+            fieldset.deliveryAddress {
+              background: #2574A9;
+            }
+            legend.deliveryAddress{
+              background: #2574A9;
+            }
+            fieldset.regulationInformation {
+              background: #DB0A5B;
+            }
+            legend.regulationInformation {
+              background: #DB0A5B;
+            }
+            input {
+              border: 0px;
+              margin:1.5px;
+              padding: 3px;
+            }
+            button {
+              border: 1px solid silver;
+              padding: 5px;
+            }
+          </pre>
+        </div> <!-- border exercice-->
+      </section> <!-- section html -->
+      <section id="bootstrap">
+        <h2 class="titleSection">Bootstrap</h2>
+        <p><strong>Le site officiel de Bootstrap se trouve <a href="https://getbootstrap.com/" title="site de Bootstrap">içi</a></strong></p>
+        <p>Pour utiliser le CSS et le JS de Bootstrap nous pouvons utiliser les BootstrapCDN</p>
+        <p>le premier "link" est à coller dans le head de notre page HTML entre notre titre et notre "link" CSS</p>
+        <pre class="styleCode">
+          &ltlink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt
+        </pre>
+        <p>Les trois script suivant sont à mettre en bas de notre page HTML au dessus de &lt/body&gt</p>
+        <pre class="styleCode">
+          &ltscript src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt&lt/script&gt
+          &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt&lt/script&gt
+          &ltscript src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt&lt/script&gt
+        </pre>
+        <p class="project">Projet de groupe: reproduire le site de <a href="https://www.oscaro.com/#">oscaro.com </a>en utilisant Bootstrap.</p>
+      </section> <!-- section bootstrap -->
+<section id="javascript">
+  <h2 class="titleSection">JavaScript</h2>
+<p>Quand cela est nécessaire, le fichier HTML est fourni.</p>
+<p>Pour la sécurité de votre code, à chaque formulaire vérifiez que ce qui est saisi correspond à ce qui est attendu.</p>
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 1</h2>
+<p>Définir une variable et l'afficher dans une boîte de dialogue.</p>
+<h3>Rendu : </h3>
+<div class="image exerciseOneJavascript"></div>
+<h3>code : </h3>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtExcercice 1&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltscript&gt
+      alert('Bonjour toi');
+    &lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 2</h2>
+<p>Définir trois variables : lastName, firstName et city. Les afficher comme sur l'image correspondant à l'exercice.</p>
+<div class="image exerciseTwoJavascript"></div>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtExcercice 2&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltscript&gt src="assets/js/script.js"&lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<p>Dans le script javascript</p>
+<pre class="styleCode">
+  var lastName = 'Doe ';
+  var firstName = 'John ';
+  var city = 'New-York ';
+  alert("Nom: " + lastName + "\nPrénom : " +firstName + "\nVille : " +city);
+  {\n permet de revenir à la ligne}
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 3</h2>
+<p>Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour, " suivi du prénom saisi.</p>
+<h3>Rendu : </h3>
+<div class="image exerciseThreeJavascript"></div>
+<div class="image exerciseThreeJavascriptBis"></div>
+<h3>code : </h3>
+<p> Dans l'HTML</p>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtExcercice 3&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltscript&gt src="assets/js/script.js"&lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<p>Dans le script javascript</p>
+<pre class="styleCode">
+  var firstName = prompt('Entrez votre prénom :');
+  alert('Bonjour : ' + firstName);
+  {La méthode Window.promt() affiche une boîte de dialogue, éventuellement avec un message, qui invite l'utilisateur à saisir dun texte}
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 4</h2>
+<p>Refaire <strong>l’exercice 2</strong> en demandant le nom, le prénom et la ville à l’utilisateur.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
+  <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+  <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+  <button  name="submit" id="submit" onclick="displayInformations()">Valider</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtJavaScript Exercice 4&lt/title&gt
+    &ltscript src="assets/js/script.js"&gt&lt/script&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltform&gt
+      &ltlabel for="lastname"&gtNom : &lt/label&gt&ltinput type="text" name="lastname" id="lastname"/&gt
+      &ltlabel for="firstname"&gtPrénom : &lt/label&gt&ltinput type="text" name="firstname" id="firstname"/&gt
+      &ltlabel for="city"&gtVille : &lt/label&gt&ltinput type="text" name="city" id="city"/&gt
+      &ltbutton  name="submit" id="submit" onclick="displayInformations()"&gtValider&lt/button&gt
+    &lt/form&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  var regexName = /^[a-zA-Z ]+$/;
+  var lastname = document.getElementById('lastname').value;
+  var firstname = document.getElementById('firstname').value;
+  var city = document.getElementById('city').value;
+  if (lastname.match(regexName) && firstname.match(regexName) && city.match(regexName)){
+    alert('Nom : ' + lastname + '\nPrénom : ' + firstname + '\nVille : ' + city);
+  }else {
+    alert('Ceci n\'est pas autorisé');
+    {on échappe les apostrophes avec un \}
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 5</h2>
+<p>Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .</p>
+<p>Les multiplier et afficher le résultat dans une boîte de dialogue.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="firstNumber">Premier nombre : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+  <label for="secondNumber">Deuxième nombre : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+  <button id="submitExo5" name ="submit" onclick="multiplyReal()">Valider</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+    &ltlabel for="firstNumber"&gtPremier nombre : &lt/label&gt&ltinput type="text" id="firstNumber" name="firstNumber"/&gt&ltbr/&gt
+    &ltlabel for="secondNumber"&gtDeuxième nombre : &lt/label&gt&ltinput type="text" id="secondNumber" name="secondNumber"/&gt&ltbr/&gt
+    &ltbutton id="submit" name ="submit" onclick="multiplyReal()"&gtValider&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  function multiplyReal() {
+        var firstNumber = document.getElementById('firstNumber').value;
+        var secondNumber = document.getElementById('secondNumber').value;
+        if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+          {On se sert du modulo pour déterminé si le nombre est à virgule. si le reste est différant de 0 alors c'est un nombre à virgule}
+          if (Number(firstNumber) % 1 !== 0 && Number(secondNumber) % 1 !== 0) {
+            firstNumberInteger = Math.trunc(firstNumber);
+            result = firstNumberInteger * secondNumber;
+            alert(result);
+
+          } else {
+            alert('ce sont des nombres entiers');
+          }
+        } else {
+          alert('attention ce ne sont pas des nombres');
+        }
+      }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 6</h2>
+<p>Dans un fichier séparé, créer une fonction permettant d’afficher le reste de la division de deux nombres. L’appeler depuis le fichier html.</p>
+<h3>Rendu : </h3>
+<form>
+    <label for="firstNumberExoSix">Premier nombre : </label><input type="text" id="firstNumberExoSix" name="firstNumberExoSix"/><br/>
+    <label for="secondNumberExoSix">Deuxième nombre : </label><input type="text" id="secondNumberExoSix" name="secondNumberExoSix"/><br/>
+    <button id="submitExoSix" name="submit" onclick="exerciceSix()">Valider</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+      &ltlabel for="firstNumber"&gtPremier nombre : &lt/label&gt&ltinput type="text" id="firstNumber" name="firstNumber"/&gt&ltbr/&gt
+      &ltlabel for="secondNumber"&gtDeuxième nombre : &lt/label&gt&ltinput type="text" id="secondNumber" name="secondNumber"/&gt&ltbr/&gt
+      &ltbutton id="submit" name="submit" onclick="myFunction()"&gtValider&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  function myFunction() {
+    var firstNumber = document.getElementById('firstNumber').value;
+    var secondNumber = document.getElementById('secondNumber').value;
+    if(isNaN(firstNumber) == false && !isNaN(secondNumber)){
+      if(secondNumber != 0){
+        var result = firstNumber % secondNumber;
+        alert(result);
+      }else{
+        alert ('Merci de ne pas diviser un nombre par zero');
+      }
+    }
+    else {
+      alert ('Merci de remplir les champs avec des nombres');
+    }
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 7</h2>
+<p>Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants :</p>
+<ol>
+    <li>Multiplier la pointure par 2</li>
+    <li>Ajouter 5 au résultat</li>
+    <li>Multiplier le tout par 50</li>
+    <li>Soustraire l’année de naissance</li>
+    <li>Ajouter au tout 1766</li>
+</ol>
+<p>La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure. <strong>Attention : n'utiliser qu'une seule variable de résultat.</strong></p>
+<h3>Rendu : </h3>
+<form>
+    <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize"/><br/>
+    <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth"/><br/>
+    <button  name="submit" onclick="exerciceSeven()">Valider</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+      &ltlabel for="shoeSize"&gtPointure : &lt/label&gt&ltinput type="text" id="shoeSize" name="shoeSize"/&gt&ltbr/&gt
+      &ltlabel for="yearOfBirth"&gtAnnée de naissance : &lt/label&gt&ltinput type="text" id="yearOfBirth" name="yearOfBirth"/&gt&ltbr/&gt
+      &ltbutton id="submit" name="submit" onclick="calcul()"&gtValider&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  function calcul() {
+    var shoeSize = document.getElementById('shoeSize').value;
+    var yearOfBirth = document.getElementById('yearOfBirth').value;
+    if(!isNaN(shoeSize) && !isNaN(yearOfBirth)){
+      if((shoeSize &gt= 34 && shoeSize &lt= 52) && (yearOfBirth &gt= 1900 && yearOfBirth &lt= 2019)){
+        var result = shoeSize * 2;
+        result += 5;
+        result *= 50;
+        result -= yearOfBirth;
+        result += 1766;
+        alert (result);
+      }else{
+        alert('La pointure et la date de naissance ne sont pas correctes');
+      }
+    }else{
+      alert ('Merci de saisir des nombres');
+    }
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 8</h2>
+<p>Demander à l’utilisateur de saisir son âge. S’il a plus de 18 ans, afficher " Vous êtes majeur ". Sinon afficher " Vous êtes mineur ".</p>
+<h3>Rendu : </h3>
+<form>
+<label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+<button  name="submit" onclick="exerciceHeight()">Valider</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+      &ltlabel for="age"&gtVotre âge : &lt/label&gt&ltinput type="text" id="age" name="age"/&gt&ltbr/&gt
+      &ltbutton id="submit" name="submit" onclick="getSee()"&gtValider&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  function getSee(){
+    var age = document.getElementById('age').value;
+    if(isNaN(age) == false){
+      if ( age &lt 114 && age &gt 0) {
+        if (age &gt= 18){
+          alert('Vous êtes majeur');
+        }else{
+          alert('Vous êtes mineur');
+        }
+      }else {
+        alert('Age non valide');
+      }
+    }else{
+      alert('En nombres stp');
+    }
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 1 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.</p>
+<h3>Rendu : </h3>
+<img src="assets/img/image1.jpg" id="image" onmouseover="changeImgExoOne()"/>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="changeImage()"/&lt
+  {L'évènement onmouseover est lié à la position et au déplacement de la souris.
+  Il déclenche une action lorsque le curseur de la souris entre dans l'élément sur lequel est déclaré cet évènement.}
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // Cette fonction permet de changer l'image au survole.
+  // On déclare la fonction avec comme nom: changeimage
+  function changeImage() {
+  // on récupère la source de la seconde image
+  document.getElementById('image1').src='assets/img/image1_2.jpg';
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 2 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, afficher une boite de dialogue avec le message : "Merci de votre participation" quand le champ de saisie perd le focus.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastnamefocus" onblur="lossfocus()"/>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+    &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" id="lastname" onblur="lossfocus()"/&gt
+    // L'évènement onblur se déclenche lorsque la balise sur laquelle il est appliqué perd le focus.
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // On déclare la fonction avec comme nom: lossfocus
+  // afficher une boite de dialogue avec le message : "Merci de votre participation" quand le champ de saisie perd le focus.
+  function lossfocus() {
+    alert('Merci de votre participation');
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 3 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastnameValue" onkeyup="InputValue()" />
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+    &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" id="lastname" onkeyup="InputValue()" /&gt
+    &lt!-- L'évènement onkeyup est une action décrivant une frappe sur une touche. --&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.
+  function InputValue() {
+  // on veut récup la valeur du champs à l'évenement c'est pour ça que la variable est à cette endroit
+  // on ajoute .value pour récupérer la valeur de l'élément
+    var lastname = document.getElementById('lastname').value;
+    alert(lastname);
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 4 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="lastname">Votre nom  : </label><input type="text" name="lastname" value="Doe" id="lastnameclick" />
+  <label for="firstname">Votre prenom  : </label><input type="text" name="firstname" value="John" id="firstnameclick" />
+  <label for="city">Votre ville  : </label><input type="text" name="city" value="New York" id="cityclick" />
+  <button type="button" name="button" onclick="wipeOff()">RAZ</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+    &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" value="Doe" id="lastname" /&gt
+    &ltlabel for="firstname"&gtVotre prenom  : &lt/label&gt&ltinput type="text" name="firstname" value="John" id="firstname" /&gt
+    &ltlabel for="city"&gtVotre ville  : &lt/label&gt&ltinput type="text" name="city" value="New York" id="city" /&gt
+    &ltbutton type="button" name="button" onclick="wipeOff()"&gtRAZ&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // faire que le bouton RAZ efface les données des champs du formulaire.
+  function wipeOff(){
+  document.getElementById('lastname').value = '';
+  document.getElementById('firstname').value = '';
+  document.getElementById('city').value = '';
+  }
+  // value='' permet de supprimer les valeurs
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 5 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.</p>
+<p><strong>Bonus</strong> Ne faire que deux fonctions JavaScript pour cet exercice.</p>
+<h3>Rendu : </h3>
+<div class="container">
+  <img src="assets/img/image1.jpg" id="image11" onmouseover="switchImages(id)"/>
+  <img src="assets/img/image2.jpg" id="image12" onmouseover="switchImages(id)"/>
+  <img src="assets/img/image3.jpg" id="image13" onmouseover="switchImages(id)"/>
+  <img src="assets/img/image4.jpg" id="image14" onmouseover="switchImages(id)"/>
+  <img src="assets/img/image5.jpg" id="image15" onmouseover="switchImages(id)"/>
+</div>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltdiv class="container"&gt
+    &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="switchImages(id)"/&gt
+    &ltimg src="assets/img/image2.jpg" id="image2" onmouseover="switchImages(id)"/&gt
+    &ltimg src="assets/img/image3.jpg" id="image3" onmouseover="switchImages(id)"/&gt
+    &ltimg src="assets/img/image4.jpg" id="image4" onmouseover="switchImages(id)"/&gt
+    &ltimg src="assets/img/image5.jpg" id="image5" onmouseover="switchImages(id)"/&gt
+  &lt/div&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // SOLUTION DU BONUS
+  // fonction permettant de changer les images au survol de chacune d'entre elles
+  function switchImages(idImg) {
+    //permet d'aller chercher le nom et l'emplacement des images qui remplacent les images actuelles.
+    document.getElementById(idImg).src = 'assets/img/' + idImg + '_2.jpg';
+  }
+  //solution par le changement d'images
+  function changeImage(img,source){
+    img.src = source;
+  }
+
+</pre>
+  </div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 6 - Partie 2</h2>
+<p>Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine dès que la souris ne survol plus l'image.</p>
+<p><strong>Bonus</strong> Ne faire que deux fonctions JavaScript pour cet exercice.</p>
+<h3>Rendu : </h3>
+<div class="container">
+  <img src="assets/img/image1.jpg" id="image6" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+  <img src="assets/img/image2.jpg" id="image7" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+  <img src="assets/img/image3.jpg" id="image8" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+  <img src="assets/img/image4.jpg" id="image9" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+  <img src="assets/img/image5.jpg" id="image10" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+</div>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltdiv class="container"&gt
+    &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+    &ltimg src="assets/img/image2.jpg" id="image2" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+    &ltimg src="assets/img/image3.jpg" id="image3" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+    &ltimg src="assets/img/image4.jpg" id="image4" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+    &ltimg src="assets/img/image5.jpg" id="image5" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+    &lt!-- L'évènement onmouseover est lié à la position et au déplacement de la souris.
+    Il déclenche une action lorsque le curseur de la souris entre dans l'élément sur lequel est déclaré cet évènement.  --&gt
+    &lt!-- L'événement mouseout est déclenché quand la souris est déplacé hors de l'élément --&gt
+  &lt/div&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // Ici nous allons chercher la deuxième image
+  function changeImage(img){
+    document.getElementById(img).src ='assets/img/' + img + '_2.jpg';
+  }
+  // et ici nous allons récupérer la première image
+  function resetImage(img){
+    document.getElementById(img).src ='assets/img/' + img + '.jpg';
+  }
+</pre>
+</div> <!-- border exercice-->
+  </section>
+    </div> <!-- div col -->
+  </div> <!-- div row -->
+</div> <!-- div container -->

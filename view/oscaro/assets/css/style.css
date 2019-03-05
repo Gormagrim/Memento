@@ -1,0 +1,365 @@
+/* style navbar */
+.barreHaut{
+padding: 0;
+margin: 0;
+}
+/* .homme{
+height: 100px;
+}
+.tel{
+height: 10px; */
+}
+.tel {
+line-height: 280px;
+}
+.logo{
+width: 200px;
+}
+.menuright{
+padding-left: 280px;
+}
+.navbar-expand-lg{
+bottom: 47px;
+
+}
+.numero{
+font-size: 25px;
+color:blue;
+line-height:4px;
+}
+.numerosuite{
+font-size: 10px;
+line-height:5px;
+}
+.panier{
+height: 30px;
+}
+#navbarText{
+font-size: 12px;
+background-color: #144a82;
+height: 25px;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-text{
+color: white;
+border-right: 1px solid white;
+}
+
+.navbar navbar-expand-lg navbar-light{
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.navbar-textOscaro{
+background-color: silver;
+padding-right: 10px;
+padding-left: 40px;
+color: #144a82;
+padding-top: 4px;
+padding-bottom: 3px;
+}
+/* FIN NAVBAR */
+
+
+/* style produits  */
+.container{
+padding-left: 0;
+padding-right: 0;
+}
+.bord{
+border: 1px solid silver;
+overflow: auto;
+
+}
+
+.carda{
+border: white; /* permet d'enlever le gris du bootstrap */
+font-size: 13px;
+height: 25rem; /*permet d'agrandir mes colonnes */
+}
+.card-body {
+padding-left: 0; /*permet d'enlever les padding qui sert à rien */
+padding-right: 0;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+/*
+.card-title {
+border: 1px solid red;
+}
+*/
+.top{
+border-bottom: 1px solid silver; /* permet de mettre un trait en dessous de mes titres */
+}
+.descendretext {
+margin-top: 2rem; /* permet de descendre mon texte du titre */
+padding-left: 1rem;
+}
+.card-title{
+padding-left: 1rem;
+}
+.card-text{
+list-style: none; /*permet d'enlever les puces sur mes listes */
+color: #144a82;
+}
+/*.card-img-right{
+float: right;
+}
+*/
+.ligneBottom{
+float: right;
+}
+
+.btn{
+background-color: #144a82;
+color: white;
+font-size: 18px;
+}
+/* FIN STYLE PRODUITS */
+
+/*carousel 1*/
+
+.carousel-indicators {
+  bottom:-50px;
+}
+.item img {
+  bottom:-48px;
+  width: 100%;
+  height: auto
+}
+.carousel2 {
+  margin-top:50px;
+  border: 1px solid #cacaca;
+}
+ol.carousel-indicators li, ol.carousel-indicators li.active {
+  bottom:-48px;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 100px;
+  border: 0;
+  background-color:grey;
+}
+ol.carousel-indicators li.active {
+  background: #144a82;
+}
+
+/*carousel 2*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 25px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+
+/* Main */
+
+.main {
+  position: relative;
+  background:no-repeat top center;
+}
+#myTab {
+  margin-bottom:150px;
+}
+#headingOne, #headingTwo, #headingThree, #headingFour {
+  padding:0;
+  width:200px;
+}
+#profile, #home {
+  margin-top:150px;
+  padding-bottom:50px;
+}
+
+
+
+button, input, optgroup, select, textarea {
+  font-family:cursive;
+}
+.nav-tabs .nav-itema {
+  margin-top:0px;
+}
+#gc {
+  display:block;
+}
+h1 {
+  position: absolute;
+  color:white;
+  font-weight:bold;
+  font-size:45px;
+  text-align:center;
+  padding-left:23%;
+  top: 8%;
+}
+.main {
+  background-image:url("https://tesla.oscaro.com/5.2.43-fix-facet-tracking/img/landing/homebox/homebg_fr.jpg");
+}
+.textgc {
+  height:150px;
+  justify-content:space-between;
+  text-align:center;
+  font-size:15px;
+  display:block;
+  padding-bottom:50px;
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display:block;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+    display:block;
+}
+.nava {
+  color:white;
+}
+.nav-tabs .nav-itema.show .nav-linka, .nav-tabs .nav-linka.active {
+  background-color: #144a82;
+  color:white;
+  margin-top:0px;
+}
+.nav-linka {
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+}
+.rowa {
+  display:block;
+}
+link.active {
+  background-color:#144a82;
+  color:white;
+}
+#accordionExample {
+}
+.navtab {
+  background-color:#144a82;
+  font-weight:bold;
+  color:white;
+}
+.nava, .navtab {
+  border:none;
+ justify-content:center;
+}
+.dropdown-menu > li:first-child {
+   margin-top: 15px;
+   background-color:#99ca3c
+}
+.dropdown-menu > li:last-child {
+   margin-bottom: 15px;
+   background-color:#99ca3c
+}
+
+.dropdown {
+    margin-top:0;
+    background-color:#99ca3c
+}
+.nav-itema {
+    margin-top:120px;
+    background-color:#99ca3c
+}
+.dropdown-menu {
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color:#99ca3c
+}
+.dropdown-menu > li:first-child {
+   margin-top: 15px;
+}
+.dropdown-menu > li:last-child {
+   margin-bottom: 15px;
+}
+.nav-linka:active {
+  background-color:#99ca3c
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+        display:block;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+        display:block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+        display:block;
+    }
+}
+@media (min-width: 768px)
+.row {
+    display: block;
+}
+
+
+/* MOUSSA */
+
+
+.plop{
+  font-size: 70%;
+  color: #5c5c5c;
+
+
+}
+.imgWidth{
+  height: 60px;
+  width: 120px;
+}
+
+.h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* .img{
+  height: 65px;
+  width: 110px;
+} */
+
+.footer{
+  font-size: 100%;
+  background-color: #f2f2f2;
+  height: 250px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 3%;
+  color: #5c5c5c;
+}
+
+
+.finfooter{
+	text-decoration: none;
+	font-size: 70%;
+	text-align: center;
+  line-height: 10%;
+}
+.copyright{
+	text-decoration: none;
+	font-size: 70%;
+	text-align: center;
+}
+.star_rate {
+  background-size: calc(4.5 * 20%) 16px;
+}

@@ -1,0 +1,332 @@
+<h2>Exercice 1</h2>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml&gt
+  &lthead&gt
+    &ltmeta charset="utf-8"/&gt
+    &lttitle&gtMa première page en HTML&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &lth1&gtMa première page en HTML&lt/h1&gt
+    &ltp&gt Voiçi mon paragraphe avec des caractères accentués pour le premier cours HTML&lt/p&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<h2>Exercice 2</h2>
+<pre>
+  &lth1&gtun titre de niveau 1&lt/h1&gt
+  &ltp&gtun paragraphe&lt/p&gt
+  &lth2&gttitre de niveau 2&lt/h2&gt
+  &ltp&gtUn deuxième paragraphe&lt/p&gt
+  &lth2&gtun autre titre de niveau 2&lt/h2&gt
+  &ltp&gtun troisième paragraphe&lt/p&gt
+</pre>
+<h2>Exercice 3</h2>
+<pre>
+  &lth1&gtMa liste de course du 7 Mai 2016&lt/h1&gt
+  &ltp&gtIl me faut plusieurs choses:&lt/p&gt
+  &ltul&gt
+    &ltli&gtUne baguette&lt/li&gt
+    &ltli&gt2 &ltspan style="color:red"&gtkilos&lt/span&gt de tomates &lt/li&gt
+    &ltli&gt3 &ltspan style="color:green"&gtlitres&lt/span&gt de lait&lt/li&gt
+    &ltli&gt5 &ltstrong&gtboites&lt/strong&gt de chewing gum&lt/li&gt
+  &lt/ul&gt
+  &ltem&gt Payer en liquide ou par chèque.&lt/em&gt
+</pre>
+<h2>Exercice 4</h2>
+<pre>
+  &ltbody&gt
+    &lth1&gt&ltimg src="http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png" alt="image bloc note" title="image bloc note"/&gtTous les petits trucs qui me seront utile pour la suite&lt/h1&gt
+    &ltp&gtLe site de codecademy est &lta href="https://www.codecademy.com/fr" title="site codecademy"&gtiçi&lt/a&gt&lt/p&gt
+    &ltp&gtPour pleins de tuto sympa, il y a aussi &lta href="https://openclassrooms.com/fr/dashboard" title="site openclassroom"&gtopenclassroom.&lt/a&gt&lt/p&gt
+    &ltp&gt&lta href="https://ubuntu-fr.org/" title="site Ubuntu"&gtSi je veux devenir un crack sous Ubuntu, il me faut la bonne adresse.&lt/a&gt&lt/p&gt
+  &lt/body&gt
+</pre>
+<h2>Exercice 5</h2>
+<pre>
+  &lthead&gt
+    &ltstyle&gt
+    table {
+      border: 1px solid black;
+    {La propriété border-collapse détermine si les bordures d'un tableau sont séparées ou fusionnées}
+      border-collapse: collapse;
+    }
+    thead {
+      text-align: center;
+    }
+    tfoot {
+      text-align: center;
+    }
+    td, th {
+    {La propriété border-width définit la largeur d'une bordure pour la boîte d'un élément.
+    Cette propriété est une propriété raccourcie pour définir les propriétés détaillées:
+      border-top-width, border-right-width, border-bottom-width et border-left-width.}
+      border-width: 1px;
+      border-style: solid;
+    }
+    &lt/style&gt
+  &lt/head&gt
+  &ltbody&gt
+    &lttable&gt
+  {L'élément HTML &ltcaption&gt représente la légende (ou le titre) d'un tableau.
+  Il doit être le première élément parmi les descendants de l'élément &lttable&gt.}
+      &ltcaption&gtMon compte BNP&lt/caption&gt
+      &ltthead&gt
+        &lttr&gt
+          &ltth&gtDate&lt/th&gt
+          &ltth&gtLibellé&lt/th&gt
+          &ltth&gtCrédit&lt/th&gt
+          &ltth&gtDébit&lt/th&gt
+        &lt/tr&gt
+      &lt/thead&gt
+    &lttfoot&gt
+      &lttr&gt
+        &lttd colspan="2"&gtSolde&lt/td&gt
+        &lttd colspan="2"&gt575,40&lt/td&gt
+      &lt/tr&gt
+    &lt/tfoot&gt
+    &lttbody&gt
+      &lttr&gt
+        &lttd&gt01/05/2016&lt/td&gt
+        &lttd&gtpaye&lt/td&gt
+        &lttd&gt1500&lt/td&gt
+        &lttd&gt0&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt01/05/2016&lt/td&gt
+        &lttd&gtCourses de la semaine&lt/td&gt
+        &lttd&gt0&lt/td&gt
+        &lttd&gt152,30&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt04/05/2016&lt/td&gt
+        &lttd&gtMc do&lt/td&gt
+        &lttd&gt0&lt/td&gt
+        &lttd&gt32,40&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt05/05/2016&lt/td&gt
+        &lttd&gtLoyer&lt/td&gt
+        &lttd&gt0&lt/td&gt
+        &lttd&gt700&lt/td&gt
+      &lt/tr&gt
+      &lttr&gt
+        &lttd&gt05/05/2016&lt/td&gt
+        &lttd&gtInternet&lt/td&gt
+        &lttd&gt0&lt/td&gt
+        &lttd&gt39,90&lt/td&gt
+      &lt/tr&gt
+    &lt/tbody&gt
+  &lt/table&gt
+&lt/body&gt
+</pre>
+<h2>Exercice 6</h2>
+<p>Dans html</p>
+<pre>
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+  {link permet de rattacher la feuille de style}
+    &ltlink rel="stylesheet" href="style.css"/&gt
+    &lttitle&gtExercice 6&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltdiv class="green"&gt&lt/div&gt
+    &ltdiv class="blue"&gt&lt/div&gt
+    &ltdiv class="red"&gt&lt/div&gt
+    &ltdiv class="orange"&gt&lt/div&gt
+    &ltdiv class="grey"&gt&lt/div&gt
+    &ltdiv class="yellow"&gt&lt/div&gt
+    &ltdiv class="teal"&gt&lt/div&gt
+    &ltdiv class="brown"&gt&lt/div&gt
+    &ltdiv class="navy"&gt&lt/div&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<p>Dans la feuille de style</p>
+<pre>
+  div {
+    float:left;
+    height:50px;
+  }
+  .green {
+    width:80%;
+    background-color: #2ECC71;
+  }
+  .blue {
+    width:20%;
+    background: #2980B9;
+  }
+  .red {
+    height:150px;
+    width:34%;
+    background: #E74C3C;
+  }
+  .orange {
+    height:75px;
+    width:33%;
+    background: #E67E22;
+  }
+  .grey {
+    height:75px;
+    width:33%;
+    background: #95A5A6;
+  }
+  .yellow {
+    height:75px;
+    width:22%;
+    background: #F39C12;
+  }
+  .teal {
+    height:75px;
+    width:22%;
+    background: #16A085;
+  }
+  .brown {
+    height:75px;
+    width:22%;
+    background: #D35400;
+  }
+  .navy {
+    height:170px;
+    width:100%;
+    background: #2C3E50;
+  }
+</pre>
+<h2>Exercice 7</h2>
+<p>Dans l'html</p>
+<pre>
+  &ltbody&gt
+    {L'élément HTML &ltform&gt représente une section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.}
+    &ltform&gt
+    {L'élément HTML &ltfieldset&gt est utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (&ltlabel&gt) dans un formulaire web.}
+      &ltfieldset class="identity"&gt
+    {L'élément HTML &ltlegend&gt représente une légende pour le contenu de son élément parent &ltfieldset&gt.}
+        &ltlegend class="identity"&gtVotre identité&lt/legend&gt
+        &ltol&gt
+    {Le pseudo-élément ::placeholder représente le texte de substitution pour un élément de formulaire.}
+          &ltli&gt&ltlabel for="lastName"&gtNom :&lt/label&gt&ltinput type="text" name="lastName" id="lastName/&gt" placeholder="Dupont"&gt&lt/li&gt
+          &ltli&gt&ltlabel for="firstName"&gtPrénom :&lt/label&gt&ltinput type="text" name="firstName" id="firstName/&gt" placeholder="Jean"&gt&lt/li&gt
+          &ltli&gt&ltlabel for="mailBox"&gtAdresse mail :&lt/label&gt&ltinput type="email" name="mailBox" id="mailBox/&gt" placeholder="Adresse mail"&gt&lt/li&gt
+        &lt/ol&gt
+          &lt/fieldset&gt
+        &lt/form&gt
+        &ltform&gt
+          &ltfieldset class="deliveryAddress"&gt
+            &ltlegend class="deliveryAddress"&gtAdresse de livraison&lt/legend&gt
+            &ltol&gt
+              &ltli&gt&ltlabel for="adress"&gtAdresse :&lt/label&gt&lttextarea rows="5" cols="14"&gt&lt/textarea&gt&lt/li&gt &lt!-- for et id doivent être identique --&gt
+              &ltli&gt&ltlabel for="postalCode"&gtCode postal :&lt/label&gt&ltinput type="text" name="postalCode" id="postalCode" placeholder="Code postal"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="town"&gtVille :&lt/label&gt&ltinput type="text" name="town" id="town/&gt" placeholder="Ville"&gt&lt/li&gt
+            &lt/ol&gt
+          &lt/fieldset&gt
+        &lt/form&gt
+        &ltform&gt
+          &ltfieldset class="regulationInformation"&gt
+            &ltlegend class="regulationInformation"&gtInformations de réglement&lt/legend&gt
+            &ltol&gt
+              &ltli&gt&ltlabel for="cB"&gtType de carte bancaire :&lt/label&gt&lt/li&gt
+              &ltol&gt
+          {Les éléments &ltinput&gt dont l'attribut type vaut radio sont généralement utilisés pour construire des groupes d'options parmi lesquelles on ne peut choisir qu'une valeur.
+          Les « boutons radio » sont représentés par des cercles remplis lorsqu'ils sont sélectionnés.}
+                &ltinput type="radio" name="radiol" value="radio1"&gt&ltlabel&gt VISA&lt/label&gt&ltbr/&gt
+                &ltinput type="radio" name="radiol" value="radio2"&gt&ltlabel&gt Mastercard&lt/label&gt
+              &lt/ol&gt
+              &ltli&gt&ltlabel for="cardNumber"&gtNuméro de carte&lt/label&gt : &ltinput type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="securityCode"&gtCode de sécurité&lt/label&gt : &ltinput type="text" name="securityCode" id="securityCode" placeholder="Code de sécurité"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="name"&gtNom du titulaire&lt/label&gt : &ltinput type="text" name="name" id="name" placeholder="Nom du titulaire"&gt&lt/li&gt
+            &lt/ol&gt
+          &lt/fieldset&gt
+        &lt/form&gt
+        &ltbutton type="submit" class="button"&gtJ'achète !&lt/button&gt
+      &lt/body&gt
+</pre>
+<pre>
+<p>Dans la feuille de style</p>
+  fieldset.identity {
+    background: #9A12B3;
+  }
+  legend.identity {
+    background: #9A12B3;
+  }
+  fieldset.deliveryAddress {
+    background: #2574A9;
+  }
+  legend.deliveryAddress{
+    background: #2574A9;
+  }
+  fieldset.regulationInformation {
+    background: #DB0A5B;
+  }
+  legend.regulationInformation {
+    background: #DB0A5B;
+  }
+  input {
+    border: 0px;
+    margin:1.5px;
+    padding: 3px;
+  }
+  button {
+    border: 1px solid silver;
+    padding: 5px;
+  }
+</pre>
+<h2 >Exercice 1 js</h2>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtExcercice 1&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltscript&gt
+      alert('Bonjour');
+    &lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<h2 class="titleExercise">Exercice 2</h2>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtExcercice 2&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltscript&gt src="assets/js/script.js"&lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<h2 class="titleExercise">Exercice 4</h2>
+<pre class="styleCode">
+  &lt!DOCTYPE html&gt
+  &lthtml lang="fr" dir="ltr"&gt
+  &lthead&gt
+    &ltmeta charset="utf-8" /&gt
+    &lttitle&gtJavaScript Exercice 4&lt/title&gt
+  &lt/head&gt
+  &ltbody&gt
+    &ltform&gt
+      &ltlabel for="lastname"&gtNom : &lt/label&gt&ltinput type="text" name="lastname" id="lastname"/&gt
+      &ltlabel for="firstname"&gtPrénom : &lt/label&gt&ltinput type="text" name="firstname" id="firstname"/&gt
+      &ltlabel for="city"&gtVille : &lt/label&gt&ltinput type="text" name="city" id="city"/&gt
+      &ltbutton  name="submit" id="submit" onclick="displayInformations()"&gtValider&lt/button&gt
+    &lt/form&gt
+    &ltscript src="assets/js/script.js"&gt&lt/script&gt
+  &lt/body&gt
+  &lt/html&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  var regexName = /^[a-zA-Z ]+$/;
+  var lastname = document.getElementById('lastname').value;
+  var firstname = document.getElementById('firstname').value;
+  var city = document.getElementById('city').value;
+  if (lastname.match(regexName) && firstname.match(regexName) && city.match(regexName)){
+    alert('Nom : ' + lastname + '\nPrénom : ' + firstname + '\nVille : ' + city);
+  }else {
+    alert('Ceci n\'est pas autorisé');
+</pre>
