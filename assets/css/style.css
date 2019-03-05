@@ -103,3 +103,23 @@
   background-image: url(../img/exo3javascriptbis.png);
   background-position: center;
 }
+
+/* exercice 3 partie 3 */
+.color{
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin : 5px;
+}
+.green{
+  background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.pink{
+    background-color: pink;
+}

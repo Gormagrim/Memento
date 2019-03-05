@@ -818,7 +818,6 @@
   function changeImage(img,source){
     img.src = source;
   }
-
 </pre>
   </div> <!-- border exercice-->
 <div class="borderExercise">
@@ -857,6 +856,337 @@
   function resetImage(img){
     document.getElementById(img).src ='assets/img/' + img + '.jpg';
   }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 1 - Partie 3</h2>
+<p>Dans le fichier HTML fourni, au survol de l'image ajouter une bordure de 3px rouge et la retirer quand la souris ne la survol plus.</p>
+<h3>Rendu : </h3>
+<img src="assets/img/image16.jpg" id="image16" onmouseover= "changeBorder()" onmouseout= "initialBorder()"/>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltimg src="assets/img/image1.jpg" id="image1" onmouseover= "changeBorder()" onmouseout= "initialBorder()"/&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // mon evenement: onmousseover
+  // J'appelle ma fonction "changeBorder"
+  function changeBorder() {
+    // je veux mettre mon bord d'image à 3 px et en rouge du coup je mets la propriété : .style.border
+  document.getElementById('image1').style.border = '3px solid red';
+  }
+  // mon evenement: onmousseout
+  // J'appelle ma fonction "initialBorder"
+  function initialBorder() {
+  // avec ma propriété je réinitialise mon bord : initial
+  document.getElementById('image1').style.border = 'initial';
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 2 - Partie 3</h2>
+<p>Dans le fichier HTML fourni, faire afficher ou masquer le texte en fonction de l'ancre.</p>
+<h3>Rendu : </h3>
+<a href="#" onclick="display()">Afficher</a>
+<a href="#" onclick="hide()">Masquer</a>
+  <div id="textOnClick">
+    <p>
+      A REVOIR FONCTION QUI MARCHE DANS L'EXO MAIS PAS DANS LE MEMENTO
+      Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+    </p>
+  </div>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &lta href="#" onclick="display()"&gtAfficher&lt/a&gt
+  &lta href="#" onclick="hide()"&gtMasquer&lt/a&gt
+    &ltdiv id="text"&gt
+      &ltp&gt
+        Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      &lt/p&gt
+    &lt/div&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // pour masquer la page au démarrage, du coup la propriété display est en dehors d'une fonction
+  document.getElementById('text').style.display = 'none';
+
+  // afficher ou masquer le texte en fonction de l'ancre.
+  // 1ere fonction pour afficher
+  // La propriété display définit le type d'affichage utilisée pour le rendu d'un élément
+  function display(){
+  document.getElementById('text').style.display = 'block';
+  }
+  // 2eme fonction pour Hide
+  function hide(){
+  // en mettant comme valeur 'none' à la propriété display l'élément ne s'affiche pas.
+  document.getElementById('text').style.display = 'none';
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 3 - Partie 3</h2>
+<p>Dans le fichier HTML fourni, changer la couleur du texte en fonction du bouton choisi.</p>
+<h3>Rendu : </h3>
+<div id="textColor">
+  <p>
+    Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+  </p>
+</div>
+<div>
+<div class="color green" onclick="changeColor(this)"></div>
+<div class="color red" onclick="changeColor(this)"></div>
+<div class="color blue" onclick="changeColor(this)"></div>
+<div class="color pink" onclick="changeColor(this)"></div>
+</div>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltdiv id="text"&gt
+    &ltp&gt
+      Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+    &lt/p&gt
+  &lt/div&gt
+  &ltdiv&gt
+  &ltdiv class="color green" onclick="changeColor(this)"&gt&lt/div&gt
+  &ltdiv class="color red" onclick="changeColor(this)"&gt&lt/div&gt
+  &ltdiv class="color blue" onclick="changeColor(this)"&gt&lt/div&gt
+  &ltdiv class="color pink" onclick="changeColor(this)"&gt&lt/div&gt
+  &lt/div&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  function changeColor(elemnt){
+    // on stocke dans une variable la valeur de l'attribut "class" de l'élément sur lequel on vient de cliquer
+  var classValue = elemnt.getAttribute('class');
+  // on utilise la fonction "split" pour éclater la chaine de caractère contenu dans la variable "classValue"
+  // On stocke le résultat dans la variable "classArray" qui devient un tableau
+  // Attention tous les index de tableau commence à 0 !!  tableau[index]
+  var classArray = classValue.split(' ');
+  // on applique au texte la couleur correspondant au deuxième élément du tableau
+  document.getElementById('text').style.color = classArray[1];
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Exercice 4 - Partie 3</h2>
+<p>Dans le fichier HTML fourni, mettre les bordures des inputs en rouge si les mots de passe sont différents. Sinon les mettre en vert.</p>
+<h3>Rendu : </h3>
+<form>
+  <label for="password">Votre mot de passe : </label><input type="text" name="password" id="password"/>
+  <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword"/>
+  <button type="button" name="button" onclick="passewordmatch()">Vérification</button>
+</form>
+<h3>code : </h3>
+<p>Dans l'Html</p>
+<pre class="styleCode">
+  &ltform&gt
+    &ltlabel for="password"&gtVotre mot de passe : &lt/label&gt&ltinput type="text" name="password" id="password"/&gt
+    &ltlabel for="confirmPassword"&gtConfirmez : &lt/label&gt&ltinput type="text" name="confirmPassword" id="confirmPassword"/&gt
+    &ltbutton type="button" name="button" onclick="passewordmatch()"&gtVérification&lt/button&gt
+  &lt/form&gt
+</pre>
+<p>Dans le script</p>
+<pre class="styleCode">
+  //fonction pour valider que les mots de passes sont identiques.
+  function passewordmatch(){
+    //On stocke tout l'élement dans la variable pour utiliser la value et le borderColor sans réutiliser document.getElementById.
+      var password = document.getElementById('password');
+    var confirmPassword = document.getElementById('confirmPassword');
+    //!= ça veut dire 'différent de'
+    //si les deux sont différent à la validation on vert que les bordures soit rouge.
+    if (password.value != confirmPassword.value) {
+      confirmPassword.style.borderColor='red';
+      password.style.borderColor='red';
+      // ou alors si les deux sont égaux à la validation bordure green.
+    }else{
+      confirmPassword.style.borderColor='green';
+      password.style.borderColor='green';
+    }
+  }
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Partie 4 - Jasmine</h2>
+<p>Il faut lancer le fichier SpecRunner.html pour valider ses réponses.</p>
+<p>Les réponses seront à écrire dans le fichier questions.js</p>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // on cherche la taille du texte avec la fonction length
+  // Cette propriété renvoie le nombre de « codets » (ou unités de code ou bien code units en anglais) d'une chaîne de caractères
+ var tailleString = function (texte) {
+     return texte.length;
+ };
+
+ // On remplace e par des espaces avec la fonction replace
+ // la méthode replace() renvoie une nouvelle chaîne de caractères dans laquelle tout ou partie des correspondances à un modèle sont remplacées par un remplacement
+ var remplaceECar = function (texte) {
+     return texte.replace('e',' ');
+ };
+ // on concat le texte1 et 2 avec la fonction concat
+ // La méthode concat() combine le texte de plusieurs chaînes avec la chaîne appelante et renvoie la nouvelle chaîne ainsi formée.
+ var concatString = function (texte1, texte2) {
+     return texte1.concat(texte2);
+ };
+ //  Afficher le cinquième caractère de la chaine içi un "e" avec la propriété substr
+ // La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain nombre de caractères après celui-ci.
+ // .substr(début[, longueur])
+ // charAt permet d'extraire le 5 ème caractère
+ var afficherCar5 = function (texte) {
+     // return texte.substr(4, 1); Bon aussi mais déprécié, il faut mieux mettre substring
+     return texte.charAt(4);
+ };
+ // Afficher les 9 premiers caractères
+ // La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain nombre de caractères après celui-ci.
+ // .substr(début[, longueur])
+ // différence entre .substr et substring
+ // Les arguments de la méthode substring() représentent les indices de début et de fin sur la chaîne.
+ // Pour substr(), les arguments représentent l'indice de début et le nombre de caractères à utiliser pour la chaîne résultante.
+ var afficher9Car = function (texte) {
+     return texte.substring(0, 9);
+     // return texte.slice(0, 9); possible aussi mais substring est plus "puissant"
+ };
+ //  Mettre en majuscule la chaine
+ // La méthode toUpperCase() retourne la valeur de la chaîne courante, convertie en majuscules
+ var majusculeString = function (texte) {
+     return texte.toUpperCase();
+ };
+ //  Mettre en minuscule la chaine
+ // La méthode toLowerCase() retourne la chaîne de caractères courante en minuscules.
+ var minusculeString = function (texte) {
+     return texte.toLowerCase();
+ };
+ // Supprimer les espaces avant et après la chaine
+ // La méthode trim() permet de retirer les blancs en début et fin de chaîne. Les blancs considérés sont les caractères d'espacement (espace, tabulation, espace insécable, etc.)
+ var SupprEspaceString = function (texte) {
+     return texte.trim();
+ };
+ // Afficher true si le parametre d'entrée de la fonction est de type string
+ // L'opérateur typeof renvoie une chaîne qui indique le type de son opérande.
+ // operande est une expression qui représente la valeur dont on souhaite obtenir le type.
+ //  'string', 'numbers', 'boolean'... sont des résultats possibles de l'opérateur typeof.
+ //  exemple : typeof 'bla' === 'string';
+ var IsString = function (texte) {
+     if (typeof texte == 'string') {
+       return true;
+     }
+ };;
+ // Afficher l'extension du fichier
+ // La méthode split() permet de diviser une chaîne de caractères à partir d'un séparateur pour fournir un tableau de sous-chaînes.
+ // içi on met extention[1], car on veut afficher l'extention si on voulait le nom du fichier on mettrait extention[0]
+ var AfficherExtensionString = function (texte) {
+   var regex = /[^.]*$/i;
+   var result = texte.match(regex);
+   return result[0];
+
+   // var extension = texte.split('.');
+   //   return extension[1];
+ };
+ // Compter le nombre d'espace dans la chaine
+ var NombreEspaceString = function (texte) {
+     return texte.split(' ').length - 1;
+     // possibilité de faire avec des regex !
+ };
+ //  Inverser une chaine de caractères
+ // split renvoie un tableau sur lequel on peut appliquer reverse
+ // enfin on utilise join pour assembler le tout.
+ var InverseString = function (texte) {
+     return texte.split('').reverse().join('');
+ };
+
+ /**
+  * Exercices sur les nombres et les caluls mathématiques
+  */
+
+  // Calculer la puissance d'un nombre par rapport à un autre (x à la puissance y)
+  // Math est un objet
+  // .pow est une méthode
+  // La fonction Math.pow() renvoie un nombre à une certaine puissance
+ var calculPuissance = function (x, y) {
+     return Math.pow(x, y);
+ };
+ // Afficher la valeur absolue d'un nombre
+ // La fonction Math.abs() retourne la valeur absolue d'un nombre, c'est-à-dire
+ var valeurAbsolue = function (nombre) {
+     return Math.abs(nombre);
+ };
+ // Afficher les valeurs absolues de plusieurs nombres
+ var valeurAbsolueArray = function (array) {
+   // Une boucle for répète des instructions jusqu'à ce qu'une condition donnée ne soit plus vérifiée.
+ //   var x = ["un", "deux", "trois" ]; =&gt dans l'exo notre variable x est égal à array
+ //   for(var i= 0; i &lt x.length; i++){
+ // Maintenant on veut que notre variable soit égale à la valeur absolue de x + i
+ // donc on crée une variable var1 avec la fonction Math.abs()
+ // il y a plus simple que la bouche for
+ //   var var1 = Math.abs(x[i]);
+ // }
+ // for (var i = 0; i &lt array.length; i++) {
+ //   var ValueAbsolue = Math.abs(array[i]);
+ //   array[i] = ValueAbsolue;
+ // }
+ //     return array;
+ // }
+
+ // La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+ return array.map(Math.abs);
+ };
+
+ // Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche
+ // La propriété Math.PI représente le ratio entre le périmètre d'un cercle et son diamètre. Elle vaut environ 3.14159:
+ // La fonction Math.round() retourne la valeur d'un nombre arrondi à l'entier le plus proche.
+ var sufaceCercle = function (rayon) {
+     return Math.round(Math.PI * Math.pow(rayon, 2));
+ };
+ //  Calculer l'hypthènuse d'un triangle rectangle
+ // La fonction Math.hypot() renvoie la racine carrée de la somme des carrés de ses arguments.
+ var hypothenuse = function (ab, ac) {
+     return Math.hypot(ab, ac);
+ };
+ // Calculer l'IMC (Poids / (taille x taille).Ne garder que deux chiffres après la virgule.
+ var calculIMC = function (poids, taille) {
+     var imc = (poids/Math.pow(taille,2)).toFixed(2);
+     return Number(imc);
+ };
+</pre>
+</div> <!-- border exercice-->
+<div class="borderExercise">
+<h2 class="titleExercise">Partie 5 - Jasmine</h2>
+<p>Il faut lancer le fichier SpecRunner.html pour valider ses réponses.</p>
+<p>Les réponses seront à écrire dans le fichier questions.js</p>
+<p>Dans le script</p>
+<pre class="styleCode">
+  // Créer un tableau "languages" contenant "Html", "CSS", "Java", "PHP"
+  // L'objet global Array est utilisé pour créer des tableaux.
+  var languagesArrayCreation = function () {
+  // var formLanguage = Array('Html', 'CSS', 'Java', 'PHP'); possible aussi
+  //   return formLanguage;
+
+    var formLanguage = ['Html', 'CSS', 'Java', 'PHP'];
+      return formLanguage;
+  };
+
+  // Créer un tableau "numbers" contenant les numbers de 0 à 5
+  var numbersArrayCreation = function () {
+    // var formNumbers = Array(0, 1, 2, 3, 4, 5); possible aussi
+    //   return formNumbers;
+
+    var formNumbers = [0, 1, 2, 3, 4, 5];
+      return formNumbers;
+  };
+
+  //  Remplacer le troisième élément du tableau par "Javascript"
+  var ElementReplacement = function (languages) {
+    // return languages.splice(2, 1, 'Javascript'); possible aussi
+    languages[2] = 'Javascript';
+    return languages;
+  };
+
+  // Ajouter "Ruby" et "Python" à la fin du tableau
+  // La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
+  var AddElementToLanguagesArray = function (languages) {
+    languages.push('Ruby', 'Python');
+    return languages;
+  };
 </pre>
 </div> <!-- border exercice-->
   </section>

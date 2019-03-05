@@ -167,3 +167,65 @@ function changeImage(img){
 function resetImage(img){
   document.getElementById(img).src ='assets/img/' + img + '.jpg';
 }
+
+
+// exercice 1 partie 3
+// mon evenement: onmousseover
+// J'appelle ma fonction "changeBorder"
+function changeBorder() {
+  // je veux mettre mon bord d'image à 3 px et en rouge du coup je mets la propriété : .style.border
+document.getElementById('image16').style.border = '3px solid red';
+}
+// mon evenement: onmousseout
+// J'appelle ma fonction "initialBorder"
+function initialBorder() {
+// avec ma propriété je réinitialise mon bord : initial
+document.getElementById('image16').style.border = 'initial';
+}
+
+// exercice 2 partie 2 A revoir
+// pour masquer la page au démarrage, du coup la propriété display est en dehors d'une fonction
+document.getElementById('textOnClick').style.display = 'none';
+
+// afficher ou masquer le texte en fonction de l'ancre.
+// 1ere fonction pour afficher
+// La propriété display définit le type d'affichage utilisée pour le rendu d'un élément
+function display(){
+document.getElementById('textOnClick').style.display = 'block';
+}
+// 2eme fonction pour Hide
+function hide(){
+// en mettant comme valeur 'none' à la propriété display l'élément ne s'affiche pas.
+document.getElementById('textOnClick').style.display = 'none';
+}
+
+
+// exercice 3 partie 3
+function changeColor(elemnt){
+  // on stocke dans une variable la valeur de l'attribut "class" de l'élément sur lequel on vient de cliquer
+var classValue = elemnt.getAttribute('class');
+// on utilise la fonction "split" pour éclater la chaine de caractère contenu dans la variable "classValue"
+// On stocke le résultat dans la variable "classArray" qui devient un tableau
+// Attention tous les index de tableau commence à 0 !!  tableau[index]
+var classArray = classValue.split(' ');
+// on applique au texte la couleur correspondant au deuxième élément du tableau
+document.getElementById('textColor').style.color = classArray[1];
+}
+
+//exercice 4 partie 4
+//fonction pour valider que les mots de passes sont identiques.
+function passewordmatch(){
+  //On stocke tout l'élement dans la variable pour utiliser la value et le borderColor sans réutiliser document.getElementById.
+    var password = document.getElementById('password');
+  var confirmPassword = document.getElementById('confirmPassword');
+  //!= ça veut dire 'différent de'
+  //si les deux sont différent à la validation on vert que les bordures soit rouge.
+  if (password.value != confirmPassword.value) {
+    confirmPassword.style.borderColor='red';
+    password.style.borderColor='red';
+    // ou alors si les deux sont égaux à la validation bordure green.
+  }else{
+    confirmPassword.style.borderColor='green';
+    password.style.borderColor='green';
+  }
+}
