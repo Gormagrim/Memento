@@ -1,7 +1,6 @@
 /* Pour toutes les sections */
-#bootstrap, #javascript {
+section {
   width: 100%;
-  height: 100%; /* permet la bonne position de mon ancre au click de la navbar */
   padding-top: 5rem;   /* permet d'avoir ma 2eme section en dessous de la navbar */
 }
 
@@ -122,4 +121,11 @@
 }
 .pink{
     background-color: pink;
+}
+
+/* exercice 5 partie 3jquery  */
+#square{
+  background-color: purple;
+  height: 50px;
+  width: 50px;
 }

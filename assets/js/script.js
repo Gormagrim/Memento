@@ -212,7 +212,7 @@ var classArray = classValue.split(' ');
 document.getElementById('textColor').style.color = classArray[1];
 }
 
-//exercice 4 partie 4
+//Exercice 4 partie 4
 //fonction pour valider que les mots de passes sont identiques.
 function passewordmatch(){
   //On stocke tout l'élement dans la variable pour utiliser la value et le borderColor sans réutiliser document.getElementById.
@@ -229,3 +229,36 @@ function passewordmatch(){
     password.style.borderColor='green';
   }
 }
+
+// Exercice 5 Partie 4 AugularJS
+$(function(){
+  // Affiche au clic.
+$('#showEx5P4AugularJS').click(function(){
+  $('#textEx5P4AugularJS').show();
+});
+// Cache au clic.
+$('#hideEx5P4AugularJS').click(function(){
+  $('#textEx5P4AugularJS').hide();
+});
+});
+
+// Exercice 6 Partie 4 AngularJS
+$(function(){
+  // Affiche au clic.
+$('#showEx6P4AugularJS').click(function(){
+  $('#firstTextEx6P4AugularJS').show();
+  $('#secondText2Ex6P4AugularJS').hide();
+});
+// Cache au clic.
+$('#hideEx6P4AugularJS').click(function(){
+  $('#firstTextEx6P4AugularJS').hide();
+  $('#secondText2Ex6P4AugularJS').show();
+});
+});
+
+// Exercice 2 Partie Bonus AngularJs
+$(function(){
+$('#alertButtonBonus').click(function(){
+  alert('fuck !');
+});
+});

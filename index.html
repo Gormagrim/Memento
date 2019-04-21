@@ -5,16 +5,3327 @@
   <title>Memento HTML</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-  <script src="https://code.angularjs.org/1.7.7/angular-route.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/angularjs.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script> -->
+  <!-- <script src="https://code.angularjs.org/1.7.7/angular-route.min.js"></script> -->
+  <!-- <script src="assets/js/angularjs.js"></script> -->
+
 
 </head>
-<body ng-app="angularjs">
-  <div ng-view></div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#html">HTML <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#bootstrap">Bootstrap</a>
+        <!-- <a class="nav-item nav-link" href="#!/oscaro">Projet Oscaro</a> -->
+        <a class="nav-item nav-link" href="#javascript">Javascript</a>
+        <a class="nav-item nav-link" href="#jquery">Jquery</a>
+        <a class="nav-item nav-link" href="#angularJS">Angularjs</a>
+        <a class="nav-item nav-link" href="./exercice3Bonus.html">Angularjs Ex3</a>
+
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <section id="html">
+          <h1 class="titleSection">Exercices HTML</h1>
+          <p>JQUERY NE FONCTION PAS SUR L'ONGLET JQUERY !!!!!! </p>
+          <p>REFAIRE L'AUTO-INTENTATION DES CODES "pre" À LA TOUTE FIN</p>
+          <p>COMMENT UTILISER UNE FEUILLE DE STYLE PAR VUE ??? EST CE POSSIBLE ??</p>
+          <p>RAJOUTER CV EN HTML ET CSS</p>
+          <p>RAJOUTER CV EN Bootstrap</p>
+          <p>FINIR JAVASCRIPT EXO 4 </p>
+          <p>LES TITRES BootStrap ET JAVASCRIPT ÉTAIENT EN H1 PASSÉ EN H2 A MODIFIER </p>
+          <p>REVOIR LES COM</p>
+          <p>pour un css par vue : <a href="http://embed.plnkr.co/lEErLbr3SvQ9Ye75G13l/">clique içi !</a></p>
+          <p>Vous trouverez ici une série d'exercices à faire dans l'ordre et à mettre dans votre github. Vous devez avoir une page valide HTML (Doctype, ...). Pensez à l'indentation !!! </p>
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 1</h2>
+            <p>Ecrire une page HTML qui affiche :</p>
+            <ul>
+              <li>un titre au niveau du bandeau de la fenêtre du navigateur</li>
+              <li>le même titre dans le document</li>
+              <li>un paragraphe</li>
+              <li>Le document devra être écrit en UTF-8</li>
+              <li>Le document devra contenir des caractères accentués</li>
+            </ul>
+            <h3>Rendu : </h3>
+            <div class="smallMade">
+              <h1>Ma première page en HTML</h1>
+              <p>paragraphe avec des caractères accentués pour le premier cours HTML</p>
+            </div>
+            <h3>code : </h3>
+            <pre class="styleCode">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+              &lthead&gt
+              &ltmeta charset="utf-8"/&gt
+              &lttitle&gtMa première page en HTML&lt/title&gt
+              &lt/head&gt
+              &ltbody&gt
+              &lth1&gtMa première page en HTML&lt/h1&gt
+              &ltp&gt Voiçi mon paragraphe avec des caractères accentués pour le premier cours HTML&lt/p&gt
+              &lt/body&gt
+              &lt/html&gt
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 2</h2>
+            <p>Ecrire une page HTML contenant :</p>
+            <ul>
+              <li>un titre de niveau 1</li>
+              <li>un paragraphe</li>
+              <li>un titre de niveau 2</li>
+              <li>un deuxième paragraphe</li>
+              <li>un autre titre de niveau 2</li>
+              <li>un troisième paragraphe</li>
+            </ul>
+            <p>Le choix des textes dans les titres et les paragraphes vous appartient.</p>
+            <h3>Rendu : </h3>
+            <div class="smallMade">
+              <h1>un titre de niveau 1</h1>
+              <p>un paragraphe</p>
+              <h2>titre de niveau 2</h2>
+              <p>Un deuxième paragraphe</p>
+              <h2>un autre titre de niveau 2</h2>
+              <p>un troisième paragraphe</p>
+            </div>
+            <h3>code : </h3>
+
+            <pre class="styleCode">
+              &lth1&gtun titre de niveau 1&lt/h1&gt
+              &ltp&gtun paragraphe&lt/p&gt
+              &lth2&gttitre de niveau 2&lt/h2&gt
+              &ltp&gtUn deuxième paragraphe&lt/p&gt
+              &lth2&gtun autre titre de niveau 2&lt/h2&gt
+              &ltp&gtun troisième paragraphe&lt/p&gt
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 3</h2>
+            <p>Reproduire l'image correspondant à l'exercice.</p>
+            <p>Rappel : Pour utiliser du CSS dans du HTML, on se sert de <strong>l'attribut style</strong></p>
+            <div class="image exerciseThreeHtml"></div>
+            <h3>code : </h3>
+            <pre class="styleCode">
+              &lth1&gtMa liste de course du 7 Mai 2016&lt/h1&gt
+              &ltp&gtIl me faut plusieurs choses:&lt/p&gt
+              &ltul&gt
+              &ltli&gtUne baguette&lt/li&gt
+              &ltli&gt2 &ltspan style="color:red"&gtkilos&lt/span&gt de tomates &lt/li&gt
+              &ltli&gt3 &ltspan style="color:green"&gtlitres&lt/span&gt de lait&lt/li&gt
+              &ltli&gt5 &ltstrong&gtboites&lt/strong&gt de chewing gum&lt/li&gt
+              &lt/ul&gt
+              &ltem&gt Payer en liquide ou par chèque.&lt/em&gt
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 4</h2>
+            <p>Reproduire l'image correspondant à l'exercice.</p>
+            <p>Pour les liens, mettre le site correspondant. Je vous laisse les trouver par vous-même.</p>
+            <p>L'image se trouve à l'adresse : http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png</p>
+            <strong>IMPORTANT</strong>
+            <ul>
+              <li>Vous ne devez pas télécharger l'image.</li>
+              <li>Mettre un titre à chaque lien, pour qu'au survol il apparaisse.</li>
+              <li>Mettre un texte alternatif et un titre à l'image.</li>
+            </ul>
+            <div class="image exerciseFourHtml"></div>
+            <h3>code : </h3>
+            <pre class="styleCode">
+              &ltbody&gt
+              &lth1&gt&ltimg src="http://www.infowebmaster.fr/img/petite-image/bloc-note-stylo.png" alt="image bloc note" title="image bloc note"/&gtTous les petits trucs qui me seront utile pour la suite&lt/h1&gt
+              &ltp&gtLe site de codecademy est &lta href="https://www.codecademy.com/fr" title="site codecademy"&gtiçi&lt/a&gt&lt/p&gt
+              &ltp&gtPour pleins de tuto sympa, il y a aussi &lta href="https://openclassrooms.com/fr/dashboard" title="site openclassroom"&gtopenclassroom.&lt/a&gt&lt/p&gt
+              &ltp&gt&lta href="https://ubuntu-fr.org/" title="site Ubuntu"&gtSi je veux devenir un crack sous Ubuntu, il me faut la bonne adresse.&lt/a&gt&lt/p&gt
+              &lt/body&gt
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 5</h2>
+            <p>Reproduire l'image correspondant à l'exercice.</p>
+            <p>Pour le CSS le mettre dans une <strong>balise style.</strong></p>
+            <p>Pour faire le tableau, il faut se servir des balises <strong>thead, tfoot</strong> et <strong>tbody</strong>.</p>
+            <p>Vous ne devez pas utiliser <strong>d'attribut style</strong> dans cet exercice.</p>
+            <div class="image exerciseFiveHtml"></div>
+            <h3>code : </h3>
+            <pre class="styleCode">
+              &lthead&gt
+              &ltstyle&gt
+              table {
+                border: 1px solid black;
+                {La propriété border-collapse détermine si les bordures d'un tableau sont séparées ou fusionnées}
+                border-collapse: collapse;
+              }
+              thead {
+                text-align: center;
+              }
+              tfoot {
+                text-align: center;
+              }
+              td, th {
+                {La propriété border-width définit la largeur d'une bordure pour la boîte d'un élément.
+                Cette propriété est une propriété raccourcie pour définir les propriétés détaillées:
+                border-top-width, border-right-width, border-bottom-width et border-left-width.}
+                border-width: 1px;
+                border-style: solid;
+              }
+              &lt/style&gt
+              &lt/head&gt
+              &ltbody&gt
+              &lttable&gt
+              {L'élément HTML &ltcaption&gt représente la légende (ou le titre) d'un tableau.
+              Il doit être le première élément parmi les descendants de l'élément &lttable&gt.}
+              &ltcaption&gtMon compte BNP&lt/caption&gt
+              &ltthead&gt
+              &lttr&gt
+              &ltth&gtDate&lt/th&gt
+              &ltth&gtLibellé&lt/th&gt
+              &ltth&gtCrédit&lt/th&gt
+              &ltth&gtDébit&lt/th&gt
+              &lt/tr&gt
+              &lt/thead&gt
+              &lttfoot&gt
+              &lttr&gt
+              &lttd colspan="2"&gtSolde&lt/td&gt
+              &lttd colspan="2"&gt575,40&lt/td&gt
+              &lt/tr&gt
+              &lt/tfoot&gt
+              &lttbody&gt
+              &lttr&gt
+              &lttd&gt01/05/2016&lt/td&gt
+              &lttd&gtpaye&lt/td&gt
+              &lttd&gt1500&lt/td&gt
+              &lttd&gt0&lt/td&gt
+              &lt/tr&gt
+              &lttr&gt
+              &lttd&gt01/05/2016&lt/td&gt
+              &lttd&gtCourses de la semaine&lt/td&gt
+              &lttd&gt0&lt/td&gt
+              &lttd&gt152,30&lt/td&gt
+              &lt/tr&gt
+              &lttr&gt
+              &lttd&gt04/05/2016&lt/td&gt
+              &lttd&gtMc do&lt/td&gt
+              &lttd&gt0&lt/td&gt
+              &lttd&gt32,40&lt/td&gt
+              &lt/tr&gt
+              &lttr&gt
+              &lttd&gt05/05/2016&lt/td&gt
+              &lttd&gtLoyer&lt/td&gt
+              &lttd&gt0&lt/td&gt
+              &lttd&gt700&lt/td&gt
+              &lt/tr&gt
+              &lttr&gt
+              &lttd&gt05/05/2016&lt/td&gt
+              &lttd&gtInternet&lt/td&gt
+              &lttd&gt0&lt/td&gt
+              &lttd&gt39,90&lt/td&gt
+              &lt/tr&gt
+              &lt/tbody&gt
+              &lt/table&gt
+              &lt/body&gt
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 6</h2>
+            <p>Reproduire l'image correspondant à l'exercice.</p>
+            <p>Toutes les propriétés CSS se trouveront dans <strong>un fichier</strong> autre que le fichier HTML.</p>
+            <p>Pour la largeur des rectangles de couleur, privilégiez les pourcentages.</p>
+            <p>Chaque rectangle de couleur est un seul élément.</p>
+            <div class="image exerciseSixHtml"></div>
+
+            <h3>code : </h3>
+            <p>Dans html</p>
+            <pre class="styleCode">
+              &lt!DOCTYPE html&gt
+              &lthtml lang="fr" dir="ltr"&gt
+              &lthead&gt
+              &ltmeta charset="utf-8" /&gt
+              {link permet de rattacher la feuille de style}
+              &ltlink rel="stylesheet" href="style.css"/&gt
+              &lttitle&gtExercice 6&lt/title&gt
+              &lt/head&gt
+              &ltbody&gt
+              &ltdiv class="green"&gt&lt/div&gt
+              &ltdiv class="blue"&gt&lt/div&gt
+              &ltdiv class="red"&gt&lt/div&gt
+              &ltdiv class="orange"&gt&lt/div&gt
+              &ltdiv class="grey"&gt&lt/div&gt
+              &ltdiv class="yellow"&gt&lt/div&gt
+              &ltdiv class="teal"&gt&lt/div&gt
+              &ltdiv class="brown"&gt&lt/div&gt
+              &ltdiv class="navy"&gt&lt/div&gt
+              &lt/body&gt
+              &lt/html&gt
+            </pre>
+            <p>Dans la feuille de style</p>
+            <pre class="styleCode">
+              div {
+                float:left;
+                height:50px;
+              }
+              .green {
+                width:80%;
+                background-color: #2ECC71;
+              }
+              .blue {
+                width:20%;
+                background: #2980B9;
+              }
+              .red {
+                height:150px;
+                width:34%;
+                background: #E74C3C;
+              }
+              .orange {
+                height:75px;
+                width:33%;
+                background: #E67E22;
+              }
+              .grey {
+                height:75px;
+                width:33%;
+                background: #95A5A6;
+              }
+              .yellow {
+                height:75px;
+                width:22%;
+                background: #F39C12;
+              }
+              .teal {
+                height:75px;
+                width:22%;
+                background: #16A085;
+              }
+              .brown {
+                height:75px;
+                width:22%;
+                background: #D35400;
+              }
+              .navy {
+                height:170px;
+                width:100%;
+                background: #2C3E50;
+              }
+            </pre>
+          </div> <!-- border exercice-->
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 7</h2>
+            <p>Reproduire l'image correspondant à l'exercice.</p>
+            <p>Ce formulaire contient 3 parties et un bouton.</p>
+            <p>Toutes les propriétés CSS se trouveront dans un fichier autre que le fichier HTML.</p>
+            <div class="image exerciseSevenHtml"></div>
+            <p>Dans l'html</p>
+            <pre class="styleCode">
+              &ltbody&gt
+              {L'élément HTML &ltform&gt représente une section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.}
+              &ltform&gt
+              {L'élément HTML &ltfieldset&gt est utilisé afin de regrouper plusieurs contrôles interactifs ainsi que des étiquettes (&ltlabel&gt) dans un formulaire web.}
+              &ltfieldset class="identity"&gt
+              {L'élément HTML &ltlegend&gt représente une légende pour le contenu de son élément parent &ltfieldset&gt.}
+              &ltlegend class="identity"&gtVotre identité&lt/legend&gt
+              &ltol&gt
+              {Le pseudo-élément ::placeholder représente le texte de substitution pour un élément de formulaire.}
+              &ltli&gt&ltlabel for="lastName"&gtNom :&lt/label&gt&ltinput type="text" name="lastName" id="lastName/&gt" placeholder="Dupont"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="firstName"&gtPrénom :&lt/label&gt&ltinput type="text" name="firstName" id="firstName/&gt" placeholder="Jean"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="mailBox"&gtAdresse mail :&lt/label&gt&ltinput type="email" name="mailBox" id="mailBox/&gt" placeholder="Adresse mail"&gt&lt/li&gt
+              &lt/ol&gt
+              &lt/fieldset&gt
+              &lt/form&gt
+              &ltform&gt
+              &ltfieldset class="deliveryAddress"&gt
+              &ltlegend class="deliveryAddress"&gtAdresse de livraison&lt/legend&gt
+              &ltol&gt
+              &ltli&gt&ltlabel for="adress"&gtAdresse :&lt/label&gt&lttextarea rows="5" cols="14"&gt&lt/textarea&gt&lt/li&gt &lt!-- for et id doivent être identique --&gt
+              &ltli&gt&ltlabel for="postalCode"&gtCode postal :&lt/label&gt&ltinput type="text" name="postalCode" id="postalCode" placeholder="Code postal"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="town"&gtVille :&lt/label&gt&ltinput type="text" name="town" id="town/&gt" placeholder="Ville"&gt&lt/li&gt
+              &lt/ol&gt
+              &lt/fieldset&gt
+              &lt/form&gt
+              &ltform&gt
+              &ltfieldset class="regulationInformation"&gt
+              &ltlegend class="regulationInformation"&gtInformations de réglement&lt/legend&gt
+              &ltol&gt
+              &ltli&gt&ltlabel for="cB"&gtType de carte bancaire :&lt/label&gt&lt/li&gt
+              &ltol&gt
+              {Les éléments &ltinput&gt dont l'attribut type vaut radio sont généralement utilisés pour construire des groupes d'options parmi lesquelles on ne peut choisir qu'une valeur.
+              Les « boutons radio » sont représentés par des cercles remplis lorsqu'ils sont sélectionnés.}
+              &ltinput type="radio" name="radiol" value="radio1"&gt&ltlabel&gt VISA&lt/label&gt&ltbr/&gt
+              &ltinput type="radio" name="radiol" value="radio2"&gt&ltlabel&gt Mastercard&lt/label&gt
+              &lt/ol&gt
+              &ltli&gt&ltlabel for="cardNumber"&gtNuméro de carte&lt/label&gt : &ltinput type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="securityCode"&gtCode de sécurité&lt/label&gt : &ltinput type="text" name="securityCode" id="securityCode" placeholder="Code de sécurité"&gt&lt/li&gt
+              &ltli&gt&ltlabel for="name"&gtNom du titulaire&lt/label&gt : &ltinput type="text" name="name" id="name" placeholder="Nom du titulaire"&gt&lt/li&gt
+              &lt/ol&gt
+              &lt/fieldset&gt
+              &lt/form&gt
+              &ltbutton type="submit" class="button"&gtJ'achète !&lt/button&gt
+              &lt/body&gt
+            </pre>
+            <p>Dans la feuille de style</p>
+            <pre class="styleCode">
+              fieldset.identity {
+                background: #9A12B3;
+              }
+              legend.identity {
+                background: #9A12B3;
+              }
+              fieldset.deliveryAddress {
+                background: #2574A9;
+              }
+              legend.deliveryAddress{
+                background: #2574A9;
+              }
+              fieldset.regulationInformation {
+                background: #DB0A5B;
+              }
+              legend.regulationInformation {
+                background: #DB0A5B;
+              }
+              input {
+                border: 0px;
+                margin:1.5px;
+                padding: 3px;
+              }
+              button {
+                border: 1px solid silver;
+                padding: 5px;
+              }
+            </pre>
+          </div> <!-- border exercice-->
+        </section> <!-- section html -->
+        <section id="bootstrap">
+          <h2 class="titleSection">Bootstrap</h2>
+          <p><strong>Le site officiel de Bootstrap se trouve <a href="https://getbootstrap.com/" title="site de Bootstrap">içi</a></strong></p>
+          <p>Pour utiliser le CSS et le JS de Bootstrap nous pouvons utiliser les BootstrapCDN</p>
+          <p>le premier "link" est à coller dans le head de notre page HTML entre notre titre et notre "link" CSS</p>
+          <pre class="styleCode">
+            &ltlink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"&gt
+          </pre>
+          <p>Les trois script suivant sont à mettre en bas de notre page HTML au dessus de &lt/body&gt</p>
+          <pre class="styleCode">
+            &ltscript src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"&gt&lt/script&gt
+            &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"&gt&lt/script&gt
+            &ltscript src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"&gt&lt/script&gt
+          </pre>
+          <p class="project">Projet de groupe: reproduire le site de <a href="https://www.oscaro.com/#">oscaro.com </a>en utilisant Bootstrap.</p>
+        </section> <!-- section bootstrap -->
+  <section id="javascript">
+    <h2 class="titleSection">JavaScript</h2>
+  <p>Quand cela est nécessaire, le fichier HTML est fourni.</p>
+  <p>Pour la sécurité de votre code, à chaque formulaire vérifiez que ce qui est saisi correspond à ce qui est attendu.</p>
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 1</h2>
+  <p>Définir une variable et l'afficher dans une boîte de dialogue.</p>
+  <h3>Rendu : </h3>
+  <div class="image exerciseOneJavascript"></div>
+  <h3>code : </h3>
+  <pre class="styleCode">
+    &lt!DOCTYPE html&gt
+    &lthtml lang="fr" dir="ltr"&gt
+    &lthead&gt
+      &ltmeta charset="utf-8" /&gt
+      &lttitle&gtExcercice 1&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+      &ltscript&gt
+        alert('Bonjour toi');
+      &lt/script&gt
+    &lt/body&gt
+    &lt/html&gt
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 2</h2>
+  <p>Définir trois variables : lastName, firstName et city. Les afficher comme sur l'image correspondant à l'exercice.</p>
+  <div class="image exerciseTwoJavascript"></div>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &lt!DOCTYPE html&gt
+    &lthtml lang="fr" dir="ltr"&gt
+    &lthead&gt
+      &ltmeta charset="utf-8" /&gt
+      &lttitle&gtExcercice 2&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+      &ltscript&gt src="assets/js/script.js"&lt/script&gt
+    &lt/body&gt
+    &lt/html&gt
+  </pre>
+  <p>Dans le script javascript</p>
+  <pre class="styleCode">
+    var lastName = 'Doe ';
+    var firstName = 'John ';
+    var city = 'New-York ';
+    alert("Nom: " + lastName + "\nPrénom : " +firstName + "\nVille : " +city);
+    {\n permet de revenir à la ligne}
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 3</h2>
+  <p>Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour, " suivi du prénom saisi.</p>
+  <h3>Rendu : </h3>
+  <div class="image exerciseThreeJavascript"></div>
+  <div class="image exerciseThreeJavascriptBis"></div>
+  <h3>code : </h3>
+  <p> Dans l'HTML</p>
+  <pre class="styleCode">
+    &lt!DOCTYPE html&gt
+    &lthtml lang="fr" dir="ltr"&gt
+    &lthead&gt
+      &ltmeta charset="utf-8" /&gt
+      &lttitle&gtExcercice 3&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+      &ltscript&gt src="assets/js/script.js"&lt/script&gt
+    &lt/body&gt
+    &lt/html&gt
+  </pre>
+  <p>Dans le script javascript</p>
+  <pre class="styleCode">
+    var firstName = prompt('Entrez votre prénom :');
+    alert('Bonjour : ' + firstName);
+    {La méthode Window.promt() affiche une boîte de dialogue, éventuellement avec un message, qui invite l'utilisateur à saisir dun texte}
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 4</h2>
+  <p>Refaire <strong>l’exercice 2</strong> en demandant le nom, le prénom et la ville à l’utilisateur.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname"/>
+    <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+    <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+    <button  name="submit" id="submit" onclick="displayInformations()">Valider</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &lt!DOCTYPE html&gt
+    &lthtml lang="fr" dir="ltr"&gt
+    &lthead&gt
+      &ltmeta charset="utf-8" /&gt
+      &lttitle&gtJavaScript Exercice 4&lt/title&gt
+      &ltscript src="assets/js/script.js"&gt&lt/script&gt
+    &lt/head&gt
+    &ltbody&gt
+      &ltform&gt
+        &ltlabel for="lastname"&gtNom : &lt/label&gt&ltinput type="text" name="lastname" id="lastname"/&gt
+        &ltlabel for="firstname"&gtPrénom : &lt/label&gt&ltinput type="text" name="firstname" id="firstname"/&gt
+        &ltlabel for="city"&gtVille : &lt/label&gt&ltinput type="text" name="city" id="city"/&gt
+        &ltbutton  name="submit" id="submit" onclick="displayInformations()"&gtValider&lt/button&gt
+      &lt/form&gt
+    &lt/body&gt
+    &lt/html&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    var regexName = /^[a-zA-Z ]+$/;
+    var lastname = document.getElementById('lastname').value;
+    var firstname = document.getElementById('firstname').value;
+    var city = document.getElementById('city').value;
+    if (lastname.match(regexName) && firstname.match(regexName) && city.match(regexName)){
+      alert('Nom : ' + lastname + '\nPrénom : ' + firstname + '\nVille : ' + city);
+    }else {
+      alert('Ceci n\'est pas autorisé');
+      {on échappe les apostrophes avec un \}
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 5</h2>
+  <p>Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .</p>
+  <p>Les multiplier et afficher le résultat dans une boîte de dialogue.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="firstNumber">Premier nombre : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+    <label for="secondNumber">Deuxième nombre : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+    <button id="submitExo5" name ="submit" onclick="multiplyReal()">Valider</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+      &ltlabel for="firstNumber"&gtPremier nombre : &lt/label&gt&ltinput type="text" id="firstNumber" name="firstNumber"/&gt&ltbr/&gt
+      &ltlabel for="secondNumber"&gtDeuxième nombre : &lt/label&gt&ltinput type="text" id="secondNumber" name="secondNumber"/&gt&ltbr/&gt
+      &ltbutton id="submit" name ="submit" onclick="multiplyReal()"&gtValider&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    function multiplyReal() {
+          var firstNumber = document.getElementById('firstNumber').value;
+          var secondNumber = document.getElementById('secondNumber').value;
+          if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+            {On se sert du modulo pour déterminé si le nombre est à virgule. si le reste est différant de 0 alors c'est un nombre à virgule}
+            if (Number(firstNumber) % 1 !== 0 && Number(secondNumber) % 1 !== 0) {
+              firstNumberInteger = Math.trunc(firstNumber);
+              result = firstNumberInteger * secondNumber;
+              alert(result);
+
+            } else {
+              alert('ce sont des nombres entiers');
+            }
+          } else {
+            alert('attention ce ne sont pas des nombres');
+          }
+        }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 6</h2>
+  <p>Dans un fichier séparé, créer une fonction permettant d’afficher le reste de la division de deux nombres. L’appeler depuis le fichier html.</p>
+  <h3>Rendu : </h3>
+  <form>
+      <label for="firstNumberExoSix">Premier nombre : </label><input type="text" id="firstNumberExoSix" name="firstNumberExoSix"/><br/>
+      <label for="secondNumberExoSix">Deuxième nombre : </label><input type="text" id="secondNumberExoSix" name="secondNumberExoSix"/><br/>
+      <button id="submitExoSix" name="submit" onclick="exerciceSix()">Valider</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+        &ltlabel for="firstNumber"&gtPremier nombre : &lt/label&gt&ltinput type="text" id="firstNumber" name="firstNumber"/&gt&ltbr/&gt
+        &ltlabel for="secondNumber"&gtDeuxième nombre : &lt/label&gt&ltinput type="text" id="secondNumber" name="secondNumber"/&gt&ltbr/&gt
+        &ltbutton id="submit" name="submit" onclick="myFunction()"&gtValider&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    function myFunction() {
+      var firstNumber = document.getElementById('firstNumber').value;
+      var secondNumber = document.getElementById('secondNumber').value;
+      if(isNaN(firstNumber) == false && !isNaN(secondNumber)){
+        if(secondNumber != 0){
+          var result = firstNumber % secondNumber;
+          alert(result);
+        }else{
+          alert ('Merci de ne pas diviser un nombre par zero');
+        }
+      }
+      else {
+        alert ('Merci de remplir les champs avec des nombres');
+      }
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 7</h2>
+  <p>Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants :</p>
+  <ol>
+      <li>Multiplier la pointure par 2</li>
+      <li>Ajouter 5 au résultat</li>
+      <li>Multiplier le tout par 50</li>
+      <li>Soustraire l’année de naissance</li>
+      <li>Ajouter au tout 1766</li>
+  </ol>
+  <p>La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure. <strong>Attention : n'utiliser qu'une seule variable de résultat.</strong></p>
+  <h3>Rendu : </h3>
+  <form>
+      <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize"/><br/>
+      <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth"/><br/>
+      <button  name="submit" onclick="exerciceSeven()">Valider</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+        &ltlabel for="shoeSize"&gtPointure : &lt/label&gt&ltinput type="text" id="shoeSize" name="shoeSize"/&gt&ltbr/&gt
+        &ltlabel for="yearOfBirth"&gtAnnée de naissance : &lt/label&gt&ltinput type="text" id="yearOfBirth" name="yearOfBirth"/&gt&ltbr/&gt
+        &ltbutton id="submit" name="submit" onclick="calcul()"&gtValider&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    function calcul() {
+      var shoeSize = document.getElementById('shoeSize').value;
+      var yearOfBirth = document.getElementById('yearOfBirth').value;
+      if(!isNaN(shoeSize) && !isNaN(yearOfBirth)){
+        if((shoeSize &gt= 34 && shoeSize &lt= 52) && (yearOfBirth &gt= 1900 && yearOfBirth &lt= 2019)){
+          var result = shoeSize * 2;
+          result += 5;
+          result *= 50;
+          result -= yearOfBirth;
+          result += 1766;
+          alert (result);
+        }else{
+          alert('La pointure et la date de naissance ne sont pas correctes');
+        }
+      }else{
+        alert ('Merci de saisir des nombres');
+      }
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 8</h2>
+  <p>Demander à l’utilisateur de saisir son âge. S’il a plus de 18 ans, afficher " Vous êtes majeur ". Sinon afficher " Vous êtes mineur ".</p>
+  <h3>Rendu : </h3>
+  <form>
+  <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+  <button  name="submit" onclick="exerciceHeight()">Valider</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+        &ltlabel for="age"&gtVotre âge : &lt/label&gt&ltinput type="text" id="age" name="age"/&gt&ltbr/&gt
+        &ltbutton id="submit" name="submit" onclick="getSee()"&gtValider&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    function getSee(){
+      var age = document.getElementById('age').value;
+      if(isNaN(age) == false){
+        if ( age &lt 114 && age &gt 0) {
+          if (age &gt= 18){
+            alert('Vous êtes majeur');
+          }else{
+            alert('Vous êtes mineur');
+          }
+        }else {
+          alert('Age non valide');
+        }
+      }else{
+        alert('En nombres stp');
+      }
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 1 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.</p>
+  <h3>Rendu : </h3>
+  <img src="assets/img/image1.jpg" id="image" onmouseover="changeImgExoOne()"/>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="changeImage()"/&lt
+    {L'évènement onmouseover est lié à la position et au déplacement de la souris.
+    Il déclenche une action lorsque le curseur de la souris entre dans l'élément sur lequel est déclaré cet évènement.}
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // Cette fonction permet de changer l'image au survole.
+    // On déclare la fonction avec comme nom: changeimage
+    function changeImage() {
+    // on récupère la source de la seconde image
+    document.getElementById('image1').src='assets/img/image1_2.jpg';
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 2 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, afficher une boite de dialogue avec le message : "Merci de votre participation" quand le champ de saisie perd le focus.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastnamefocus" onblur="lossfocus()"/>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+      &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" id="lastname" onblur="lossfocus()"/&gt
+      // L'évènement onblur se déclenche lorsque la balise sur laquelle il est appliqué perd le focus.
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // On déclare la fonction avec comme nom: lossfocus
+    // afficher une boite de dialogue avec le message : "Merci de votre participation" quand le champ de saisie perd le focus.
+    function lossfocus() {
+      alert('Merci de votre participation');
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 3 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastnameValue" onkeyup="InputValue()" />
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+      &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" id="lastname" onkeyup="InputValue()" /&gt
+      &lt!-- L'évènement onkeyup est une action décrivant une frappe sur une touche. --&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.
+    function InputValue() {
+    // on veut récup la valeur du champs à l'évenement c'est pour ça que la variable est à cette endroit
+    // on ajoute .value pour récupérer la valeur de l'élément
+      var lastname = document.getElementById('lastname').value;
+      alert(lastname);
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 4 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" value="Doe" id="lastnameclick" />
+    <label for="firstname">Votre prenom  : </label><input type="text" name="firstname" value="John" id="firstnameclick" />
+    <label for="city">Votre ville  : </label><input type="text" name="city" value="New York" id="cityclick" />
+    <button type="button" name="button" onclick="wipeOff()">RAZ</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+      &ltlabel for="lastname"&gtVotre nom  : &lt/label&gt&ltinput type="text" name="lastname" value="Doe" id="lastname" /&gt
+      &ltlabel for="firstname"&gtVotre prenom  : &lt/label&gt&ltinput type="text" name="firstname" value="John" id="firstname" /&gt
+      &ltlabel for="city"&gtVotre ville  : &lt/label&gt&ltinput type="text" name="city" value="New York" id="city" /&gt
+      &ltbutton type="button" name="button" onclick="wipeOff()"&gtRAZ&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // faire que le bouton RAZ efface les données des champs du formulaire.
+    function wipeOff(){
+    document.getElementById('lastname').value = '';
+    document.getElementById('firstname').value = '';
+    document.getElementById('city').value = '';
+    }
+    // value='' permet de supprimer les valeurs
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 5 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.</p>
+  <p><strong>Bonus</strong> Ne faire que deux fonctions JavaScript pour cet exercice.</p>
+  <h3>Rendu : </h3>
+  <div class="container">
+    <img src="assets/img/image1.jpg" id="image11" onmouseover="switchImages(id)"/>
+    <img src="assets/img/image2.jpg" id="image12" onmouseover="switchImages(id)"/>
+    <img src="assets/img/image3.jpg" id="image13" onmouseover="switchImages(id)"/>
+    <img src="assets/img/image4.jpg" id="image14" onmouseover="switchImages(id)"/>
+    <img src="assets/img/image5.jpg" id="image15" onmouseover="switchImages(id)"/>
+  </div>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltdiv class="container"&gt
+      &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="switchImages(id)"/&gt
+      &ltimg src="assets/img/image2.jpg" id="image2" onmouseover="switchImages(id)"/&gt
+      &ltimg src="assets/img/image3.jpg" id="image3" onmouseover="switchImages(id)"/&gt
+      &ltimg src="assets/img/image4.jpg" id="image4" onmouseover="switchImages(id)"/&gt
+      &ltimg src="assets/img/image5.jpg" id="image5" onmouseover="switchImages(id)"/&gt
+    &lt/div&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // SOLUTION DU BONUS
+    // fonction permettant de changer les images au survol de chacune d'entre elles
+    function switchImages(idImg) {
+      //permet d'aller chercher le nom et l'emplacement des images qui remplacent les images actuelles.
+      document.getElementById(idImg).src = 'assets/img/' + idImg + '_2.jpg';
+    }
+    //solution par le changement d'images
+    function changeImage(img,source){
+      img.src = source;
+    }
+  </pre>
+    </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 6 - Partie 2</h2>
+  <p>Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine dès que la souris ne survol plus l'image.</p>
+  <p><strong>Bonus</strong> Ne faire que deux fonctions JavaScript pour cet exercice.</p>
+  <h3>Rendu : </h3>
+  <div class="container">
+    <img src="assets/img/image1.jpg" id="image6" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+    <img src="assets/img/image2.jpg" id="image7" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+    <img src="assets/img/image3.jpg" id="image8" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+    <img src="assets/img/image4.jpg" id="image9" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+    <img src="assets/img/image5.jpg" id="image10" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/>
+  </div>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltdiv class="container"&gt
+      &ltimg src="assets/img/image1.jpg" id="image1" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+      &ltimg src="assets/img/image2.jpg" id="image2" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+      &ltimg src="assets/img/image3.jpg" id="image3" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+      &ltimg src="assets/img/image4.jpg" id="image4" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+      &ltimg src="assets/img/image5.jpg" id="image5" onmouseover="changeImage(id)" onmouseout="resetImage(id)"/&gt
+      &lt!-- L'évènement onmouseover est lié à la position et au déplacement de la souris.
+      Il déclenche une action lorsque le curseur de la souris entre dans l'élément sur lequel est déclaré cet évènement.  --&gt
+      &lt!-- L'événement mouseout est déclenché quand la souris est déplacé hors de l'élément --&gt
+    &lt/div&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // Ici nous allons chercher la deuxième image
+    function changeImage(img){
+      document.getElementById(img).src ='assets/img/' + img + '_2.jpg';
+    }
+    // et ici nous allons récupérer la première image
+    function resetImage(img){
+      document.getElementById(img).src ='assets/img/' + img + '.jpg';
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 1 - Partie 3</h2>
+  <p>Dans le fichier HTML fourni, au survol de l'image ajouter une bordure de 3px rouge et la retirer quand la souris ne la survol plus.</p>
+  <h3>Rendu : </h3>
+  <img src="assets/img/image16.jpg" id="image16" onmouseover= "changeBorder()" onmouseout= "initialBorder()"/>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltimg src="assets/img/image1.jpg" id="image1" onmouseover= "changeBorder()" onmouseout= "initialBorder()"/&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // mon evenement: onmousseover
+    // J'appelle ma fonction "changeBorder"
+    function changeBorder() {
+      // je veux mettre mon bord d'image à 3 px et en rouge du coup je mets la propriété : .style.border
+    document.getElementById('image1').style.border = '3px solid red';
+    }
+    // mon evenement: onmousseout
+    // J'appelle ma fonction "initialBorder"
+    function initialBorder() {
+    // avec ma propriété je réinitialise mon bord : initial
+    document.getElementById('image1').style.border = 'initial';
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 2 - Partie 3</h2>
+  <p>Dans le fichier HTML fourni, faire afficher ou masquer le texte en fonction de l'ancre.</p>
+  <h3>Rendu : </h3>
+  <a href="#" onclick="display()">Afficher</a>
+  <a href="#" onclick="hide()">Masquer</a>
+    <div id="textOnClick">
+      <p>
+        A REVOIR FONCTION QUI MARCHE DANS L'EXO MAIS PAS DANS LE MEMENTO
+        Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </p>
+    </div>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &lta href="#" onclick="display()"&gtAfficher&lt/a&gt
+    &lta href="#" onclick="hide()"&gtMasquer&lt/a&gt
+      &ltdiv id="text"&gt
+        &ltp&gt
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/p&gt
+      &lt/div&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // pour masquer la page au démarrage, du coup la propriété display est en dehors d'une fonction
+    document.getElementById('text').style.display = 'none';
+
+    // afficher ou masquer le texte en fonction de l'ancre.
+    // 1ere fonction pour afficher
+    // La propriété display définit le type d'affichage utilisée pour le rendu d'un élément
+    function display(){
+    document.getElementById('text').style.display = 'block';
+    }
+    // 2eme fonction pour Hide
+    function hide(){
+    // en mettant comme valeur 'none' à la propriété display l'élément ne s'affiche pas.
+    document.getElementById('text').style.display = 'none';
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 3 - Partie 3</h2>
+  <p>Dans le fichier HTML fourni, changer la couleur du texte en fonction du bouton choisi.</p>
+  <h3>Rendu : </h3>
+  <div id="textColor">
+    <p>
+      Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+    </p>
+  </div>
+  <div>
+  <div class="color green" onclick="changeColor(this)"></div>
+  <div class="color red" onclick="changeColor(this)"></div>
+  <div class="color blue" onclick="changeColor(this)"></div>
+  <div class="color pink" onclick="changeColor(this)"></div>
+  </div>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltdiv id="text"&gt
+      &ltp&gt
+        Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+      &lt/p&gt
+    &lt/div&gt
+    &ltdiv&gt
+    &ltdiv class="color green" onclick="changeColor(this)"&gt&lt/div&gt
+    &ltdiv class="color red" onclick="changeColor(this)"&gt&lt/div&gt
+    &ltdiv class="color blue" onclick="changeColor(this)"&gt&lt/div&gt
+    &ltdiv class="color pink" onclick="changeColor(this)"&gt&lt/div&gt
+    &lt/div&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    function changeColor(elemnt){
+      // on stocke dans une variable la valeur de l'attribut "class" de l'élément sur lequel on vient de cliquer
+    var classValue = elemnt.getAttribute('class');
+    // on utilise la fonction "split" pour éclater la chaine de caractère contenu dans la variable "classValue"
+    // On stocke le résultat dans la variable "classArray" qui devient un tableau
+    // Attention tous les index de tableau commence à 0 !!  tableau[index]
+    var classArray = classValue.split(' ');
+    // on applique au texte la couleur correspondant au deuxième élément du tableau
+    document.getElementById('text').style.color = classArray[1];
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Exercice 4 - Partie 3</h2>
+  <p>Dans le fichier HTML fourni, mettre les bordures des inputs en rouge si les mots de passe sont différents. Sinon les mettre en vert.</p>
+  <h3>Rendu : </h3>
+  <form>
+    <label for="password">Votre mot de passe : </label><input type="text" name="password" id="password"/>
+    <label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword"/>
+    <button type="button" name="button" onclick="passewordmatch()">Vérification</button>
+  </form>
+  <h3>code : </h3>
+  <p>Dans l'Html</p>
+  <pre class="styleCode">
+    &ltform&gt
+      &ltlabel for="password"&gtVotre mot de passe : &lt/label&gt&ltinput type="text" name="password" id="password"/&gt
+      &ltlabel for="confirmPassword"&gtConfirmez : &lt/label&gt&ltinput type="text" name="confirmPassword" id="confirmPassword"/&gt
+      &ltbutton type="button" name="button" onclick="passewordmatch()"&gtVérification&lt/button&gt
+    &lt/form&gt
+  </pre>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    //fonction pour valider que les mots de passes sont identiques.
+    function passewordmatch(){
+      //On stocke tout l'élement dans la variable pour utiliser la value et le borderColor sans réutiliser document.getElementById.
+        var password = document.getElementById('password');
+      var confirmPassword = document.getElementById('confirmPassword');
+      //!= ça veut dire 'différent de'
+      //si les deux sont différent à la validation on vert que les bordures soit rouge.
+      if (password.value != confirmPassword.value) {
+        confirmPassword.style.borderColor='red';
+        password.style.borderColor='red';
+        // ou alors si les deux sont égaux à la validation bordure green.
+      }else{
+        confirmPassword.style.borderColor='green';
+        password.style.borderColor='green';
+      }
+    }
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Partie 4 - Jasmine</h2>
+  <p>Il faut lancer le fichier SpecRunner.html pour valider ses réponses.</p>
+  <p>Les réponses seront à écrire dans le fichier questions.js</p>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // on cherche la taille du texte avec la fonction length
+    // Cette propriété renvoie le nombre de « codets » (ou unités de code ou bien code units en anglais) d'une chaîne de caractères
+   var tailleString = function (texte) {
+       return texte.length;
+   };
+
+   // On remplace e par des espaces avec la fonction replace
+   // la méthode replace() renvoie une nouvelle chaîne de caractères dans laquelle tout ou partie des correspondances à un modèle sont remplacées par un remplacement
+   var remplaceECar = function (texte) {
+       return texte.replace('e',' ');
+   };
+   // on concat le texte1 et 2 avec la fonction concat
+   // La méthode concat() combine le texte de plusieurs chaînes avec la chaîne appelante et renvoie la nouvelle chaîne ainsi formée.
+   var concatString = function (texte1, texte2) {
+       return texte1.concat(texte2);
+   };
+   //  Afficher le cinquième caractère de la chaine içi un "e" avec la propriété substr
+   // La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain nombre de caractères après celui-ci.
+   // .substr(début[, longueur])
+   // charAt permet d'extraire le 5 ème caractère
+   var afficherCar5 = function (texte) {
+       // return texte.substr(4, 1); Bon aussi mais déprécié, il faut mieux mettre substring
+       return texte.charAt(4);
+   };
+   // Afficher les 9 premiers caractères
+   // La méthode substr() retourne la partie d'une chaîne de caractères comprise entre l'indice de départ et un certain nombre de caractères après celui-ci.
+   // .substr(début[, longueur])
+   // différence entre .substr et substring
+   // Les arguments de la méthode substring() représentent les indices de début et de fin sur la chaîne.
+   // Pour substr(), les arguments représentent l'indice de début et le nombre de caractères à utiliser pour la chaîne résultante.
+   var afficher9Car = function (texte) {
+       return texte.substring(0, 9);
+       // return texte.slice(0, 9); possible aussi mais substring est plus "puissant"
+   };
+   //  Mettre en majuscule la chaine
+   // La méthode toUpperCase() retourne la valeur de la chaîne courante, convertie en majuscules
+   var majusculeString = function (texte) {
+       return texte.toUpperCase();
+   };
+   //  Mettre en minuscule la chaine
+   // La méthode toLowerCase() retourne la chaîne de caractères courante en minuscules.
+   var minusculeString = function (texte) {
+       return texte.toLowerCase();
+   };
+   // Supprimer les espaces avant et après la chaine
+   // La méthode trim() permet de retirer les blancs en début et fin de chaîne. Les blancs considérés sont les caractères d'espacement (espace, tabulation, espace insécable, etc.)
+   var SupprEspaceString = function (texte) {
+       return texte.trim();
+   };
+   // Afficher true si le parametre d'entrée de la fonction est de type string
+   // L'opérateur typeof renvoie une chaîne qui indique le type de son opérande.
+   // operande est une expression qui représente la valeur dont on souhaite obtenir le type.
+   //  'string', 'numbers', 'boolean'... sont des résultats possibles de l'opérateur typeof.
+   //  exemple : typeof 'bla' === 'string';
+   var IsString = function (texte) {
+       if (typeof texte == 'string') {
+         return true;
+       }
+   };;
+   // Afficher l'extension du fichier
+   // La méthode split() permet de diviser une chaîne de caractères à partir d'un séparateur pour fournir un tableau de sous-chaînes.
+   // içi on met extention[1], car on veut afficher l'extention si on voulait le nom du fichier on mettrait extention[0]
+   var AfficherExtensionString = function (texte) {
+     var regex = /[^.]*$/i;
+     var result = texte.match(regex);
+     return result[0];
+
+     // var extension = texte.split('.');
+     //   return extension[1];
+   };
+   // Compter le nombre d'espace dans la chaine
+   var NombreEspaceString = function (texte) {
+       return texte.split(' ').length - 1;
+       // possibilité de faire avec des regex !
+   };
+   //  Inverser une chaine de caractères
+   // split renvoie un tableau sur lequel on peut appliquer reverse
+   // enfin on utilise join pour assembler le tout.
+   var InverseString = function (texte) {
+       return texte.split('').reverse().join('');
+   };
+
+   /**
+    * Exercices sur les nombres et les caluls mathématiques
+    */
+
+    // Calculer la puissance d'un nombre par rapport à un autre (x à la puissance y)
+    // Math est un objet
+    // .pow est une méthode
+    // La fonction Math.pow() renvoie un nombre à une certaine puissance
+   var calculPuissance = function (x, y) {
+       return Math.pow(x, y);
+   };
+   // Afficher la valeur absolue d'un nombre
+   // La fonction Math.abs() retourne la valeur absolue d'un nombre, c'est-à-dire
+   var valeurAbsolue = function (nombre) {
+       return Math.abs(nombre);
+   };
+   // Afficher les valeurs absolues de plusieurs nombres
+   var valeurAbsolueArray = function (array) {
+     // Une boucle for répète des instructions jusqu'à ce qu'une condition donnée ne soit plus vérifiée.
+   //   var x = ["un", "deux", "trois" ]; =&gt dans l'exo notre variable x est égal à array
+   //   for(var i= 0; i &lt x.length; i++){
+   // Maintenant on veut que notre variable soit égale à la valeur absolue de x + i
+   // donc on crée une variable var1 avec la fonction Math.abs()
+   // il y a plus simple que la bouche for
+   //   var var1 = Math.abs(x[i]);
+   // }
+   // for (var i = 0; i &lt array.length; i++) {
+   //   var ValueAbsolue = Math.abs(array[i]);
+   //   array[i] = ValueAbsolue;
+   // }
+   //     return array;
+   // }
+
+   // La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
+   return array.map(Math.abs);
+   };
+
+   // Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche
+   // La propriété Math.PI représente le ratio entre le périmètre d'un cercle et son diamètre. Elle vaut environ 3.14159:
+   // La fonction Math.round() retourne la valeur d'un nombre arrondi à l'entier le plus proche.
+   var sufaceCercle = function (rayon) {
+       return Math.round(Math.PI * Math.pow(rayon, 2));
+   };
+   //  Calculer l'hypthènuse d'un triangle rectangle
+   // La fonction Math.hypot() renvoie la racine carrée de la somme des carrés de ses arguments.
+   var hypothenuse = function (ab, ac) {
+       return Math.hypot(ab, ac);
+   };
+   // Calculer l'IMC (Poids / (taille x taille).Ne garder que deux chiffres après la virgule.
+   var calculIMC = function (poids, taille) {
+       var imc = (poids/Math.pow(taille,2)).toFixed(2);
+       return Number(imc);
+   };
+  </pre>
+  </div> <!-- border exercice-->
+  <div class="borderExercise">
+  <h2 class="titleExercise">Partie 5 - Jasmine</h2>
+  <p>Il faut lancer le fichier SpecRunner.html pour valider ses réponses.</p>
+  <p>Les réponses seront à écrire dans le fichier questions.js</p>
+  <p>Dans le script</p>
+  <pre class="styleCode">
+    // Créer un tableau "languages" contenant "Html", "CSS", "Java", "PHP"
+    // L'objet global Array est utilisé pour créer des tableaux.
+    var languagesArrayCreation = function () {
+    // var formLanguage = Array('Html', 'CSS', 'Java', 'PHP'); possible aussi
+    //   return formLanguage;
+
+      var formLanguage = ['Html', 'CSS', 'Java', 'PHP'];
+        return formLanguage;
+    };
+
+    // Créer un tableau "numbers" contenant les numbers de 0 à 5
+    var numbersArrayCreation = function () {
+      // var formNumbers = Array(0, 1, 2, 3, 4, 5); possible aussi
+      //   return formNumbers;
+
+      var formNumbers = [0, 1, 2, 3, 4, 5];
+        return formNumbers;
+    };
+
+    //  Remplacer le troisième élément du tableau par "Javascript"
+    var ElementReplacement = function (languages) {
+      // return languages.splice(2, 1, 'Javascript'); possible aussi
+      languages[2] = 'Javascript';
+      return languages;
+    };
+
+    // Ajouter "Ruby" et "Python" à la fin du tableau
+    // La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
+    var AddElementToLanguagesArray = function (languages) {
+      languages.push('Ruby', 'Python');
+      return languages;
+    };
+  </pre>
+  </div> <!-- border exercice-->
+    </section>
+    <section id="jquery">
+      <h2 class="titleSection">Exercices Jquery</h2>
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 1 - Partie 1</h2>
+      <p>Cacher le paragraphe text.</p>
+      <h3>Rendu : </h3>
+      <div id="ExoOneJquery" hidden>
+        <p>
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        </p>
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="text"&gt
+          &ltp&gt
+            Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+          &lt/p&gt
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Cacher la div text.
+        $(document).ready(function() {
+          $('#text').hide();
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 2 - Partie 1</h2>
+      <p>Afficher le paragraphe text.</p>
+      <h3>Rendu : </h3>
+      <div id="ExoTwoJquery">
+        <p>
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        </p>
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="text" hidden&gt
+          &lt!-- hidden est un attribut pour cacher --&gt
+          &ltp&gt
+            Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+          &lt/p&gt
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Afficher la div text.
+        $(function() {
+          $( '#text' ).show();
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 3 - Partie 1</h2>
+      <p>Changer le font-family du paragraphe text en Arial.</p>
+      <h3>Rendu : </h3>
+      <div id="ExoThreeJquery">
+        <p>
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        </p>
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="text"&gt
+          &ltp&gt
+            Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+          &lt/p&gt
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Changer le font-family de la div text en "Arial".
+        $(function() {
+          $('#text').css('font-family', 'arial');
+          // on applique la valeur arial à la propriété font-family
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 4 - Partie 1</h2>
+      <p>Changer la couleur de toutes les balises li en rouge.</p>
+      <h3>Rendu : </h3>
+      <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>...</li>
+      </ul>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltul&gt
+          &ltli&gtHtml&lt/li&gt
+          &ltli&gtCSS&lt/li&gt
+          &ltli&gtJavascript&lt/li&gt
+          &ltli&gtPHP&lt/li&gt
+          &ltli&gt...&lt/li&gt
+        &lt/ul&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Changer la couleur de toutes les balises li en rouge.
+        $(function() {
+          $('li').css('color', 'red');
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 5 - Partie 1</h2>
+      <p>Vider le paragraphe secondText.</p>
+      <h3>Rendu : </h3>
+      <div id="firstTextExoFiveJquery">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam.</p>
+      </div>
+      <div id="secondTextExoFiveJquery">
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.</p>
+      </div>
+      <div id="thirdTextExoFiveJquery">
+        <p>Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.</p>
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="firstText"&gt
+          &ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam.&lt/p&gt
+        &lt/div&gt
+        &ltdiv id="secondText"&gt
+          &ltp&gtVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.&lt/p&gt
+        &lt/div&gt
+        &ltdiv id="thirdText"&gt
+          &ltp&gtNunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.&lt/p&gt
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Vider la div secondText.
+        $(function() {
+          $('#secondText').empty();
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 6 - Partie 1</h2>
+      <p>Cacher tous les éléments de la classe hide.</p>
+      <h3>Rendu : </h3>
+      <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li class="ExoSixJquery">Javascript</li>
+        <li>PHP</li>
+        <li class="ExoSixJquery">...</li>
+      </ul>
+      <ol>
+        <li class="ExoSixJquery">JQuery</li>
+        <li>Angular JS</li>
+        <li class="ExoSixJquery">Node JS</li>
+        <li>BootStrap</li>
+        <li>Symfony</li>
+        <li class="ExoSixJquery">Laravel</li>
+      </ol>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltul&gt
+          &ltli&gtHtml&lt/li&gt
+          &ltli&gtCSS&lt/li&gt
+          &ltli class="hide"&gtJavascript&lt/li&gt
+          &ltli&gtPHP&lt/li&gt
+          &ltli class="hide"&gt...&lt/li&gt
+        &lt/ul&gt
+        &ltol&gt
+          &ltli class="hide"&gtJQuery&lt/li&gt
+          &ltli&gtAngular JS&lt/li&gt
+          &ltli class="hide"&gtNode JS&lt/li&gt
+          &ltli&gtBootStrap&lt/li&gt
+          &ltli&gtSymfony&lt/li&gt
+          &ltli class="hide"&gtLaravel&lt/li&gt
+        &lt/ol&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Cacher tous les éléments de la classe hide.
+        $(function() {
+          $('.hide').hide();
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 7 - Partie 1</h2>
+      <p>Supprimer tous les éléments de la classe remove.</p>
+      <h3>Rendu : </h3>
+      <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li class="ExoSevenJquery">Javascript</li>
+        <li>PHP</li>
+        <li class="ExoSevenJquery">...</li>
+      </ul>
+      <ol>
+        <li class="ExoSevenJquery">JQuery</li>
+        <li>Angular JS</li>
+        <li class="ExoSevenJquery">Node JS</li>
+        <li>BootStrap</li>
+        <li>Symfony</li>
+        <li class="ExoSevenJquery">Laravel</li>
+      </ol>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltul&gt
+          &ltli&gtHtml&lt/li&gt
+          &ltli&gtCSS&lt/li&gt
+          &ltli class="remove"&gtJavascript&lt/li&gt
+          &ltli&gtPHP&lt/li&gt
+          &ltli class="remove"&gt...&lt/li&gt
+        &lt/ul&gt
+        &ltol&gt
+          &ltli class="remove"&gtJQuery&lt/li&gt
+          &ltli&gtAngular JS&lt/li&gt
+          &ltli class="remove"&gtNode JS&lt/li&gt
+          &ltli&gtBootStrap&lt/li&gt
+          &ltli&gtSymfony&lt/li&gt
+          &ltli class="remove"&gtLaravel&lt/li&gt
+        &lt/ol&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Supprimer tous les éléments de la classe remove.
+        $(function() {
+          $('.remove').remove();
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 8 - Partie 1</h2>
+      <p>Donner à tous les éléments li enfants de ol la couleur rouge.</p>
+      <h3>Rendu : </h3>
+      <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>...</li>
+      </ul>
+      <ol>
+        <li>JQuery</li>
+        <li>Angular JS</li>
+        <li>Node JS</li>
+        <li>BootStrap</li>
+        <li>Symfony</li>
+        <li>Laravel</li>
+      </ol>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltul&gt
+          &ltli&gtHtml&lt/li&gt
+          &ltli&gtCSS&lt/li&gt
+          &ltli&gtJavascript&lt/li&gt
+          &ltli&gtPHP&lt/li&gt
+          &ltli&gt...&lt/li&gt
+        &lt/ul&gt
+        &ltol&gt
+          &ltli&gtJQuery&lt/li&gt
+          &ltli&gtAngular JS&lt/li&gt
+          &ltli&gtNode JS&lt/li&gt
+          &ltli&gtBootStrap&lt/li&gt
+          &ltli&gtSymfony&lt/li&gt
+          &ltli&gtLaravel&lt/li&gt
+        &lt/ol&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Donner à tous les éléments li enfants de ol la couleur rouge.
+        $(function() {
+        $('ol').children('li').css('color', 'red');
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 9 - Partie 1</h2>
+      <p>Donner aux paragraphes firstText et thirdText une bordure de 5 pixels, verte à pointillés ("5px green dashed").</p>
+      <h3>Rendu : </h3>
+      <div id="firstTextExoNineJquery">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </div>
+      <div id="secondTextExoNineJquery">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+      </div>
+      <div id="thirdTextExoNineJquery">
+        Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="firstText"&gt
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/div&gt
+        &ltdiv id="secondText"&gt
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+        &lt/div&gt
+        &ltdiv id="thirdText"&gt
+          Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function() {
+          $('#firstText, #thirdText').css('border', '5px green dashed');
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 10 - Partie 1</h2>
+      <p>Du JQuery est déjà présent dans un fichier script.js et permet de cacher tous les éléments de la classe hide. Ajouter cette classe au paragraphe thirdText.</p>
+      <h3>Rendu : </h3>
+      <div id="firstTextExoTenJquery" class="hideExoTenJquery">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </div>
+      <div id="secondTextExoTenJquery">
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+      </div>
+      <div id="thirdTextExoTenJquery">
+        Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+      </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="firstText" class="hide"&gt
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/div&gt
+        &ltdiv id="secondText"&gt
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+        &lt/div&gt
+        &ltdiv id="thirdText"&gt
+          Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+        &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Du JQuery est déjà présent et permet de cacher tous les éléments de la classe hide. Ajouter cette classe à la div thirdText.
+        $(function() {
+          $('#thirdText').addClass('hide');
+          $('.hide').hide();
+          });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 1 - Partie 2</h2>
+      <p>Au clic sur le bouton, afficher une boîte de dialogue avec le message de votre choix.</p>
+      <h3>Rendu : </h3>
+      <form>
+        <button type="button" name="button" id="clickMe" >Clique-moi !</button>
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltbutton type="button" name="button" id="clickMe" &gtClique-moi !&lt/button&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Au clic sur le bouton, afficher une boite de dialogue avec le message de votre choix.
+        $( '#clickMe' ).click(function() {
+          alert('Hello world');
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 2 - Partie 2</h2>
+      <p>Au double clic, modifier la largeur de l'image et la mettre à 500px.</p>
+      <h3>Rendu : </h3>
+      <img src="assets/img/image17.jpg" id="image17" />
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltimg src="assets/img/image.jpg" id="image" /&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Au double clic, modifier la largeur de l'image à 500px.
+        $(document).ready(function(){
+          $('#image').dblclick(function() {
+            $(this).width('500px');
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 3 - Partie 2</h2>
+      <p>Afficher ou masquer le paragraphe text au clic des liens existants.</p>
+      <h3>Rendu : </h3>
+      <a id="showExoThreeJquery" href="#">Afficher</a>
+      <a id="hideExoThreeJquery" href="#">Masquer</a>
+        <div id="textExoThreeJquery">
+          <p>Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.</p>
+        </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &lta id="show" href="#"&gtAfficher&lt/a&gt
+        &lta id="hide" href="#"&gtMasquer&lt/a&gt
+          &ltdiv id="text"&gt
+            &ltp&gtJoseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.&lt/p&gt
+          &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Afficher ou masquer la div text au clic des liens fournis.
+        $(function(){
+          $('#show').click(function(){
+            $('#text').show();
+          });
+          $('#hide').click(function(){
+            $('#text').hide();
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 4 - Partie 2</h2>
+      <p>Au clic sur un bouton de couleur, modifier la couleur du texte.</p>
+      <h3>Rendu : </h3>
+      <div id="textExoFourJquery">
+        <p>
+          Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+        </p>
+      </div>
+      <div>
+      <div class="color green" id="green"></div>
+      <div class="color red" id="red"></div>
+      <div class="color blue" id="blue"></div>
+    </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="text"&gt
+          &ltp&gt
+            Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+          &lt/p&gt
+        &lt/div&gt
+        &ltdiv&gt
+        &ltdiv class="color green" id="green"&gt&lt/div&gt
+        &ltdiv class="color red" id="red"&gt&lt/div&gt
+        &ltdiv class="color blue" id="blue"&gt&lt/div&gt
+      &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+          //Quand on clique sur une div de couleurs.
+          $('.color').click(function(){
+          //On stock dans la variable l'id.
+          var colors = $(this).attr('id');
+          //On modifie la couleur du texte en récupérant la couleur stocké dans la variable.
+          $('#text').css('color', colors);
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 5 - Partie 2</h2>
+      <p>Quand un champ a le focus, définir sa bordure à <strong>1px solid green</strong>. Quand le champ perd le focus, définir la bordure à <strong>1px solid red.</strong></p>
+      <h3>Rendu : </h3>
+      <form>
+        <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastNameExoFive" />
+        <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstNameExoFive" />
+        <button type="button" name="button">Envoyer</button>
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltlabel for="lastName"&gtNom : &lt/label&gt&ltinput type="text" name="lastName" id="lastName" /&gt
+          &ltlabel for="firstName"&gtPrénom : &t/label&gt&ltinput type="text" name="firstName" id="firstName" /&gt
+          &ltbutton type="button" name="button"&gtEnvoyer&lt/button&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+           $('input').focusin(function(){
+             $('#lastName').text($(this).css('border', '1px solid green'));
+           });
+           $('input').focusout(function(){
+             $('#firstName').text($(this).css('border', '1px solid red'));
+           });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 6 - Partie 2</h2>
+      <p>Au passage de la souris sur un bouton de couleur, colorer le texte. Le texte doit redevenir noir quand la souris quitte le bouton.</p>
+      <h3>Rendu : </h3>
+      <div id="textExoSixJquery">
+        <p>
+          Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+        </p>
+      </div>
+      <div>
+      <div class="color green"></div>
+      <div class="color red"></div>
+      <div class="color blue"></div>
+    </div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv id="text"&gt
+          &ltp&gt
+            Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre le corail, menacé par des facteurs humains et climatiques1.
+          &lt/p&gt
+        &lt/div&gt
+        &ltdiv&gt
+        &ltdiv class="color green" id="green"&gt&lt/div&gt
+        &ltdiv class="color red" id="red"&gt&lt/div&gt
+        &ltdiv class="color blue" id="blue"&gt&lt/div&gt
+      &lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        // Au passage de la souris sur un bouton de couleur, colorer le texte.
+        // Le texte doit redevenir noir quand la souris quitte le bouton.$( '#clickMe' ).click(function() {
+        $(function() {
+          $('div.color').mouseover(function() {
+            var changeColor = $(this).css('background-color');
+            $('#text').css('color', changeColor);
+          });
+
+          $('div.color').mouseout(function() {
+            $('#text').css('color', 'initial');
+        });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 1 - Partie 3</h2>
+      <p>Construisez une page html avec un bouton et un champ texte dans lequel on affiche le nombre de clics sur le bouton.</p>
+      <h3>Rendu : </h3>
+      <form>
+        <button type="button" name="button" id="buttonExo13">Clique :</button>
+        <label for="text">Nombre de clique(s)</label>
+        <input type="text" id="textExo13" />
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltbutton type="button" name="button" id="button"&gtClique :&lt/button&gt
+          &ltlabel for="text"&gtNombre de clique&lt/label&gt
+          &ltinput type="text" id="text" /&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){ // you can wrap it here with in document ready block
+           var count = 0;
+           $('#button').click(function(){
+            count++; //ajoute 1 au compteur
+              $('#text').val(count);//fonction val permet de définir la valeur d'un input (pas forcement que des nombres)
+           });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 2 - Partie 3</h2>
+      <p>Construisez une page html avec un bouton +, un bouton - et un champ number qui aura pour valeur 0. Augmenter ou baisser le chiffre dans ce champ en fonction des boutons cliqués.</p>
+      <h3>Rendu : </h3>
+      <form>
+        <button type="button" name="button" id="buttonUp"> + </button>
+        <button type="button" name="button" id="buttonDown"> - </button>
+        <input type="number" id="number" value="0" />
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltbutton type="button" name="button" id="buttonUp"&gt + &lt/button&gt
+          &ltbutton type="button" name="button" id="buttonDown"&gt - &lt/button&gt
+          &ltinput type="number" id="number" value="0" /&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+          var count = 0;
+          $('#buttonUp').click(function(){ //clique sur le bouton +
+            count++; //ajoute 1 au compteur
+            $('#number').val(count);
+          });
+          $('#buttonDown').click(function(){ //clique sur le bouton -
+            count--; // retire 1 au compteur
+            $('#number').val(count);
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 3 - Partie 3</h2>
+      <p>Construisez une page html avec un bouton et un champ number. Le but est de trouver un nombre entre 0 et 100. A chaque réponse la page répond :</p>
+<ul>
+        <li> plus</li>
+        <li>moins</li>
+        <li>correcte</li>
+</ul>
+<p>Quand la réponse est trouvée, on obtient le nombre d'essais que l'on a fait.</p>
+      <h3>Rendu : </h3>
+      <p>Entrer un chiffre entre 0 et 100</p>
+      <input type="text" id="result" name="" value="">
+      <button type="button" id="button">Test</button>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltp&gtEntrer un chiffre entre 0 et 100&lt/p&gt
+        &ltinput type="text" id="result" name="" value=""&gt
+        &ltbutton type="button" id="button"&gtTest&lt/button&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+          // Permet de générer un nombre aléatoire entre 0 et 100.
+          var getNumber = Math.floor(Math.random()*101);
+          var count = 0 ;
+          $('#button').click(function(){
+            // Déclare la variable dans laquelle on stocke la saisie utilisateur.
+            var result = $('#result').val();
+            // On incrémente le nombre de coups.
+            count++;
+            // Si la saisie utilisateur est inférieure au nombre généré, je le précise à l'utilisateur avec une boîte de dialogue.
+            if (result &lt getNumber){
+              alert('pas assez !');
+              // Si la saisie utilisateur est supérieure au nombre généré, je le précise à l'utilisateur avec une boîte de dialogue.
+            } else if (result &gt getNumber){
+              alert('trop !');
+              // Si la saisie utilisateur est égale au nombre généré, je le précise à l'utilisateur avec une boîte de dialogue.
+            } else if(result == getNumber){
+              alert('c\'est bon ! Nombre de coups: ' + count);
+              // Dans tout les autres cas on demande un nombre.
+            } else{
+              alert('Veuillez entrer un nombre !');
+            }
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 4 - Partie 3</h2>
+      <p>Construisez une page html avec 5 boutons et un rectangle. Chaque bouton provoque une action sur le rectangle.</p>
+<ul>
+    <li>Bouton 1 : augmente la hauteur de 10px, si il dépasse 100px, il remet la hauteur à 10px</li>
+    <li>Bouton 2 : met le rectangle en vert</li>
+    <li>Bouton 3 : remet les couleurs initiales</li>
+    <li>Bouton 4 : fait disparaître le rectangle</li>
+    <li>Bouton 5 : fait réaparaître le rectangle</li>
+</ul>
+      <h3>Rendu : </h3>
+      <div class="rectangle"></div>
+      <button type="button" id="changeHeight">+10px</button>
+      <button type="button" id="changeColor">Vert</button>
+      <button type="button" id="resetColor">Init Color</button>
+      <button type="button" id="hideRectangle">hide</button>
+      <button type="button" id="showRectangle">show</button>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltdiv class="rectangle"&gt&lt/div&gt
+        &ltbutton type="button" id="changeHeight"&gt+10px&lt/button&gt
+        &ltbutton type="button" id="changeColor"&gtVert&lt/button&gt
+        &ltbutton type="button" id="resetColor"&gtInit Color&lt/button&gt
+        &ltbutton type="button" id="hideRectangle"&gthide&lt/button&gt
+        &ltbutton type="button" id="showRectangle"&gtshow&lt/button&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+        //on va stoké dans la variable firstColor la couleur de base du rectangle.
+        //$('.rectangle').css('background-color') récupére la valeur de la propriété background-color parce qu'on n'a pas précisé de valeur.
+          var firstColor = $('.rectangle').css('background-color');
+         $('#changeHeight').click(function(){
+        //on stock la hauteur de réctangle dans la variable "rectangleHeight".
+        //$('.rectangle').height(); récupére la hauteur du réctangle parce qu'on n'a pas précisé de valeur.
+         	var rectangleHeight = $('.rectangle').height();
+        //selon la hauteur qu'on récupere a chaque click, on y ajoute 10 ou on la remet a 10.
+         	if (rectangleHeight &lt 100 ){
+         		rectangleHeight += 10;
+         	}else{
+         		rectangleHeight = 10;
+         	}
+        //on attribue cette nouvelle hauteur au rectangle.
+         $('.rectangle').height(rectangleHeight);
+         });
+         $('#changeColor').click(function(){
+        //On attribue a notre réctangle la couleur verte.
+         	$('.rectangle').css('background-color','green');
+         });
+         $('#resetColor').click(function(){
+        //On attribue a notre réctangle la couleur que l'on a stocké au chargement de la page.
+         	$('.rectangle').css('background-color', firstColor);
+         });
+         $('#hideRectangle').click(function(){
+        //on cache notre réctangle avec la fonction hide
+         	$('.rectangle').hide();
+         });
+         $('#showRectangle').click(function(){
+        //on affiche notre réctangle avec la fonction show
+         	$('.rectangle').show();
+         });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 5 - Partie 3</h2>
+      <p></p>
+      <h3>Rendu : </h3>
+      <form>
+        <input type="text" id="direction" />
+      </form>
+      <div id="square"></div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltinput type="text" id="direction" /&gt
+        &lt/form&gt
+        &ltdiv id="square"&gt&lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+          //On stocke la largeur et la hauteur de la fenêtre dans des variables
+          var windowWidth = $(window).width();
+          var windowHeight = $(window).height();
+
+          //On stocke la largeur et la hauteur du carré dans des variables
+          var squareWidth = $('#square').width();
+          var squareHeight = $('#square').height();
+          //Je met un évènement"keydown" sur mon Input.
+          //Je met "event" en paramètre de ma fonction anonyme, grâce à ça je vais pouvoir récupérer la touche sur laquelle j'ai appuyé.
+          $('#direction').keydown(function(event){
+            var squarePositionLeft = $('#square').offset().left;
+            var squarePositionTop = $('#square').offset().top;
+            //Switch est utilisé lorsque l'on veut comparer une variable à plusieurs valeurs
+            switch (event.keyCode) {
+              case 37:
+                squarePositionLeft -= 10;
+              break;
+              case 38:
+                squarePositionTop -= 10;
+              break;
+              case 39:
+                squarePositionLeft += 10;
+              break;
+              case 40:
+                squarePositionTop += 10;
+              break;
+            }
+          // si mon carré dépasse 0 (donc à gauche ma fenêtre)
+            if(squarePositionLeft &lt 0){
+              // alors mon carré va au bout de ma fenêtre de l'autre côté!
+              squarePositionLeft = windowWidth - squareWidth;
+        // Si la position haute de mon carré est inférieur de 0
+      }else if(squarePositionTop &lt 0){
+              // alors la position haute de mon carré est égale à la hauteur de ma fenêtre moins la hauteur du carré
+              squarePositionTop = windowHeight - squareHeight;
+              //
+            }else if((squarePositionTop + squareHeight) &gt windowHeight){
+              squarePositionTop = 0;
+            }else if((squarePositionLeft + squareWidth) &gt windowWidth){
+              squarePositionLeft = 0;
+            }
+          //On définit la position du carré grâce à la fonction "Offset".
+          $('#square').offset({top : squarePositionTop, left : squarePositionLeft});
+          });
+        });
+
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 1 - Partie 4</h2>
+      <p></p>
+      <h3>Rendu : </h3>
+      <select id="userChoice">
+        <option value="2">Pierre</option>
+        <option value="0">Feuille</option>
+        <option value="1">Ciseaux</option>
+      </select>
+      <button type="button" name="button" id="shiFuMi">Shifumi</button>
+      <div id="resultShiFuMi"></div>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltselect id="userChoice"&gt
+          &ltoption value="2"&gtPierre&lt/option&gt
+          &ltoption value="0"&gtFeuille&lt/option&gt
+          &ltoption value="1"&gtCiseaux&lt/option&gt
+        &lt/select&gt
+        &ltbutton type="button" name="button" id="shiFuMi"&gtShifumi&lt/button&gt
+        &ltdiv id="result"&gt&lt/div&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(document).ready(function() {
+          var victory = 0;
+          var defeat = 0;
+          var even = 0;
+          // Je lance ma fonction quand je click sur le bouton
+          $('#shiFuMi').click(function(){
+            // Je stock dans une variable un tableau(Array)
+            var choices = ['Feuille','Ciseaux','Pierre'];
+            //Je génère le choix de l'ordinateur
+            var computerChoice = Math.floor(Math.random()*3);
+            // Choix de l'utilisateur
+            var userChoice = $('#userChoice option:selected').val();
+            //Si le choix de l'ordinateur et le même choix que celui de l'utilisateur alors :
+            if(computerChoice == userChoice){
+            //une boite d'alerte ce gènere (Egalité).
+              alert('égalité');
+              even++;
+            // Autrement si l'utilisateur gagner contre l'ordinateur exemple(Pierre &gt Ciseaux) alors :
+            }else if ((choices[userChoice] == 'Pierre' && choices[computerChoice] == 'Ciseaux') || (choices[userChoice] == 'Ciseaux' && choices[computerChoice] == 'Feuille') || (choices[userChoice] == 'Feuille' && choices[computerChoice] == 'Pierre')) {
+            // L'utilisateur gagne.
+              alert('Youpi, tu as gagné');
+              victory++;
+            //Sinon :
+            }else{
+            // L'ordinateur Gagne
+              alert('Youpi, tu as perdu');
+              defeat++;
+            }
+            var victoryPercentage = (victory/(victory + defeat + even))*100;
+            $('#result').html('&ltp class="resultVictory"&gtNombre de victoire : ' + victory + '(' + victoryPercentage +  '%)&lt/p&gt&ltp class="resultDefeat"&gtNombre de défaite : ' + defeat + '&lt/p&gt');
+          });
+        });
+
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 2 - Partie 4</h2>
+      <p></p>
+      <h3>Rendu : </h3>
+      <form>
+        <label for="firstNote">1ère note : </label><input type="number" id="firstNote" min="0" max="20" />
+        <label for="secondNote">2ème note : </label><input type="number" id="secondNote" min="0" max="20" />
+        <label for="thirdNote">3ème note :  </label><input type="number" id="thirdNote" min="0" max="20" />
+        <label for="fourthNote">4ème note : </label><input type="number" id="fourthNote" min="0" max="20" />
+        <label for="fifthNote">5ème note :  </label><input type="number" id="fifthNote" min="0" max="20" />
+        <button type="button" id="submitNote">Valider</button>
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltlabel for="firstNote"&gt1ère note : &lt/label&gt&ltinput type="number" id="firstNote" min="0" max="20" /&gt
+          &ltlabel for="secondNote"&gt2ème note : &lt/label&gt&ltinput type="number" id="secondNote" min="0" max="20" /&gt
+          &ltlabel for="thirdNote"&gt3ème note :  &lt/label&gt&ltinput type="number" id="thirdNote" min="0" max="20" /&gt
+          &ltlabel for="fourthNote"&gt4ème note : &lt/label&gt&ltinput type="number" id="fourthNote" min="0" max="20" /&gt
+          &ltlabel for="fifthNote"&gt5ème note :  &lt/label&gt&ltinput type="number" id="fifthNote" min="0" max="20" /&gt
+          &ltbutton type="button" id="submit"&gtValider&lt/button&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+        $('#submit').click(function(){
+          //On stocke la regex pour faire une note 10 ou 10;75 ...
+          var noteRegex = new RegExp (/^([0-9]{1,2})([\.,]{1}[0-9]{1,2}){0,1}$/);
+          //On stocke dans des variables la valeur récupérée des input. Grâce à number, on met les strings en nombres.
+          var firstNote = $('#firstNote').val();
+          var secondNote = $('#secondNote').val();
+          var thirdNote = $('#thirdNote').val();
+          var fourthNote = $('#fourthNote').val();
+          var fifthNote = $('#fifthNote').val();
+
+          if(firstNote.match(noteRegex) && secondNote.match(noteRegex) && thirdNote.match(noteRegex) && fourthNote.match(noteRegex) && fifthNote.match(noteRegex)){
+            //On fait la moyenne par rapport aux 5 notes.
+            var average = (parseFloat(firstNote) + parseFloat(secondNote) + parseFloat(thirdNote) + parseFloat(fourthNote) + parseFloat(fifthNote)) / 5;
+            if(average &gt= 0 && average &lt 10){
+              alert('Moyenne : ' + average + '\nAppréciations : \nEn dessous de la moyenne.');
+            }else if (average &gt= 10 && average &lt 13){
+              alert('Moyenne : ' + average + '\nAppréciations : \nMoyen.');
+            }else if (average &gt= 13 && average &lt 16){
+              alert('Moyenne : ' + average + '\nAppréciations : \nBien.');
+            }else if (average &gt= 16 && average &lt 20){
+              alert('Moyenne : ' + average + '\nAppréciations : \nTrès bien.');
+            }else{
+              alert('Excellent !');
+            }
+          }else{
+            alert('Veuillez entrer des notes valides svp.');
+          }
+        });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 3 - Partie 4</h2>
+      <p></p>
+      <h3>Rendu : </h3>
+      <form>
+        <label for="firstName">Prénom : <input type="text" id="firstName" /></label>
+        <label for="lastName">Nom : <input type="text" id="lastName" /></label>
+        <label for="mail">Mail : <input type="text" id="mail" /></label>
+        <label for="phoneNumber">Numéro de téléphone : <input type="text" id="phoneNumber" /></label>
+        <input type="button" id="submitInfo" value="Envoyer" />
+        <p id="displayInfo"></p>
+      </form>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+        &ltform&gt
+          &ltlabel for="firstName"&gtPrénom : &ltinput type="text" id="firstName" /&gt&lt/label&gt
+          &ltlabel for="lastName"&gtNom : &ltinput type="text" id="lastName" /&gt&lt/label&gt
+          &ltlabel for="mail"&gtMail : &ltinput type="text" id="mail" /&gt&lt/label&gt
+          &ltlabel for="phoneNumber"&gtNuméro de téléphone : &ltinput type="text" id="phoneNumber" /&gt&lt/label&gt
+          &ltinput type="button" id="submit" value="Envoyer" /&gt
+          &ltp id="displayInfo"&gt&lt/p&gt
+        &lt/form&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+          $('#submit').click(function(){
+            var regexName = /^([A-Z]{1}[a-zÀ-ÖØ-öø-ÿ]+)([- ]{1}[A-Z]{1}[a-zÀ-ÖØ-öø-ÿ]+){0,1}$/;
+            var regexphone = /^0[1-9]{1}[0-9]{8}$/;
+            var regexMail = /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9]+[.]+[a-zA-Z]{2,}$/;
+
+            var firstName = $('#firstName').val();
+            var lastName = $('#lastName').val();
+            var mail = $('#mail').val();
+            var phoneNumber = $('#phoneNumber').val();
+
+            if (lastName.match(regexName) && firstName.match(regexName) && mail.match(regexMail) && phoneNumber.match(regexphone)){
+              $('#displayInfo').html('Firstname : ' + firstName + '&ltbr&gtLastname : ' + lastName + '&ltbr&gtMail : ' + mail + '&ltbr&gtPhone number : ' + phoneNumber);
+            } else{
+              alert('Veuillez entrer des données valides');
+            }
+          });
+        });
+      </pre>
+      </div> <!-- border exercice-->
+      <div class="borderExercise">
+      <h2 class="titleExercise">Exercice 4 - Partie 4</h2>
+      <p></p>
+      <h3>Rendu : </h3>
+    <form class="" action="index.html" method="post">
+      Nom:
+    </form>
+    <input type="text" name="" value="" id="lastNameExoFour" autofocus required>
+    <form class="" action="index.html" method="post">
+      Prénom:
+    </form>
+    <input type="text" name="" value="" id="firstNameExoFour">
+    <form class="" action="index.html" method="post" required>
+      Date de naissance:
+    </form>
+    <input type="date" name="" value="" id="birthExoFour">
+    <form class="" action="index.html" method="post" required>
+      Lieu de naissance:
+    </form>
+    <input type="text" name="" value="" id="placeOfBirthExoFour">
+    <form class="" action="index.html" method="post" required>
+      Emploi:
+    </form>
+    <input type="text" name="" value="" id="employExoFour">
+    <form class="" action="index.html" method="post" required>
+      Société:
+    </form>
+    <input type="text" name="" value="" id="societyExoFour">
+    <button type="button" name="button" id="validate">Générer</button>
+      <h3>code : </h3>
+      <p>Dans l'Html</p>
+      <pre class="styleCode">
+    &ltform class="" action="index.html" method="post"&gt
+      Nom:
+    &lt/form&gt
+    &ltinput type="text" name="" value="" id="lastName" autofocus required&gt
+    &ltform class="" action="index.html" method="post"&gt
+      Prénom:
+    &lt/form&gt
+    &ltinput type="text" name="" value="" id="firstName"&gt
+    &ltform class="" action="index.html" method="post" required&gt
+      Date de naissance:
+    &lt/form&gt
+    &ltinput type="date" name="" value="" id="birth"&gt
+    &ltform class="" action="index.html" method="post" required&gt
+      Lieu de naissance:
+    &lt/form&gt
+    &ltinput type="text" name="" value="" id="placeOfBirth"&gt
+    &ltform class="" action="index.html" method="post" required&gt
+      Emploi:
+    &lt/form&gt
+    &ltinput type="text" name="" value="" id="employ"&gt
+    &ltform class="" action="index.html" method="post" required&gt
+      Société:
+    &lt/form&gt
+    &ltinput type="text" name="" value="" id="society"&gt
+    &ltbutton type="button" name="button" id="validate"&gtGénérer&lt/button&gt
+      </pre>
+      <p>Dans le script</p>
+      <pre class="styleCode">
+        $(function(){
+            $('#lastName').focusout(function(){
+              var inputLastName = $('#lastName').val();
+              var regex = new RegExp(/[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?[[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?]*[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+/);
+              if (regex.test(inputLastName)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#firstName').focusout(function(){
+              var input = $('#firstName').val();
+              var regex = new RegExp(/[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?[[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?]*[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+/);
+              if (regex.test(input)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#birth').focusout(function(){
+              var input = $('#birth').val();
+              var regex = new RegExp();
+              if (regex.test(input)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#placeOfBirth').focusout(function(){
+              var input = $('#placeOfBirth').val();
+              var regex = new RegExp(/[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?[[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?]*[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+/);
+              if (regex.test(input)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#employ').focusout(function(){
+              var input = $('#employ').val();
+              var regex = new RegExp(/[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?[[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?]*[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+/);
+              if (regex.test(input)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#society').focusout(function(){
+              var input = $('#society').val();
+              var regex = new RegExp(/[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?[[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+[ \-']?]*[A-Za-zàáâäçèéêëìíîïñòóôöùúûü]+/);
+              if (regex.test(input)){
+              } else {
+                alert('Merci d\'entrer un prénom valide');
+              }
+            });
+            $('#validate').click(function(){
+              // Si les données saisies sont : "Jérôme OTT, 5/06/1990, Margny-lès-Compiègne, Formateur, Novei", la phrase de présentation sera : "Jérôme OTT, né le 5/06/1990 à Margny-lès-Compiègne, actuellement Formateur à Novei
+      alert(($('#firstName').val())+ ' ' + ($('#lastName').val()) + ', ' + 'né(e) le ' + ($('#birth').val()) + ' à ' + ($('#placeOfBirth').val()) + ', actuellement ' + ($('#employ').val()) + ' à '+ ($('#society').val()));
+    });
+});
+      </pre>
+      </div>
+      </section>
+      <section id="angularJS">
+        <h2 class="titleSection">Exercices AngularJs</h2>
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 1 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour qu'AngularJS fonctionne dans tout le document.</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            220 + 304 = 524
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &lt!-- placer ng-app pour qu'AngularJS fonctionne dans tout le document --&gt
+            &lt!-- Les directives sont utilisées lorsque l'on souhaite modifier ou transformer le DOM,
+            on les places dans le body ou dans la balise html --&gt
+            &lt!-- la directive "ng-app" permet d'initialiser notre application --&gt
+            &ltbody ng-app&gt
+            &ltdiv class="sum"&gt
+            220 + 304 = {{220+304}}
+            &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 2 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour qu'AngularJS fonctionne uniquement dans la div sum.</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            220 + 304 = 524
+          </div>
+          <div id="ExoTwoAngularJs" hidden>
+
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody&gt
+              &ltdiv class="sum" ng-app&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 3 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour qu'AngularJS fonctionne uniquement après le h1.</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            <h1>AngularJS</h1>
+              <div ng-app>
+                220 + 304 = 524
+              </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum"&gt
+              &lth1&gtAngularJS&lt/h1&gt
+                &ltdiv ng-app&gt
+                  220 + 304 = {{220+304}}
+                &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 4 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour qu'AngularJS fonctionne uniquement après le h1.</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            <h1>AngularJS</h1>
+            <div>
+              Le code "220 + 304 = {{220+304}}" sera interprété par AngularJS et donnera :
+            </div>
+            <div ng-app>
+              220 + 304 = 524
+            </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum"&gt
+              &lth1&gtAngularJS&lt/h1&gt
+              &ltdiv&gt
+                Le code "220 + 304 = {{220+304}}" sera interprété par AngularJS et donnera :
+              &lt/div&gt
+              &ltdiv ng-app&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 5 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour que toutes les expressions soient interprétées.</p>
+          <h3>Rendu : </h3>
+          <div class="sum" ng-app>
+            <h1>AngularJS</h1>
+            <div>
+              220 + 304 = 524
+            </div>
+            <div>
+              220 - 304 = -84
+            </div>
+            <div>
+              220 * 304 = 66880
+            </div>
+            <div>
+              220/304 = 0.7236842105263158
+            </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum" ng-app&gt
+              &lth1&gtAngularJS&lt/&gt
+              &ltdiv&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+              &ltdiv&gt
+                220 - 304 = {{220-304}}
+              &lt/div&gt
+              &ltdiv&gt
+                220 * 304 = {{220 * 304}}
+              &lt/div&gt
+              &ltdiv&gt
+                220/304 = {{220 / 304}}
+              &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 6 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour que seules les deux dernières expressions soient interprétées. (Modification du html autorisée).</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            <h1>AngularJS</h1>
+            <div>
+              220 + 304 = {{220+304}}
+            </div>
+            <div>
+              220 - 304 = {{220-304}}
+            </div>
+            <div ng-app>
+              <div>
+                220 * 304 = 66880
+              </div>
+              <div>
+                220/304 = 0.7236842105263158
+              </div>
+            </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum"&gt
+              &lth1&gtAngularJS&lt/h1&gt
+              &ltdiv&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+              &ltdiv&gt
+                220 - 304 = {{220-304}}
+              &lt/div&gt
+              &ltdiv ng-app&gt
+                &ltdiv&gt
+                  220 * 304 = {{220 * 304}}
+                &lt/div&gt
+                &ltdiv&gt
+                  220/304 = {{220 / 304}}
+                &lt/div&gt
+              &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 7 - Partie 1</h2>
+          <p>Dans le fichier html fourni, créer une div qui appellera votre application. Placer à l'intérieur l'expression 220 + 304 = {{220+304}}.</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            <h1>AngularJS</h1>
+            <div ng-app>
+              220 + 304 = 524
+            </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum"&gt
+              &lth1&gtAngularJS&lt/h1&gt
+              &ltdiv ng-app&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 6 - Partie 1</h2>
+          <p>Dans le fichier html fourni, placer ng-app pour que seules les deux dernières expressions soient interprétées. (Modification du html autorisée).</p>
+          <h3>Rendu : </h3>
+          <div class="sum">
+            <h1>AngularJS</h1>
+            <div>
+              220 + 304 = {{220+304}}
+            </div>
+            <div>
+              220 - 304 = {{220-304}}
+            </div>
+            <div ng-app>
+              <div>
+                220 * 304 = 66880
+              </div>
+              <div>
+                220/304 = 0.7236842105263158
+              </div>
+            </div>
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv class="sum"&gt
+              &lth1&gtAngularJS&lt/h1&gt
+              &ltdiv&gt
+                220 + 304 = {{220+304}}
+              &lt/div&gt
+              &ltdiv&gt
+                220 - 304 = {{220-304}}
+              &lt/div&gt
+              &ltdiv ng-app&gt
+                &ltdiv&gt
+                  220 * 304 = {{220 * 304}}
+                &lt/div&gt
+                &ltdiv&gt
+                  220/304 = {{220 / 304}}
+                &lt/div&gt
+              &lt/div&gt
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 1 - Partie 2</h2>
+          <p>Dans le fichier html fourni, afficher la variable firstName dans la div.</p>
+          <h3>Rendu : </h3>
+          <div ng-model="firstName">
+            Émilie
+            <p ng-bind="lastName"></p>
+            Gérard
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &lthtml ng-app="schoolApp"&gt
+              &lthead&gt
+                &ltmeta charset="utf-8"&gt
+                &ltscript src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"&gt&lt/script&gt
+                &lttitle&gtExercice 1&lt/title&gt
+                &ltscript src="script.js"&gt&lt/script&gt
+              &lt/head&gt
+              &ltbody ng-controller="studentsCtrl"&gt
+                &ltdiv&gt
+                  {{firstName}}
+                  &ltp ng-bind="lastName"&gt&lt/p&gt  &lt-- Seconde façon d'appeler la variable firstName --&gt
+                &lt/div&gt
+            &lt/body&gt
+            &lt/html&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var schoolApp = angular.module('schoolApp',[]);
+
+            schoolApp.controller('studentsCtrl',function($scope){
+              $scope.firstName = 'Émilie';
+              $scope.lastName = 'Gérard';
+              $scope.age = '17';
+              $scope.grade = 'Terminale';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 2 - Partie 2</h2>
+          <p>Dans le fichier html fourni, afficher toutes les variables.</p>
+          <h3>Rendu : </h3>
+          <div>
+            Émilie Gérard 17 Terminale
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="schoolApp" ng-controller="studentsCtrl"&gt
+              &ltdiv&gt
+                {{firstName}}
+                {{lastName}}
+                {{age}}
+                {{grade}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var schoolApp = angular.module('schoolApp',[]);
+
+            schoolApp.controller('studentsCtrl',function($scope){
+              $scope.firstName = 'Émilie';
+              $scope.lastName = 'Gérard';
+              $scope.age = '17';
+              $scope.grade = 'Terminale';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 3 - Partie 2</h2>
+          <p>Dans le fichier html fourni, afficher toutes les variables.</p>
+          <h3>Rendu : </h3>
+          <div>
+            Émilie Gérard 17 Terminale
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="schoolApp" ng-controller="studentsCtrl"&gt
+              &ltdiv&gt
+                {{firstName +' '+ lastName +' '+ age +' '+ grade}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var schoolApp = angular.module('schoolApp',[]);
+
+            schoolApp.controller('studentsCtrl',function($scope){
+              $scope.firstName = 'Émilie';
+              $scope.lastName = 'Gérard';
+              $scope.age = '17';
+              $scope.grade = 'Terminale';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 4 - Partie 2</h2>
+          <p>ans le fichier html fourni, afficher toutes les variables aux bons emplacements.</p>
+          <h3>Rendu : </h3>
+          <div>
+            Prénom : Émilie
+          </div>
+          <div>
+            Nom : Gérard
+          </div>
+          <div>
+            Âge : 17
+          </div>
+          <div>
+            Classe : Terminale
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="schoolApp" ng-controller="studentsCtrl"&gt
+              &ltdiv&gt
+                Prénom : {{" " + firstName}}
+              &lt/div&gt
+              &ltdiv&gt
+                Nom : {{" " + lastName}}
+              &lt/div&gt
+              &ltdiv&gt
+                Âge : {{" " + age}}
+              &lt/div&gt
+              &ltdiv&gt
+                Classe : {{" " + grade}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var schoolApp = angular.module('schoolApp',[]);
+
+            schoolApp.controller('studentsCtrl',function($scope){
+              $scope.firstName = 'Émilie';
+              $scope.lastName = 'Gérard';
+              $scope.age = '17';
+              $scope.grade = 'Terminale';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 5 - Partie 2</h2>
+          <p>ans le fichier html fourni, afficher toutes les variables aux bons emplacements.</p>
+          <h3>Rendu : </h3>
+          <div>
+            Je m'appelle Émilie Gérard, J'ai 17 ans et je suis en Terminale
+          </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="schoolApp" ng-controller="studentsCtrl"&gt
+              &ltdiv&gt
+                {{'Je m\'appelle '  + firstName + ' ' + lastName + ', J\'ai ' + age + ' ans et je suis en ' + grade}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var schoolApp = angular.module('schoolApp',[]);
+
+            schoolApp.controller('studentsCtrl',function($scope){
+              $scope.firstName = 'Émilie';
+              $scope.lastName = 'Gérard';
+              $scope.age = '17';
+              $scope.grade = 'Terminale';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 1 - Partie 3</h2>
+          <p>Dans le fichier html fourni, convertir le texte de la variable firstSentence en majuscules et celui de secondSentence en minuscules.</p>
+          <h3>Rendu : </h3>
+          <p>L'AXOLOTL, AMBYSTOMA MEXICANUM, EST UNE ESPÈCE D'URODÈLES DE LA FAMILLE DES AMBYSTOMATIDAE. l'ornithorynque (ornithorhynchus anatinus) est un animal semi-aquatique endémique de l'est de l'australie, y compris la tasmanie.</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv ng-app="app" ng-controller="testCtrl"&gt
+              {{firstSentence | uppercase}}
+              {{secondSentence | lowercase}}
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var testApp = angular.module('app',[]);
+
+            testApp.controller('testCtrl', function($scope){
+              $scope.firstSentence = 'L\'Axolotl, Ambystoma mexicanum, est une espèce d\'urodèles de la famille des Ambystomatidae.';
+              $scope.secondSentence = 'L\'ORNITHORYNQUE (ORNITHORHYNCHUS ANATINUS) EST UN ANIMAL SEMI-AQUATIQUE ENDÉMIQUE DE L\'EST DE L\'AUSTRALIE, Y COMPRIS LA TASMANIE.';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 2 - Partie 3</h2>
+          <p>Dans le fichier html fourni, formater le nombre 3.14159265359 en nombre à deux chiffres après la virgule.</p>
+          <h3>Rendu : </h3>
+          <p>3.14</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltdiv ng-app&gt
+              {{ 3.14159265359 | number:2 }}
+            &lt/div&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 3 - Partie 3</h2>
+          <p>Dans le fichier html fourni, formater la date 2017-01-23 au format français (dd/MM/yyyy).</p>
+          <h3>Rendu : </h3>
+          <p>23-01-2017</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app&gt
+              &ltdiv&gt
+                {{ '2017-01-23' | date:'dd-MM-yyyy' }}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 4 - Partie 3</h2>
+          <p>Dans le fichier html fourni, formater la variable pi en monnaie.</p>
+          <h3>Rendu : </h3>
+          <p>€3.14</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="app" ng-controller="testCtrl"&gt
+              &ltdiv&gt
+                {{ pi | currency:'€' }}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var testApp = angular.module('app',[]);
+
+            testApp.controller('testCtrl', function($scope){
+              $scope.pi = 3.14159265359;
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 5 - Partie 3</h2>
+          <p>Dans le fichier html fourni, n'afficher que les 150 premiers caractères de la variable article.</p>
+          <h3>Rendu : </h3>
+          <p>'Ornithorynque (Ornithorhynchus anatinus) est un animal semi-aquatique endémique de l'est de l'Australie, y compris la Tasmanie. C'est l'une des cinq</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="app" ng-controller="testCtrl"&gt
+              &ltdiv&gt
+                {{ article | limitTo : 150 : 1}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var testApp = angular.module('app',[]);
+
+            testApp.controller('testCtrl', function($scope){
+              $scope.article = 'L\'Ornithorynque (Ornithorhynchus anatinus) est un animal semi-aquatique endémique de l\'est de l\'Australie, y compris la Tasmanie. C\'est l\'une des cinq espèces de l\'ordre des monotrèmes, seul ordre de mammifères qui pond des œufs au lieu de donner naissance à des petits complètement formés (les quatre autres espèces sont des échidnés). C\'est la seule espèce actuelle de la famille des Ornithorhynchidae et du genre Ornithorhynchus bien qu\'un grand nombre de fragments d\'espèces fossiles de cette famille et de ce genre aient été découverts. L\'apparence fantasmagorique de ce mammifère pondant des œufs, à la mâchoire cornée ressemblant au bec d\'un canard, à queue évoquant un castor, qui lui sert à la fois de gouvernail dans l\'eau et de réserve de graisse, et à pattes de loutre a fortement surpris les premiers explorateurs qui l\'ont découvert ; bon nombre de naturalistes européens ont cru à une plaisanterie. C\'est l\'un des rares mammifères venimeux : le mâle porte sur les pattes postérieures un aiguillon qui peut libérer du venin capable de paralyser une jambe humaine ou même de tuer un chien. Les traits originaux de l\'ornithorynque en font un sujet d\'études important pour mieux comprendre l\'évolution des espèces animales et en ont fait un des symboles de l\'Australie : il a été utilisé comme mascotte pour de nombreux événements nationaux et il figure au verso de la pièce de monnaie de 20 cents australiens. Jusqu\'au début du XXe siècle, il a été chassé pour sa fourrure mais il est protégé à l\'heure actuelle. Bien que les programmes de reproduction en captivité aient eu un succès très limité et qu\'il soit sensible aux effets de la pollution, l\'espèce n\'est pas considérée comme en danger.';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 6 - Partie 3</h2>
+          <p>Dans le fichier html fourni, n'afficher que les 150 premiers caractères de la variable article et la mettre en majuscules.</p>
+          <h3>Rendu : </h3>
+          <p>L'ORNITHORYNQUE (ORNITHORHYNCHUS ANATINUS) EST UN ANIMAL SEMI-AQUATIQUE ENDÉMIQUE DE L'EST DE L'AUSTRALIE, Y COMPRIS LA TASMANIE. C'EST L'UNE DES CINQ</p>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="app" ng-controller="testCtrl"&gt
+              &ltdiv&gt
+                {{ article | limitTo : 150 | uppercase}}
+              &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var testApp = angular.module('app',[]);
+
+            testApp.controller('testCtrl', function($scope){
+              $scope.article = 'L\'Ornithorynque (Ornithorhynchus anatinus) est un animal semi-aquatique endémique de l\'est de l\'Australie, y compris la Tasmanie. C\'est l\'une des cinq espèces de l\'ordre des monotrèmes, seul ordre de mammifères qui pond des œufs au lieu de donner naissance à des petits complètement formés (les quatre autres espèces sont des échidnés). C\'est la seule espèce actuelle de la famille des Ornithorhynchidae et du genre Ornithorhynchus bien qu\'un grand nombre de fragments d\'espèces fossiles de cette famille et de ce genre aient été découverts. L\'apparence fantasmagorique de ce mammifère pondant des œufs, à la mâchoire cornée ressemblant au bec d\'un canard, à queue évoquant un castor, qui lui sert à la fois de gouvernail dans l\'eau et de réserve de graisse, et à pattes de loutre a fortement surpris les premiers explorateurs qui l\'ont découvert ; bon nombre de naturalistes européens ont cru à une plaisanterie. C\'est l\'un des rares mammifères venimeux : le mâle porte sur les pattes postérieures un aiguillon qui peut libérer du venin capable de paralyser une jambe humaine ou même de tuer un chien. Les traits originaux de l\'ornithorynque en font un sujet d\'études important pour mieux comprendre l\'évolution des espèces animales et en ont fait un des symboles de l\'Australie : il a été utilisé comme mascotte pour de nombreux événements nationaux et il figure au verso de la pièce de monnaie de 20 cents australiens. Jusqu\'au début du XXe siècle, il a été chassé pour sa fourrure mais il est protégé à l\'heure actuelle. Bien que les programmes de reproduction en captivité aient eu un succès très limité et qu\'il soit sensible aux effets de la pollution, l\'espèce n\'est pas considérée comme en danger.';
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 7 - Partie 3</h2>
+          <p>Dans le fichier html fourni, trier le tableau par ordre alphabétique du modèle.</p>
+          <h3>Rendu : </h3>
+          <img src="assets/img/exercice7.png" alt="">
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="testApp"&gt
+            &ltdiv ng-controller="phonesCtrl"&gt
+              &lttable cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;"&gt
+                &ltthead&gt
+                  &ltth&gtModèle&lt/th&gt
+                  &ltth&gtMarque&lt/th&gt
+                &lt/thead&gt
+                &lttr ng-repeat="phone in phones | orderBy : 'phoneModel'"&gt
+                  &lttd&gt
+                    {{phone.phoneModel}}
+                  &lt/td&gt
+                  &lttd&gt
+                    {{phone.brand}}
+                  &lt/td&gt
+                &lt/tr&gt
+              &lt/table&gt
+            &lt/div&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var app = angular.module('testApp', []);
+
+            app.controller('phonesCtrl', function($scope) {
+                $scope.phones = [
+                    {'phoneModel': 'G7',  'brand': 'LG'},
+                    {'phoneModel': 'Galaxy S7 Edge', 'brand': 'Samsung'},
+                    {'phoneModel': 'iPhone7',  'brand': 'Apple'},
+                    {'phoneModel': '50b Helium 4G', 'brand': 'Archos'},
+                    {'phoneModel': 'One A9', 'brand': 'HTC'},
+                    {'phoneModel': '8', 'brand': 'Nokia'},
+                    {'phoneModel': 'Zenphone 2',  'brand': 'Asus'}
+                ];
+            });
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 1 - Partie 4</h2>
+          <p>Faire une page HTML contenant un bouton + , un bouton - et un paragraphe. Au clic sur le bouton + incrémenter le chiffre présent dans le paragraphe de 1. Au clic sur le bouton - décrémenter le chiffre de 1.</p>
+          <h3>Rendu : </h3>
+          <body>
+            <button type="button" id="AngularE1P4ButtonPlus">+</button>
+            <button type="button" id="AngularE1P4ButtonLess">-</button>
+            <p id="clicksAE1P1" > Score:  0</p>
+          </body>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app&gt
+              &ltbutton ng-click="count = count + 1" ng-init="count=0"&gt+&lt/button&gt
+              &ltbutton ng-click="count = count - 1"&gt-&lt/button&gt
+              &ltspan&gtcount : {{count}} &lt/span&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 2 - Partie 4</h2>
+          <p>Faire une page HTML permettant d'afficher la liste des voitures et leur couleur du fichier voiture.json.</p>
+          <h3>Rendu : </h3>
+          <img src="assets/img/AngularjsExercice2Partie4.png" alt="">
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="app" ng-controller="voituresCtrl"&gt
+                  &lt!-- afficher la liste des voitures et leur couleur du fichier voiture.json. --&gt
+                &lttable cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;"&gt
+                  &ltthead&gt
+                    &ltth&gtMarque&lt/th&gt
+                    &ltth&gtCouleur&lt/th&gt
+                  &lt/thead&gt
+                  &lttr ng-repeat="voiture in voitures"&gt
+                    &lttd&gt
+                      {{ voiture.marque}}
+                    &lt/td&gt
+                    &lttd&gt
+                      {{ voiture.couleur}}
+                    &lt/td&gt
+                  &lt/tr&gt
+                &lt/table&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var app = angular.module('app',[]);
+            app.controller('voituresCtrl', function($scope,$http){
+              $http.get('voiture.json').then(function(res){
+                $scope.voitures = res.data;
+              });
+            });
+          </pre>
+          <p>Sans le json</p>
+          <pre class="styleCode">
+            [
+                {"marque":"Renaul", "couleur":"verte"},
+                {"marque":"Citroen", "couleur":"grise"},
+                {"marque":"Opel", "couleur":"or"},
+                {"marque":"Ferrari", "couleur":"rouge"},
+                {"marque":"Peugeot", "couleur":"bleu"},
+                {"marque":"Nissan", "couleur":"verte"}
+            ]
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 3 - Partie 4</h2>
+          <p>Faire une page HTML permettant d'afficher la liste des voitures et leur couleur du fichier voiture.json uniquement si la couleur est verte.</p>
+          <h3>Rendu : </h3>
+          <img src="assets/img/AngularjsExercice3Partie4.png" alt="">
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="App" ng-controller="voituresCtrl"&gt
+                  &lt!-- afficher la liste des voitures et leur couleur du fichier voiture.json. --&gt
+                &lttable cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;"&gt
+                  &ltthead&gt
+                    &ltth&gtMarque&lt/th&gt
+                    &ltth&gtCouleur&lt/th&gt
+                  &lt/thead&gt
+                  &lttr ng-repeat="voiture in voitures" ng-if="voiture.couleur == 'verte'"&gt
+                    &lttd&gt
+                      {{ voiture.marque}}
+                    &lt/td&gt
+                    &lttd&gt
+                      {{ voiture.couleur}}
+                    &lt/td&gt
+                  &lt/tr&gt
+                &lt/table&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var App = angular.module('App',[]);
+            App.controller('voituresCtrl', function($scope,$http){
+              $http.get('voiture.json')
+              .then(function(res){
+                $scope.voitures = res.data;
+            });
+              });
+          </pre>
+          <p>Sans le json</p>
+          <pre class="styleCode">
+            [
+            		{"marque":"Renault", "couleur":"verte"},
+            		{"marque":"Citroen", "couleur":"grise"},
+            		{"marque":"Opel", "couleur":"or"},
+            		{"marque":"Ferrari", "couleur":"rouge"},
+            		{"marque":"Peugeot", "couleur":"bleu"},
+            		{"marque":"Nissan", "couleur":"verte"}
+            ]
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 4 - Partie 4</h2>
+          <p>Faire une page HTML permettant d'afficher la liste des voitures et leur couleur du fichier voiture.json uniquement si la couleur n'est pas verte.</p>
+          <h3>Rendu : </h3>
+          <img src="assets/img/AngularjsExercice4Partie4.png" alt="">
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app="App" ng-controller="voituresCtrl"&gt
+                  &lt!-- afficher la liste des voitures et leur couleur du fichier voiture.json. --&gt
+                &lttable cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;"&gt
+                  &ltthead&gt
+                    &ltth&gtMarque&lt/th&gt
+                    &ltth&gtCouleur&lt/th&gt
+                  &lt/thead&gt
+                  &lttr ng-repeat="voiture in voitures" ng-if="voiture.couleur != 'verte'"&gt
+                    &lttd&gt
+                      {{ voiture.marque}}
+                    &lt/td&gt
+                    &lttd&gt
+                      {{ voiture.couleur}}
+                    &lt/td&gt
+                  &lt/tr&gt
+                &lt/table&gt
+            &lt/body&gt
+          </pre>
+          <p>Dans le script</p>
+          <pre class="styleCode">
+            var App = angular.module('App',[]);
+            App.controller('voituresCtrl', function($scope,$http){
+              $http.get('voiture.json')
+              .then(function(res){
+                $scope.voitures = res.data;
+            });
+              });
+          </pre>
+          <p>Sans le json</p>
+          <pre class="styleCode">
+            [
+            		{"marque":"Renault", "couleur":"verte"},
+            		{"marque":"Citroen", "couleur":"grise"},
+            		{"marque":"Opel", "couleur":"or"},
+            		{"marque":"Ferrari", "couleur":"rouge"},
+            		{"marque":"Peugeot", "couleur":"bleu"},
+            		{"marque":"Nissan", "couleur":"verte"}
+            ]
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 5 - Partie 4</h2>
+          <p>Faire une page HTML contenant un bouton Afficher et un bouton Cacher. Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+          <h3>Rendu : </h3>
+          <button type="button" id="showEx5P4AugularJS">Afficher</button>
+          <button type="button"  id="hideEx5P4AugularJS">Masquer</button>
+            <div id="textEx5P4AugularJS">
+              <p>Ayrton Senna da Silva est un pilote automobile brésilien, né le 21 mars 1960 à São Paulo et mort le 1er mai 1994 à Bologne, à la suite d'un accident lors du Grand Prix de Saint-Marin.</p>
+            </div>
+          <h3>code : </h3>
+          <p>Dans l'Html</p>
+          <pre class="styleCode">
+            &ltbody ng-app&gt
+              &ltbutton ng-click="text = false" type="button"&gtAfficher&lt/button&gt &lt!-- Au clic on vérifie que text = false --&gt
+              &ltbutton ng-click="text = true" type="button"&gtCacher&lt/button&gt  &lt!-- Au clic on vérifie que text = true --&gt
+              &ltp ng-hide="text"&gt &lt!-- Si ng-hide = false le texte reste visible, si ng-hide = true le text disparait --&gt
+                Ayrton Senna da Silva est un pilote automobile brésilien, né le 21 mars 1960 à São Paulo et mort le 1er mai 1994 à Bologne, à la suite d'un accident lors du Grand Prix de Saint-Marin.
+              &lt/p&gt
+            &lt/body&gt
+          </pre>
+          <p>Sans le json</p>
+          <pre class="styleCode">
+
+          </pre>
+        </div>
+
+        <div class="borderExercise">
+          <h2 class="titleExercise">Exercice 6 - Partie 4</h2>
+          <p>Faire une page HTML contenant deux paragrahes et deux boutons. Au clic sur le premier uniquement le paragrahe 1 doit être visible. Au clic sur le bouton deux, seulement le paragrahe 2 doit aparaître.</p>
+          <h3>Rendu : </h3>
+          <button type="button" id="showEx6P4AugularJS">Afficher</button>
+          <button type="button"  id="hideEx6P4AugularJS">Masquer</button>
+            <div id="firstTextEx6P4AugularJS">
+              <p>Ayrton Senna da Silva est un pilote automobile brésilien, né le 21 mars 1960 à São Paulo et mort le 1er mai 1994 à Bologne, à la suite d'un accident lors du Grand Prix de Saint-Marin.</p>
+            </div>
+            <div id="secondText2Ex6P4AugularJS">
+              <p>  <!-- Si show = false le texte disparait et si show = true le texte apparait -->
+                Alain Prost, né le 24 février 1955 à Lorette dans la Loire, est un pilote automobile français. Quadruple champion du monde des pilotes de Formule 1 en 1985, 1986, 1989 et 1993, victorieux de 51 Grands Prix de Formule 1 pour 199 départs entre 1980 et 1993, celui que l'on surnomme « Le Professeur » est considéré comme l'un des plus grands pilotes de l'histoire de son sport. Sa rivalité au sommet avec Ayrton Senna fait partie des grandes heures de la Formule 1 au tournant des années 1980 et 1990.
+              </p>
+            </div>
+
+            <h3>code : </h3>
+            <p>Dans l'Html</p>
+            <pre class="styleCode">
+              &ltbody ng-app&gt
+                &ltbutton ng-click="text = false" type="button"&gtSenna&lt/button&gt  &lt!-- Au clic on vérifie que text = false --&gt
+                &ltbutton ng-click="text = true" type="button"&gtProst&lt/button&gt  &lt!-- Au clic on vérifie que text = true --&gt
+                &ltp ng-hide="text"&gt  &lt!-- Si hide = false le texte s'affiche et si hide = true le texte disparait --&gt
+                  Ayrton Senna da Silva est un pilote automobile brésilien, né le 21 mars 1960 à São Paulo et mort le 1er mai 1994 à Bologne, à la suite d'un accident lors du Grand Prix de Saint-Marin.
+                &lt/p&gt
+                &ltp ng-show="text"&gt  &lt!-- Si show = false le texte disparait et si show = true le texte apparait --&gt
+                  Alain Prost, né le 24 février 1955 à Lorette dans la Loire, est un pilote automobile français. Quadruple champion du monde des pilotes de Formule 1 en 1985, 1986, 1989 et 1993, victorieux de 51 Grands Prix de Formule 1 pour 199 départs entre 1980 et 1993, celui que l'on surnomme « Le Professeur » est considéré comme l'un des plus grands pilotes de l'histoire de son sport. Sa rivalité au sommet avec Ayrton Senna fait partie des grandes heures de la Formule 1 au tournant des années 1980 et 1990.
+                &lt/p&gt
+              &lt/body&gt
+            </pre>
+            <p>Dans le script</p>
+            <pre class="styleCode">
+
+            </pre>
+          </div>
+
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 1 - Partie Bonus</h2>
+            <p>Faire un formulaire de saisie d'adresse e-mail. Si l'adresse comporte le symbole @, alors une div verte apparait. S'il n'est pas là, une div rouge apparaît pour avertir l'utilisateur que sa saisie est incorrecte.</p>
+            <h3>Rendu : </h3>
+              <img src="assets/img/AngularjsEx1Pbonus.png" alt="">
+
+            <h3>code : </h3>
+            <p>Dans l'Html</p>
+            <pre class="styleCode">
+              &ltform ng-app name="myForm"&gt
+                Email:
+                &ltinput type="email" name="input" ng-model="text" required /&gt
+                &ltdiv ng-style="{color:'red'}" ng-show="myForm.input.$error.email"&gtNot a valid e-mail address&lt/div&gt
+                &ltdiv ng-style="{color:'green'}" ng-show="myForm.input.$valid"&gtok&lt/div&gt
+                &ltdiv ng-show="myForm.input.$error.required"&gtMerci de remplir le champs.&lt/div&gt
+              &lt/form&gt
+            </pre>
+            <p>Dans le script</p>
+            <pre class="styleCode">
+
+            </pre>
+              <p>Sans le json</p>
+            <pre class="styleCode">
+
+            </pre>
+          </div>
+
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 2 - Partie Bonus</h2>
+            <p>Faire un bouton qui affiche une alerte dès que l'on clique dessus.</p>
+            <h3>Rendu : </h3>
+              <button type="button" id="alertButtonBonus">Appuyez ici</button>
+
+            <h3>code : </h3>
+            <p>Dans l'Html</p>
+            <pre class="styleCode">
+              &ltbody ng-app="alertTest"&gt
+                &ltdiv ng-controller="TestAlert"&gt
+                  &ltbutton ng-click="doAlert(popUp)"&gtALERT&lt/button&gt
+                &lt/div&gt
+              &lt/body&gt
+            </pre>
+            <p>Dans le script</p>
+            <pre class="styleCode">
+              angular.module('alertTest', [])
+                  .controller('TestAlert', ['$scope', '$window', function($scope, $window) {
+                    $scope.popUp = 'Alerte !!!';
+                    $scope.doAlert = function(popUp) {
+                      $window.alert(popUp);
+                    };
+                  }]);
+            </pre>
+          </div>
+
+          <div class="borderExercise">
+            <h2 class="titleExercise">Exercice 3 - Partie Bonus</h2>
+            <p>Faire un formulaire avec les champs nom, e-mail, sujet et texte. Le champ texte doit être un textarea. Chaque champ doit avoir son propre message d'erreur si la saisie est incorrecte.
+                Suite:
+                Ajouter un bouton envoyer. Au clic ajouter en dessous du formulaire le sujet du mail. Au clic sur un sujet afficher une autre vue avec les autres données saisies (nom, email, sujet et texte).</p>
+            <h3>Rendu : </h3>
+              <img src="assets/img/exercice3BonusAngularJS.png" alt="">
+            <h3>code : </h3>
+            <p>Dans l'Html</p>
+            <pre class="styleCode">
+              &ltdiv ng-app="mailBox"&gt
+                &lth1&gtMa boite mail&lt/h1&gt
+                &lt!-- ng-view nous servira à l'affichage de nos vues. Elles seront dans une div, ce qui nous permettra
+                d'afficher d'autres choses au dessus ou en dessous. Par exemple une navbar...--&gt
+                &ltdiv ng-view&gt&lt/div&gt
+              &lt/div&gt
+            </pre>
+
+            <p>Dans la vue form</p>
+            <pre class="styleCode">
+              &ltform name="form"&gt
+                &ltdiv&gt
+                  &ltlabel for="name"&gtNom : &lt/label&gt
+                  &ltinput type="text" name="name" ng-model="name" placeholder="Dupont" ng-pattern="nameRegex" required /&gt
+                  &ltp ng-show="form.name.$error.pattern"&gtLe nom doit commencer par une majuscule et ne pas comporter de chiffres.&lt/p&gt
+                &lt/div&gt
+                &ltdiv&gt
+                  &ltlabel for="email"&gtEmail : &lt/label&gt
+                  &ltinput type="email" name="email" ng-model="email" placeholder="exemple@mail.fr" ng-pattern="mailRegex" required /&gt
+                  &ltp ng-show="form.email.$error.pattern"&gtMerci de rentrer une adresse mail valide.&lt/p&gt
+                &lt/div&gt
+                &ltdiv&gt
+                  &ltlabel for="subject"&gtSujet du mail : &lt/label&gt
+                  &ltinput type="text" name="subject" ng-model="subject" placeholder="sujet" minlength="5" required /&gt
+                  &ltp ng-show="form.subject.$error.minlength"&gtMerci d'entrer au minimum 5 caractères.&lt/p&gt
+                &lt/div&gt
+                &ltdiv&gt
+                  &ltlabel for="textArea"&gtMessage : &lt/label&gt
+                  &lttextarea name="textArea"  ng-model="textArea" rows="8" cols="80" minlength="5" required&gt&lt/textarea&gt
+                  &ltp ng-show="form.textArea.$error.minlength"&gtMerci d'entrer au minimum 5 caractères.&lt/p&gt
+                  &lt!-- Ci-dessous le boutton auquel nous avons placé un ng-click gérant la fonction sendMessage()
+                        qui permet de stocker les donnés saisies au clic.--&gt
+                &lt/div&gt
+                  &ltbutton ng-click="sendMessage()" type="submit" name="validate"&gtValider&lt/button&gt
+              &lt/form&gt
+              &ltol&gt
+                &lt!-- le ng-repeat permet de créer une "boucle" qui permettra l'affichage des 'subjectLink'
+                      du tableau 'subjectMessageList'.
+                      A chaque clic sur le boutton un nouveau sujet s'affichera sous le précédent sous forme de liste.
+                      Les sujets seront affichés sous forme de liens qui renveront vers un index
+                      mailInfo/0 pour le premier sujet de la liste, mailInfo/1 pour le deuxiéme et ainsi de suite.--&gt
+                &ltli ng-repeat="subjectLink in subjectMessageList"&gt&lta href="#!/mailInfo/{{$index}}"&gt {{ subjectLink }}&lt/a&gt&lt/li&gt
+              &lt/ol&gt
+
+            </pre>
+
+            <p>Dans la vue mailInfo</p>
+            <pre class="styleCode">
+              &lt!-- Nous retrouvons ici les 4 variables que nous avons créés dans notre controlleurs
+              mailInfoController.
+              Pour afficher ces variables, nous utiliserons les double acollades {{ maVariable }} --&gt
+              &ltp&gtNom : {{selectName}}&lt/p&gt
+              &ltp&gtMail : {{selectMail}}&lt/p&gt
+              &ltp&gtSujet : {{selectSubject}}&lt/p&gt
+              &ltp&gtText : {{selectTextArea}}&lt/p&gt
+              &lt!-- Le lien ci-dessous permet de revenir sur notre vue principale tout en concervant les sujets affichés. --&gt
+              &lta href="#!/"&gtRetour à la liste&lt/a&gt
+            </pre>
+
+
+            <p>Dans le script</p>
+            <pre class="styleCode">
+              // On déclare une nouvelle application angular qui s'appelle mailBox.
+              var mailBox = angular.module('mailBox', ['ngRoute']);
+              // $rootScope permet de déclarer les tableaux vides dans tout les controlleurs et
+              // donc de pouvoir utiliser les tableaux dans toutes les vues.
+              mailBox.run(['$rootScope', function($rootScope){
+                // Ici nous créons 4 tableaux vides, un pour le stockage du nom, du sujet, de l'adresse mail et du texte.
+                  $rootScope.subjectMessageList = [];
+                  $rootScope.nameMessageList = [];
+                  $rootScope.mailMessageList = [];
+                  $rootScope.textAreaMessageList = [];
+              }]);
+              // Nous créons ici notre premier controlleur 'formController' qui nous servira à gérer le formulaire.
+              mailBox.controller('formController', ['$scope', '$rootScope', function($scope, $rootScope){
+                // À-ÖØ-öø-ÿ est utilisé pour regrouper l'ensemble des accents existants.
+                $scope.nameRegex = /^[A-Z][a-zÀ-ÖØ-öø-ÿ]+([ \-][A-Z][a-zÀ-ÖØ-öø-ÿ]+)*$/;
+                $scope.mailRegex = /^[A-Za-z]+@[a-z]+\.[a-z]+$/ ;
+                // Ici nous injectons dans nos tableaux vides les variables name, mail, subject et textArea.
+                // Pour cela nous utilisons la fonction 'sendMessage' que nous retrouvons dans le ng-click
+                // de notre boutton dans le fichier form.html.
+                $scope.sendMessage = function(){
+                  // Nous 'pushons' $scope.subject dans notre tableau subjectMessageList.
+                  // Nous retrouvons subject en tant que ng-model de l'input 'sujet' dans form.html.
+                  $rootScope.subjectMessageList.push($scope.subject);
+                  $rootScope.nameMessageList.push($scope.name);
+                  $rootScope.mailMessageList.push($scope.email);
+                  $rootScope.textAreaMessageList.push($scope.textArea);
+                };
+              }]);
+                // Ici nous configurons nos routes. Une pour afficher le contenu du fichier form.html et une seconde
+                // pour le contenu de 'mailInfo.html'.
+                mailBox.config(function($routeProvider) {
+                  $routeProvider
+                  // Pour notre première vue, nous spécifions qu'elle devra apparaitre à la racine ('/' equivalent à '/index.html')
+                  .when('/', {
+                    templateUrl: 'view/form.html', // Ici nous spécifions le chemin d'accés de notre fichier "form.html"
+                    controller: 'formController' // Nous indiquons que notre vue sera géré par le controlleur 'formController'
+                                                  // cela permet de ne pas indiquer le ng-controller dans notre 'form.html'.
+                  })
+                  .when('/mailInfo/:index', { // Cette vue aura une URL se terminant par un index. C'est à dire un chiffres
+                                              // allant de 0 au nombre de sujet affichés moins un (entre 0 et 5 si nous avons 6 sujets affiché par exemple.)
+                    templateUrl: 'view/mailInfo.html',
+                    controller: 'mailInfoController' // Nous indiquons que notre vue sera géré par le controlleur 'mailInfoController'.
+                  });
+                });
+                // Ici nous créons notre second controlleur qui permettra de gérer l'affichage du détail des mails.
+                // Nous lui spécifions qu'il pourra "utiliser" $scope, $rootScope et $routeParams.
+              mailBox.controller('mailInfoController', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams){
+                // Nous créons la variable selectSubject dans notre controlelur.
+                // Nous définissons qu'elle sera égale au :
+                // $routeParams.index de notre tableau subjectMessageList. (array[index])
+                // Ainsi selectSubject sera utilisable dans notre fichier mailInfo.
+                $scope.selectSubject = $rootScope.subjectMessageList[$routeParams.index];
+                $scope.selectName = $rootScope.nameMessageList[$routeParams.index];
+                $scope.selectMail = $rootScope.mailMessageList[$routeParams.index];
+                $scope.selectTextArea = $rootScope.textAreaMessageList[$routeParams.index];
+              }]);
+            </pre>
+          </div>
+
+      </section>
+      </div> <!-- div col -->
+    </div> <!-- div row -->
+  </div> <!-- div container -->
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- toujours mettre le fichier jquery au dessus de la balise </body> ET la mettre toujours au dessus du script.js -->
 </body>
 </html>

@@ -6,8 +6,10 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#html">HTML <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#bootstrap">bootstrap</a>
-      <a class="nav-item nav-link" href="#!/oscaro">Projet Oscaro</a>
+      <!-- <a class="nav-item nav-link" href="#!/oscaro">Projet Oscaro</a> -->
       <a class="nav-item nav-link" href="#javascript">javascript</a>
+      <a class="nav-item nav-link" href="#jquery">Jquery</a>
+
     </div>
   </div>
 </nav>
@@ -16,6 +18,7 @@
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <section id="html">
         <h1 class="titleSection">Exercices HTML</h1>
+        <p>JQUERY NE FONCTION PAS SUR L'ONGLET JQUERY !!!!!! </p>
         <p>REFAIRE L'AUTO-INTENTATION DES CODES "pre" À LA TOUTE FIN</p>
         <p>COMMENT UTILISER UNE FEUILLE DE STYLE PAR VUE ??? EST CE POSSIBLE ??</p>
         <p>RAJOUTER CV EN HTML ET CSS</p>
@@ -1190,6 +1193,417 @@
 </pre>
 </div> <!-- border exercice-->
   </section>
+  <section id="jquery">
+    <h2 class="titleSection">Exercices Jquery</h2>
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 1 - Partie 1</h2>
+    <p>Cacher le paragraphe text.</p>
+    <h3>Rendu : </h3>
+    <div id="ExoOneJquery" hidden>
+      <p>
+        Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </p>
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="text"&gt
+        &ltp&gt
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/p&gt
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Cacher la div text.
+      $(document).ready(function() {
+        $('#text').hide();
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 2 - Partie 1</h2>
+    <p>Afficher le paragraphe text.</p>
+    <h3>Rendu : </h3>
+    <div id="ExoTwoJquery">
+      <p>
+        Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </p>
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="text" hidden&gt
+        &lt!-- hidden est un attribut pour cacher --&gt
+        &ltp&gt
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/p&gt
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Afficher la div text.
+      $(function() {
+        $( '#text' ).show();
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 3 - Partie 1</h2>
+    <p>Changer le font-family du paragraphe text en Arial.</p>
+    <h3>Rendu : </h3>
+    <div id="ExoThreeJquery">
+      <p>
+        Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      </p>
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="text"&gt
+        &ltp&gt
+          Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+        &lt/p&gt
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Changer le font-family de la div text en "Arial".
+      $(function() {
+        $('#text').css('font-family', 'arial');
+        // on applique la valeur arial à la propriété font-family
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 4 - Partie 1</h2>
+    <p>Changer la couleur de toutes les balises li en rouge.</p>
+    <h3>Rendu : </h3>
+    <ul>
+      <li class="exoFourJquery">Html</li>
+      <li class="exoFourJquery">CSS</li>
+      <li class="exoFourJquery">Javascript</li>
+      <li class="exoFourJquery">PHP</li>
+      <li class="exoFourJquery">...</li>
+    </ul>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltul&gt
+        &ltli&gtHtml&lt/li&gt
+        &ltli&gtCSS&lt/li&gt
+        &ltli&gtJavascript&lt/li&gt
+        &ltli&gtPHP&lt/li&gt
+        &ltli&gt...&lt/li&gt
+      &lt/ul&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Changer la couleur de toutes les balises li en rouge.
+      $(function() {
+        $('li').css('color', 'red');
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 5 - Partie 1</h2>
+    <p>Vider le paragraphe secondText.</p>
+    <h3>Rendu : </h3>
+    <div id="firstTextExoFiveJquery">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam.</p>
+    </div>
+    <div id="secondTextExoFiveJquery">
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.</p>
+    </div>
+    <div id="thirdTextExoFiveJquery">
+      <p>Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.</p>
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="firstText"&gt
+        &ltp&gtLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam.&lt/p&gt
+      &lt/div&gt
+      &ltdiv id="secondText"&gt
+        &ltp&gtVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.&lt/p&gt
+      &lt/div&gt
+      &ltdiv id="thirdText"&gt
+        &ltp&gtNunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.&lt/p&gt
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Vider la div secondText.
+      $(function() {
+        $('#secondText').empty();
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 6 - Partie 1</h2>
+    <p>Cacher tous les éléments de la classe hide.</p>
+    <h3>Rendu : </h3>
+    <ul>
+      <li>Html</li>
+      <li>CSS</li>
+      <li class="ExoSixJquery">Javascript</li>
+      <li>PHP</li>
+      <li class="ExoSixJquery">...</li>
+    </ul>
+    <ol>
+      <li class="ExoSixJquery">JQuery</li>
+      <li>Angular JS</li>
+      <li class="ExoSixJquery">Node JS</li>
+      <li>BootStrap</li>
+      <li>Symfony</li>
+      <li class="ExoSixJquery">Laravel</li>
+    </ol>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltul&gt
+        &ltli&gtHtml&lt/li&gt
+        &ltli&gtCSS&lt/li&gt
+        &ltli class="hide"&gtJavascript&lt/li&gt
+        &ltli&gtPHP&lt/li&gt
+        &ltli class="hide"&gt...&lt/li&gt
+      &lt/ul&gt
+      &ltol&gt
+        &ltli class="hide"&gtJQuery&lt/li&gt
+        &ltli&gtAngular JS&lt/li&gt
+        &ltli class="hide"&gtNode JS&lt/li&gt
+        &ltli&gtBootStrap&lt/li&gt
+        &ltli&gtSymfony&lt/li&gt
+        &ltli class="hide"&gtLaravel&lt/li&gt
+      &lt/ol&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Cacher tous les éléments de la classe hide.
+      $(function() {
+        $('.hide').hide();
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 7 - Partie 1</h2>
+    <p>Supprimer tous les éléments de la classe remove.</p>
+    <h3>Rendu : </h3>
+    <ul>
+      <li>Html</li>
+      <li>CSS</li>
+      <li class="ExoSevenJquery">Javascript</li>
+      <li>PHP</li>
+      <li class="ExoSevenJquery">...</li>
+    </ul>
+    <ol>
+      <li class="ExoSevenJquery">JQuery</li>
+      <li>Angular JS</li>
+      <li class="ExoSevenJquery">Node JS</li>
+      <li>BootStrap</li>
+      <li>Symfony</li>
+      <li class="ExoSevenJquery">Laravel</li>
+    </ol>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltul&gt
+        &ltli&gtHtml&lt/li&gt
+        &ltli&gtCSS&lt/li&gt
+        &ltli class="remove"&gtJavascript&lt/li&gt
+        &ltli&gtPHP&lt/li&gt
+        &ltli class="remove"&gt...&lt/li&gt
+      &lt/ul&gt
+      &ltol&gt
+        &ltli class="remove"&gtJQuery&lt/li&gt
+        &ltli&gtAngular JS&lt/li&gt
+        &ltli class="remove"&gtNode JS&lt/li&gt
+        &ltli&gtBootStrap&lt/li&gt
+        &ltli&gtSymfony&lt/li&gt
+        &ltli class="remove"&gtLaravel&lt/li&gt
+      &lt/ol&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Supprimer tous les éléments de la classe remove.
+      $(function() {
+        $('.remove').remove();
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 8 - Partie 1</h2>
+    <p>Donner à tous les éléments li enfants de ol la couleur rouge.</p>
+    <h3>Rendu : </h3>
+    <ul>
+      <li>Html</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>PHP</li>
+      <li>...</li>
+    </ul>
+    <ol class="class">
+      <li>JQuery</li>
+      <li>Angular JS</li>
+      <li>Node JS</li>
+      <li>BootStrap</li>
+      <li>Symfony</li>
+      <li>Laravel</li>
+    </ol>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltul&gt
+        &ltli&gtHtml&lt/li&gt
+        &ltli&gtCSS&lt/li&gt
+        &ltli&gtJavascript&lt/li&gt
+        &ltli&gtPHP&lt/li&gt
+        &ltli&gt...&lt/li&gt
+      &lt/ul&gt
+      &ltol&gt
+        &ltli&gtJQuery&lt/li&gt
+        &ltli&gtAngular JS&lt/li&gt
+        &ltli&gtNode JS&lt/li&gt
+        &ltli&gtBootStrap&lt/li&gt
+        &ltli&gtSymfony&lt/li&gt
+        &ltli&gtLaravel&lt/li&gt
+      &lt/ol&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Donner à tous les éléments li enfants de ol la couleur rouge.
+      $(function() {
+      $('ol').children('li').css('color', 'red');
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 9 - Partie 1</h2>
+    <p>Donner aux paragraphes firstText et thirdText une bordure de 5 pixels, verte à pointillés ("5px green dashed").</p>
+    <h3>Rendu : </h3>
+    <div id="firstTextExoNineJquery">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+    </div>
+    <div id="secondTextExoNineJquery">
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+    </div>
+    <div id="thirdTextExoNineJquery">
+      Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="firstText"&gt
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      &lt/div&gt
+      &ltdiv id="secondText"&gt
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+      &lt/div&gt
+      &ltdiv id="thirdText"&gt
+        Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      $(function() {
+        $('#firstText, #thirdText').css('border', '5px green dashed');
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 10 - Partie 1</h2>
+    <p>Du JQuery est déjà présent dans un fichier script.js et permet de cacher tous les éléments de la classe hide. Ajouter cette classe au paragraphe thirdText.</p>
+    <h3>Rendu : </h3>
+    <div id="firstTextExoTenJquery" class="hideExoTenJquery">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+    </div>
+    <div id="secondTextExoTenJquery">
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+    </div>
+    <div id="thirdTextExoTenJquery">
+      Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+    </div>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltdiv id="firstText" class="hide"&gt
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet quam eu molestie hendrerit. Proin in metus a velit fermentum lacinia. Sed semper euismod sapien, at ultricies metus luctus sit amet. Donec sodales accumsan sem ut egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec pulvinar tristique facilisis. Donec rhoncus, enim eget malesuada dictum, risus justo aliquam ex, sit amet ultricies mauris libero nec massa. Nunc eget mauris non massa sollicitudin porta id a massa. Nullam dictum quam non leo varius, et tempus tortor egestas. Integer rhoncus non enim ac auctor. Phasellus mollis lorem mattis elit ultrices fermentum. Donec interdum vel risus porttitor pulvinar. Proin pulvinar lacus sed nunc feugiat imperdiet non sit amet quam. ès ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.
+      &lt/div&gt
+      &ltdiv id="secondText"&gt
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse interdum metus at metus iaculis, vitae dapibus eros rhoncus. Suspendisse tempus lectus erat, vitae malesuada sem tempus non. Ut suscipit eros ac interdum malesuada. In volutpat tellus in lacus malesuada, non finibus orci mattis. Phasellus vulputate dui arcu, non feugiat justo blandit ut. Etiam ut lacinia lorem, sit amet rhoncus ex. Nunc ornare sem a lorem venenatis tincidunt.
+      &lt/div&gt
+      &ltdiv id="thirdText"&gt
+        Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
+      &lt/div&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Du JQuery est déjà présent et permet de cacher tous les éléments de la classe hide. Ajouter cette classe à la div thirdText.
+      $(function() {
+        $('#thirdText').addClass('hide');
+        $('.hide').hide();
+        });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 1 - Partie 2</h2>
+    <p>Au clic sur le bouton, afficher une boîte de dialogue avec le message de votre choix.</p>
+    <h3>Rendu : </h3>
+    <form>
+      <button type="button" name="button" id="clickMe" >Clique-moi !</button>
+    </form>
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltform&gt
+        &ltbutton type="button" name="button" id="clickMe" &gtClique-moi !&lt/button&gt
+      &lt/form&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Au clic sur le bouton, afficher une boite de dialogue avec le message de votre choix.
+      $( '#clickMe' ).click(function() {
+        alert('Hello world');
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 2 - Partie 2</h2>
+    <p>Au double clic, modifier la largeur de l'image et la mettre à 500px.</p>
+    <h3>Rendu : </h3>
+    <img src="assets/img/image17.jpg" id="image17" />
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+      &ltimg src="assets/img/image.jpg" id="image" /&gt
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+      // Au double clic, modifier la largeur de l'image à 500px.
+      $(document).ready(function(){
+        $('#image').dblclick(function() {
+          $(this).width('500px');
+        });
+      });
+    </pre>
+    </div> <!-- border exercice-->
+    <div class="borderExercise">
+    <h2 class="titleExercise">Exercice 3 - Partie 2</h2>
+    <p>Afficher ou masquer le paragraphe text au clic des liens existants.</p>
+    <h3>Rendu : </h3>
+
+    <h3>code : </h3>
+    <p>Dans l'Html</p>
+    <pre class="styleCode">
+
+    </pre>
+    <p>Dans le script</p>
+    <pre class="styleCode">
+
+    </pre>
+    </div> <!-- border exercice-->
+    </section>
+
     </div> <!-- div col -->
   </div> <!-- div row -->
 </div> <!-- div container -->
